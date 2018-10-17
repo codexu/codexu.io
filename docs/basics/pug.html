@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>自适应布局方案 · GitBook</title>
+        <title>HTML -> Pug · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mixins.html" />
+    <link rel="next" href="stylus.html" />
     
     
-    <link rel="prev" href="structure.html" />
+    <link rel="prev" href="special.html" />
     
 
     </head>
@@ -163,12 +163,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="px2rem.html">
+        <li class="chapter " data-level="2.2" data-path="special.html">
             
-                <a href="px2rem.html">
+                <a href="special.html">
             
                     
-                    自适应布局方案
+                    特殊语法
             
                 </a>
             
@@ -176,7 +176,33 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="mixins.html">
+        <li class="chapter active" data-level="2.3" data-path="pug.html">
+            
+                <a href="pug.html">
+            
+                    
+                    HTML -> Pug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="stylus.html">
+            
+                <a href="stylus.html">
+            
+                    
+                    CSS -> Stylus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="mixins.html">
             
                 <a href="mixins.html">
             
@@ -192,57 +218,11 @@
 
     
         
-        <li class="header">代码风格</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="../style/special.html">
-            
-                <a href="../style/special.html">
-            
-                    
-                    特殊语法
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.2" data-path="../style/pug.html">
-            
-                <a href="../style/pug.html">
-            
-                    
-                    HTML相关
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="../style/stylus.html">
-            
-                <a href="../style/stylus.html">
-            
-                    
-                    CSS相关
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
         <li class="header">插件</li>
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../plugin/x-load.html">
+        <li class="chapter " data-level="3.1" data-path="../plugin/x-load.html">
             
                 <a href="../plugin/x-load.html">
             
@@ -255,7 +235,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../plugin/x-animate.html">
+        <li class="chapter " data-level="3.2" data-path="../plugin/x-animate.html">
             
                 <a href="../plugin/x-animate.html">
             
@@ -268,12 +248,32 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../plugin/x-touch.html">
+        <li class="chapter " data-level="3.3" data-path="../plugin/x-touch.html">
             
                 <a href="../plugin/x-touch.html">
             
                     
                     x-touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../others/px2rem.html">
+            
+                <a href="../others/px2rem.html">
+            
+                    
+                    自适应布局方案
             
                 </a>
             
@@ -311,7 +311,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >自适应布局方案</a>
+        <a href="../.." >HTML -> Pug</a>
     </h1>
 </div>
 
@@ -326,18 +326,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;">&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;</h1>
-<p>&#x91C7;&#x7528; <code>px2rem</code> + <code>hotcss</code> &#x7684;&#x5E03;&#x5C40;&#x65B9;&#x6848;&#xFF0C;css&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x4E0E;&#x8BBE;&#x8BA1;&#x7A3F;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x5957;&#x4EE3;&#x7801;&#x591A;&#x5C3A;&#x5BF8;&#x9002;&#x5E94;&#x3002;</p>
-<p>&#x9ED8;&#x8BA4;&#x4E3A;<code>750px</code>&#x8BBE;&#x8BA1;&#x7A3F;&#x5F00;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x8BA1;&#x7A3F;&#x4E3A;&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x5BF9;webpack.config.js =&gt; remUnit&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF1A;</p>
-<ul>
-<li><p>&#x8BBE;&#x8BA1;&#x7A3F;640px : remUnit&#xFF08;40&#xFF09;</p>
-</li>
-<li><p>&#x8BBE;&#x8BA1;&#x7A3F;750px : remUnit&#xFF08;46.875&#xFF09;</p>
-</li>
-<li><p>&#x8BBE;&#x8BA1;&#x7A3F;818px : remUnit&#xFF08;51.75&#xFF09;</p>
-</li>
-</ul>
-<p>&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x53C2;&#x8003;&#x6839;&#x8282;&#x70B9;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;</p>
+                                <h1 id="pug&#xFF08;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF09;">pug&#xFF08;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF09;</h1>
+<p>&#x6B64;&#x5904;&#x4EC5;&#x5217;&#x4E3E;&#x4E00;&#x90E8;&#x5206;&#x5E38;&#x7528;&#x8BED;&#x6CD5;&#xFF0C;&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x8BF7;&#x67E5;&#x770B;&#xFF1A;<a href="https://pug.bootcss.com/api/getting-started.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x6863;</a></p>
+<h4 id="&#x4EC0;&#x4E48;&#x662F;pug">&#x4EC0;&#x4E48;&#x662F;Pug</h4>
+<p>Pug&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x7F16;&#x5199;HTML&#x7684;&#x5E72;&#x51C0;&#xFF0C;&#x7A7A;&#x683C;&#x654F;&#x611F;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x7F29;&#x8FDB;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E66;&#x5199;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-pug">#container.col
+  p You are using pug!
+</code></pre>
+<p>&#x7F16;&#x8BD1;&#x4E3A;:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;container&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You are using pug!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>&#x53EF;&#x89C1;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x5199;&#x6CD5;&#x53EF;&#x4EE5;&#x7701;&#x53BB;&#x5927;&#x91CF;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F46;&#x8981;&#x6CE8;&#x610F;&#x7F29;&#x8FDB;&#x5173;&#x7CFB;&#x3002;</p>
+<h4 id="&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</h4>
+<pre><code class="lang-pug">// &#x4E00;&#x4E9B;&#x5185;&#x5BB9;
+//- &#x8FD9;&#x884C;&#x4E0D;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;
+</code></pre>
+<h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
+<p>&#x5F00;&#x59CB;&#x4E00;&#x6BB5;&#x4E0D;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x8F93;&#x51FA;&#x7684;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-pug">- var list = [&quot;Cuatro&quot;, &quot;Cinco&quot;, &quot;Seis&quot;]
+</code></pre>
+<h4 id="&#x6761;&#x4EF6;">&#x6761;&#x4EF6;</h4>
+<pre><code class="lang-pug">- var isTrue = true
+  if isTrue
+    p ture
+  else
+    p false
+</code></pre>
 
                                 
                                 </section>
@@ -365,12 +381,12 @@
 
             
                 
-                <a href="structure.html" class="navigation navigation-prev " aria-label="Previous page: 目录结构">
+                <a href="special.html" class="navigation navigation-prev " aria-label="Previous page: 特殊语法">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mixins.html" class="navigation navigation-next " aria-label="Next page: Mixins">
+                <a href="stylus.html" class="navigation navigation-next " aria-label="Next page: CSS -> Stylus">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -381,7 +397,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"自适应布局方案","level":"2.2","depth":1,"next":{"title":"Mixins","level":"2.3","depth":1,"path":"docs/basics/mixins.md","ref":"docs/basics/mixins.md","articles":[]},"previous":{"title":"目录结构","level":"2.1","depth":1,"path":"docs/basics/structure.md","ref":"docs/basics/structure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/basics/px2rem.md","mtime":"2018-10-11T03:13:45.357Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-12T03:42:27.049Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTML -> Pug","level":"2.3","depth":1,"next":{"title":"CSS -> Stylus","level":"2.4","depth":1,"path":"docs/basics/stylus.md","ref":"docs/basics/stylus.md","articles":[]},"previous":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/basics/special.md","ref":"docs/basics/special.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/basics/pug.md","mtime":"2018-10-17T08:32:39.516Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T08:37:19.140Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
