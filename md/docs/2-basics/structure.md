@@ -1,26 +1,30 @@
 # 目录结构
 
+#### 开发模式
+
 ```
   .
-  ├── .babelrc
   ├── .eslintrc.js # eslint配置，当程序报错时，可以参考注释
-  ├── index.pug
-  ├── package.json
-  ├── postcss.config.js
-  ├── webpack.config.js
+  ├── index.pug # html入口文件
   ├── node_modules/
   |   └── ...
   └── src/ # 源码目录
       ├── assets/ # 静态资源
-      |   ├── images/
       ├── scripts/
+      |   └── index.js
       ├── styles/
-      ├── utils/ # 工具集
       |   ├── config.styl # 用于字体、颜色等配置
-      |   ├── hostcss.js # 配合px2rem使用
       |   ├── mixins.styl # 一些常用的css布局函数
-      |   └── reset.styl
-      ├── app.pug
-      ├── index.js
-      └── index.styl
+      |   └── index.styl
+      └── app.pug # html正文
+```
+
+#### 生产模式
+
+```
+  .
+  ├── index.html
+  ├── bundle.[hash:8].css
+  ├── bundle.[hash:8].js
+  └── assets/ # 静态资源
 ```
