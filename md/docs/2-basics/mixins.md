@@ -33,7 +33,7 @@
     Wrapper-background(750px)
 ```
 
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fw22y2vahej308c0d374l.jpg)
+![](https://ws1.sinaimg.cn/large/006tNbRwly1fwi8p33us7j308b08mt8x.jpg)
 
 ---
 
@@ -49,7 +49,7 @@
 
 用于元素定位，默认情况下定位在父元素的顶部正中间，x、y控制元素偏移。
 
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fw236lasx5j30640d374i.jpg)
+![](https://ws1.sinaimg.cn/large/006tNbRwly1fwi8nup29pj306307fmx8.jpg)
 
 #### Text(size, width, align, color)
 
@@ -87,4 +87,4 @@
     img()
 ```
 
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fw239wg3b3j30640d3jrj.jpg)
+![](https://ws2.sinaimg.cn/large/006tNbRwly1fwi8pzdj4hj306404zglk.jpg)
