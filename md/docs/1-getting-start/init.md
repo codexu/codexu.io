@@ -1,6 +1,6 @@
 # 创建一个新项目
 
-![](https://ws3.sinaimg.cn/large/006tNbRwly1fwi9fxsva5g30qp0g1q5v.gif)
+![](https://ws4.sinaimg.cn/large/006tNbRwly1fwp98dwz0jg30rs0gph5z.gif)
 
 通过以下任意指令创建一个新项目：
 
