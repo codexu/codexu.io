@@ -6,11 +6,16 @@
 
 ```
   $ x-build init
-  or
-  $ x -i
+  # 别名[ x ]可以代替[ x-build ]
 ```
 
-&emsp;
+#### Step1 版本检测
+
+为了保证x-build-cli与x-build保持最完美的配合。
+
+v1.3.10版本起，会进行版本检测，强制更新到最新版本才可以使用，低版本可能会导致程序报错！
+
+#### Step2 输入问题
 
 你会被提示输入或选择一系列问题来自定义你的项目：
 
@@ -26,6 +31,17 @@
 
 - 选择安装插件 *（normalize.css/x-load/x-animate/animate.css）*
 
-&emsp;
+#### Step3 安装&依赖
 
-随后在github下载x-build最新版本 -> 安装项目依赖 -> 安装插件
+- 下载最新的x-build
+
+- 安装依赖
+
+- 安装插件
+
+#### Step4 完成最后的操作
+
+```
+  $ cd [name]
+  $ npm run dev
+```
