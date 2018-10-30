@@ -2,7 +2,7 @@
 
 ## 快速上手
 
-* [什么是x-build](README.md)
+* [x-build](README.md)
 
 * [安装（CLI）](docs/1-getting-start/install.md)
 

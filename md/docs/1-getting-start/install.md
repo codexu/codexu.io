@@ -2,7 +2,9 @@
 
 #### 命令行工具 (CLI)
 
+<img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
 <img src="https://img.shields.io/badge/npm-v1.3.10-blue.svg">
+<img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 
 `x-build-cli`是一个快速生成`x-build`项目的生成器，类似于vue-cli。将 `x-build-cli` npm包安装在全局环境下，提供了终端里的 `x-build` or `x` 命令。
 
