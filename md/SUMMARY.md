@@ -16,10 +16,6 @@
 
 * [特殊语法](docs/2-basics/special.md)
 
-* [HTML -> Pug](docs/2-basics/pug.md)
-
-* [CSS -> Stylus](docs/2-basics/stylus.md)
-
 * [Mixins](docs/2-basics/mixins.md)
 
 ## 插件
