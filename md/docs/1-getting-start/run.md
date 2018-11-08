@@ -5,7 +5,7 @@
 执行开发模式：
 
 ```
-  $ npm run dev
+  $ yarn serve
 ```
 
 - 启动一个开发服务器基于`webpack-dev-server`并附带开箱即用的模块热重载`HMR`。
@@ -19,7 +19,7 @@
 执行生产模式：
 
 ```
-  $ npm run build
+  $ yarn build
 ```
 
 - 生产模式下将编译好的文件打包在`dist\`目录下，所有的静态文件都存放在`dist\static\`目录下。
