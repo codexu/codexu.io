@@ -7,6 +7,7 @@
 ```
   $ x-build create [name]
   # 别名[ x ]可以代替[ x-build ]
+  # 别名[ -c ]可以代替[ create ]
 ```
 
 #### Step1 版本检测
