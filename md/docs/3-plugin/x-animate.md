@@ -1,17 +1,21 @@
+<p align="center"><img width="160" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx32anjngzj308w06x415.jpg" alt="x-animate"></p>
+
+<p align="center">
+  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
+  <img src="https://img.shields.io/badge/npm-v0.1.1-blue.svg">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+</p>
+
 # x-animate
 
 x-animate是通过屏幕滚动控制动画执行的插件，可以配合[animate.css](https://daneden.github.io/animate.css/)使用。
-
-<p align="center">
-  <img width="280" src="https://github.com/codexu/_images/blob/master/x-animate/animate.gif?raw=true">
-</p>
 
 #### 快速起步
 
 - 安装
 
 ```
-$ npm install animate.css x-animate --save
+$ yarn add animate.css x-animate
 ```
 
 - 引用
@@ -26,13 +30,21 @@ let animate = new Animate();
 ```html
 <!-- html -->
 <div animate="bounceInLeft"></div>
+<!-- pug -->
+div(animate="bounceInLeft")
 ```
 
 #### 配置项
 
 ```html
 <!-- html -->
-<div animate="bounceInLeft" delay="1000" duration="1000" offset="100" animate-enter="animateEnter" animate-leave="animateLeave"></div>
+<div animate="bounceInLeft" 
+     delay="1000" 
+     duration="1000" 
+     offset="100" 
+     animateEnter="animateEnterFn" 
+     animateLeave="animateLeaveFn"
+></div>
 ```
 
 - `animate(必填项)` 参考animate.css动画名，或参考自定义动画。
@@ -43,11 +55,11 @@ let animate = new Animate();
 
 - `offset(可选)` 偏移量：(px)，以屏幕底部为轴，默认滚动到某一元素已显示一半高度时执行动画。偏移量为正数，则需多滚动相应的距离；偏移量为负值，则会提前相应距离执行动画。
 
-- `animate-enter(可选)` 钩子函数：(function(item))，当某个元素动画开始时执行函数。
+- `animateEnter(可选)` 钩子函数：(function(item))，当某个元素动画开始时执行函数。
 
-- `animate-leave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
+- `animateLeave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
 
-#### 生命周期函数
+#### 钩子函数
 
 在需要触发的元素上增加属性`animate-enter`(动画前)或`animate-leave`(动画后)，值为定义在methods中的函数名。
 
@@ -62,10 +74,10 @@ let animate = new Animate();
 // javascript
 new Animate({
   methods: {
-    animateEnter(item) {
+    animateEnterFn(item) {
       console.log('animateEnter', item);
     },
-    animateLeave(item) {
+    animateLeaveFn(item) {
       console.log('animateLeave', item);
     }
   }
@@ -109,8 +121,6 @@ new Animate({
   delay: 'delay',
   // 默认值'duration'，对应<div duration=""></div>，防止与其他插件命名冲突
   duration: 'duration',
-  // 默认值50，滚动节流间隔时间
-  interval: 50,
   // 默认空，生命周期函数
   methods: {}
 });
