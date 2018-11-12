@@ -304,12 +304,12 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v0.1.1-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v0.2.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
 <h1 id="x-animate">x-animate</h1>
-<p>x-animate&#x662F;&#x901A;&#x8FC7;&#x5C4F;&#x5E55;&#x6EDA;&#x52A8;&#x63A7;&#x5236;&#x52A8;&#x753B;&#x6267;&#x884C;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x5408;<a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a>&#x4F7F;&#x7528;&#x3002;</p>
+<p>x-animate&#x662F;&#x901A;&#x8FC7;&#x5C4F;&#x5E55;&#x6EDA;&#x52A8;&#x63A7;&#x5236;&#x52A8;&#x753B;&#x6267;&#x884C;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x652F;&#x6301;&#x52A8;&#x753B;&#x7EC4;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x5408;<a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a>&#x4F7F;&#x7528;&#x3002;</p>
 <h4 id="&#x5FEB;&#x901F;&#x8D77;&#x6B65;">&#x5FEB;&#x901F;&#x8D77;&#x6B65;</h4>
 <ul>
 <li>&#x5B89;&#x88C5;</li>
@@ -328,9 +328,9 @@
 <span class="hljs-comment">&lt;!-- pug --&gt;</span>
 div(animate=&quot;bounceInLeft&quot;)
 </code></pre>
-<h4 id="&#x914D;&#x7F6E;&#x9879;">&#x914D;&#x7F6E;&#x9879;</h4>
+<h4 id="&#x5355;&#x5143;&#x7D20;&#x52A8;&#x753B;">&#x5355;&#x5143;&#x7D20;&#x52A8;&#x753B;</h4>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- html --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">animate</span>=<span class="hljs-string">&quot;bounceInLeft&quot;</span> 
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">animate</span>=<span class="hljs-string">&quot;[animate-name]&quot;</span> 
      <span class="hljs-attr">delay</span>=<span class="hljs-string">&quot;1000&quot;</span> 
      <span class="hljs-attr">duration</span>=<span class="hljs-string">&quot;1000&quot;</span> 
      <span class="hljs-attr">offset</span>=<span class="hljs-string">&quot;100&quot;</span> 
@@ -350,6 +350,20 @@ div(animate=&quot;bounceInLeft&quot;)
 <li><p><code>animateEnter(&#x53EF;&#x9009;)</code> &#x94A9;&#x5B50;&#x51FD;&#x6570;&#xFF1A;(function(item))&#xFF0C;&#x5F53;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#x65F6;&#x6267;&#x884C;&#x51FD;&#x6570;&#x3002;</p>
 </li>
 <li><p><code>animateLeave(&#x53EF;&#x9009;)</code> &#x94A9;&#x5B50;&#x51FD;&#x6570;&#xFF1A;(function(item))&#xFF0C;&#x5F53;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x65F6;&#x6267;&#x884C;&#x51FD;&#x6570;&#x3002;</p>
+</li>
+</ul>
+<h4 id="&#x52A8;&#x753B;&#x7EC4;">&#x52A8;&#x753B;&#x7EC4;</h4>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- html --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">animate-group</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">animateItem</span>=<span class="hljs-string">&quot;[animate-name]&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p><code>animate-group(&#x5FC5;&#x586B;&#x9879;)</code> &#x4E3A;&#x4E00;&#x4E2A;&#x52A8;&#x753B;&#x7EC4;&#x7684;&#x7236;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x6B64;&#x5C5E;&#x6027;&#x3002;</p>
+</li>
+<li><p><code>animateItem(&#x5FC5;&#x586B;&#x9879;)</code> &#x5B50;&#x5143;&#x7D20;&#x4E0E;&#x5355;&#x5143;&#x7D20;<code>animate</code>&#x529F;&#x80FD;&#x4E00;&#x81F3;&#x3002;</p>
+</li>
+<li><p>&#x5B50;&#x5143;&#x7D20;&#x652F;&#x6301;&#x5355;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x3002;</p>
 </li>
 </ul>
 <h4 id="&#x94A9;&#x5B50;&#x51FD;&#x6570;">&#x94A9;&#x5B50;&#x51FD;&#x6570;</h4>
@@ -445,7 +459,7 @@ div(animate=&quot;bounceInLeft&quot;)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"x-animate","level":"3.2","depth":1,"next":{"title":"x-touch","level":"3.3","depth":1,"path":"docs/3-plugin/x-touch.md","ref":"docs/3-plugin/x-touch.md","articles":[]},"previous":{"title":"x-load","level":"3.1","depth":1,"path":"docs/3-plugin/x-load.md","ref":"docs/3-plugin/x-load.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/3-plugin/x-animate.md","mtime":"2018-11-10T09:29:54.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-10T09:30:58.015Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"x-animate","level":"3.2","depth":1,"next":{"title":"x-touch","level":"3.3","depth":1,"path":"docs/3-plugin/x-touch.md","ref":"docs/3-plugin/x-touch.md","articles":[]},"previous":{"title":"x-load","level":"3.1","depth":1,"path":"docs/3-plugin/x-load.md","ref":"docs/3-plugin/x-load.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/3-plugin/x-animate.md","mtime":"2018-11-12T05:32:16.460Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-12T05:38:23.105Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -2,13 +2,13 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v0.1.1-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v0.2.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
 # x-animate
 
-x-animate是通过屏幕滚动控制动画执行的插件，可以配合[animate.css](https://daneden.github.io/animate.css/)使用。
+x-animate是通过屏幕滚动控制动画执行的插件，支持动画组，可以配合[animate.css](https://daneden.github.io/animate.css/)使用。
 
 #### 快速起步
 
@@ -34,11 +34,11 @@ let animate = new Animate();
 div(animate="bounceInLeft")
 ```
 
-#### 配置项
+#### 单元素动画
 
 ```html
 <!-- html -->
-<div animate="bounceInLeft" 
+<div animate="[animate-name]" 
      delay="1000" 
      duration="1000" 
      offset="100" 
@@ -58,6 +58,21 @@ div(animate="bounceInLeft")
 - `animateEnter(可选)` 钩子函数：(function(item))，当某个元素动画开始时执行函数。
 
 - `animateLeave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
+
+#### 动画组
+
+```html
+<!-- html -->
+<div animate-group>
+  <div animateItem="[animate-name]"></div>
+</div>
+```
+
+- `animate-group(必填项)` 为一个动画组的父元素添加此属性。
+
+- `animateItem(必填项)` 子元素与单元素`animate`功能一至。
+
+- 子元素支持单元素的所有属性。
 
 #### 钩子函数
 
