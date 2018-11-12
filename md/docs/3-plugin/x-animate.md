@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v0.2.0-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v0.2.1-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -14,8 +14,12 @@ x-animate是通过屏幕滚动控制动画执行的插件，支持动画组，�
 
 - 安装
 
+通过npm或yarn安装，或使用script直接引用dist目录下的x-animate.min.js。
+
 ```
 $ yarn add animate.css x-animate
+or
+<script src="dist/x-animate.min.js"></script>
 ```
 
 - 引用
