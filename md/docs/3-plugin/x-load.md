@@ -1,6 +1,16 @@
+<p align="center"><img width="160" src="https://ws2.sinaimg.cn/large/006tNbRwly1fx67hwnhw1j308w06xdig.jpg" alt="x-animate"></p>
+
+<p align="center">
+  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
+  <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+</p>
+
 # x-load
 
-<p align="center"><img width="878" src="https://github.com/codexu/_images/blob/master/x-load/load.gif?raw=true" alt="x-load"></p>
+x-load是用于控制图片加载的ES6插件，主要功能为：提前加载、延迟加载、控制加载顺序和进度控制。
+
+#### 特性
 
 - loading持续时，同时加载需要的图片，每张图片加载结束会更新加载进度。
 - 当加载进度100%时，结束并隐藏loading效果。
@@ -12,7 +22,7 @@
 - 通过npm安装
 
 ```
-npm install x-load --save
+yarn add x-load
 ```
 
 - 通过import引入x-load，通过`new`操作符创建一个新的xLoad对象。
@@ -57,8 +67,8 @@ let xload = new XLoad({
   // prior属性存在时，图片会优先加载，为防止与其他插件命名冲突
   prior: 'prior',
 
-  // 加载方式，默认为按序加载，配置false为同步加载
-  sequence: true,
+  // 加载方式，默认为同步加载(按从上到下的顺序加载)，配置false为异步加载(同时加载)
+  sync: true,
 
   // [剩余图片]在未加载事使用loading效果图片代替，此值传入图片url
   loadImg: require('../assets/images/oval.svg'),

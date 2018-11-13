@@ -39,7 +39,7 @@ import xLoad from 'x-load';
 import Animate from 'x-animate';
 /* eslint-disable */
 new xLoad({
-  nextTickLoading: (percent) => {
+  afterLoading: (percent) => {
     new Animate()
   }
 })
