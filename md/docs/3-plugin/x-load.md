@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.3.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -38,8 +38,6 @@ x-load是用于控制图片加载的ES6插件，主要功能为：提前加载�
 
 #### 起步
 
-- 在`<HTML>`标签内的最上层创建DOM`<div id="xl-load"></div>`制作loading效果。
-
 - 正文包裹层增加`id="xl-wrapper"`（与xl-load同层）。
 
 - `<img>`标签使用`data-src`传入图片链接，不要设置`src`属性。
@@ -48,7 +46,6 @@ x-load是用于控制图片加载的ES6插件，主要功能为：提前加载�
 
 ```html
 <!-- html -->
-<div id="xl-load"></div>
 <div id="xl-wrapper">
   <img data-src="./abc.jpg" prior>
 </div>
@@ -72,7 +69,7 @@ x-load是用于控制图片加载的ES6插件，主要功能为：提前加载�
 
 - 默认值`#xl-load`
 
-- 传入loading效果DOM。
+- 如果需要自定义loading效果，请将自定义DOM传入。
 
 ---
 
