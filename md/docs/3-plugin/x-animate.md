@@ -118,7 +118,7 @@ new Animate({
 }
 
 .newAnimate {
-  animation-name: fadeIn;
+  animation-name: newAnimate;
 }
 ```
 
