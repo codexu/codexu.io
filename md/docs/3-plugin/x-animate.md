@@ -6,11 +6,11 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
-# x-animate
+<p align="center">
+  <a href="https://github.com/codexu/x-animate">X-ANIMATE</a>是通过屏幕滚动控制动画执行的插件，支持动画组，可以配合<a href="https://daneden.github.io/animate.css/">animate.css</a>使用。
+</p>
 
-x-animate是通过屏幕滚动控制动画执行的插件，支持动画组，可以配合[animate.css](https://daneden.github.io/animate.css/)使用。
-
-#### 快速起步
+### 快速起步
 
 - 安装
 
@@ -38,7 +38,7 @@ let animate = new Animate();
 div(animate="bounceInLeft")
 ```
 
-#### 单元素动画
+### 单元素动画
 
 ```html
 <!-- html -->
@@ -63,7 +63,7 @@ div(animate="bounceInLeft")
 
 - `animateLeave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
 
-#### 动画组
+### 动画组
 
 ```html
 <!-- html -->
@@ -78,7 +78,7 @@ div(animate="bounceInLeft")
 
 - 子元素支持单元素的所有属性。
 
-#### 钩子函数
+### 钩子函数
 
 在需要触发的元素上增加属性`animate-enter`(动画前)或`animate-leave`(动画后)，值为定义在methods中的函数名。
 
@@ -103,7 +103,7 @@ new Animate({
 });
 ```
 
-#### 自定义动画
+### 自定义动画
 
 使用自定义的动画，例如新定义`newAnimate`动画:
 
@@ -127,7 +127,7 @@ new Animate({
 <div animate="newAnimate"></div>
 ```
 
-#### 深度配置
+### 深度配置
 
 配置属性名称、滚动节流调节、生命周期函数。
 

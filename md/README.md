@@ -6,54 +6,48 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
-x-build是一套基于Webpack、快速搭建H5场景开发环境的脚手架，只需要几分钟的时间就可以运行起来。
+<p align="center">
+  <a href="https://github.com/codexu/x-build">X-BUILD</a>一套基于Webpack、快速搭建H5场景开发环境的脚手架，只需要几分钟的时间就可以运行起来。
+</p>
 
 #### H5场景开发
 
-由于H5网页开发周期短，每个项目都需要重新搭建开发环境，x-build主要目标是解决这种情况。
+由于H5网页开发周期短，每个项目都需要重新搭建开发环境，X-BUILD主要目标是解决这种情况。
 
-您只需要对HTML、CSS、JS有简单的开发经验，就可以按照x-build的规则去快速搭建一个优秀的H5页面。
+您只需要对HTML、CSS、JS有简单的开发经验，就可以按照X-BUILD的规则去快速搭建一个优秀的H5页面。
 
 #### 解决痛点
 
-- 繁琐的开发环境搭建
+✅ 零配置，快速搭建繁琐的开发环境搭建。
 
-- 不同终端的屏幕适配、代码兼容性
+✅ 解决多终端屏幕适配以及代码兼容性。
 
-- 用户访问、浏览体验优化
+✅ 代码压缩、静态资源压缩、更少的HTTP请求。
 
-- 更小的静态资源
+✅ 可选插件，避免逻辑问题导致开发效率降低。
 
 #### 功能&特性
 
-- 基于Webpack(v4.21.0)
+- 基于[Webpack](https://webpack.docschina.org/concepts/)(v4.21.0)
 
-- 集成移动端自适应解决方案（px2rem，一套代码、多端适应）
+- 集成移动端自适应解决方案
 
 - 静态文件服务
 
-- 支持Pug模板引擎
+- [Pug模板引擎](https://pug.bootcss.com/api/getting-started.html)
 
-- ES6/ES7 语法支持
+- JavaScript模块化
 
-- 支持Stylus样式预处理器，并提供多个Mixins快速布局
+- Babel转译ES6/ES7
 
-- 集成normalize.css样式重置
+- [ESLint](https://github.com/codexu/x-build/blob/master/.eslintrc.js)规范代码
 
-- 集成postcss: autoprefixer
+- Css拆分
 
-- 打包和压缩 JS 和 CSS
+- normalize样式重置
 
-- 集成ESLint
+- [Stylus](https://www.zhangxinxu.com/jq/stylus/)样式预处理器，提供多个Mixins快速搭建页面
 
-- 本地开发支持热加载
+- postcss
 
-- 配套插件满足动画、加载、手势的需求。
-
-#### 相关链接（源码）
-
-[x-build](https://github.com/codexu/x-build)、
-[x-build-cli](https://github.com/codexu/x-build-cli)、
-[x-load](https://github.com/codexu/x-load)、
-[x-animate](https://github.com/codexu/x-animate)、
-[x-touch](https://github.com/codexu/x-touch)
+- Hot Module Replacement

@@ -1,0 +1,403 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>自适应布局方案 · X-BUILD中文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../3-plugin/x-load.html" />
+    
+    
+    <link rel="prev" href="3-mixins.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">快速上手</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1-getting-start/2-install.html">
+            
+                <a href="../1-getting-start/2-install.html">
+            
+                    
+                    安装（CLI）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../1-getting-start/3-init.html">
+            
+                <a href="../1-getting-start/3-init.html">
+            
+                    
+                    创建一个新项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../1-getting-start/4-run.html">
+            
+                <a href="../1-getting-start/4-run.html">
+            
+                    
+                    开发与打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1-structure.html">
+            
+                <a href="1-structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="2-special.html">
+            
+                <a href="2-special.html">
+            
+                    
+                    特殊语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="3-mixins.html">
+            
+                <a href="3-mixins.html">
+            
+                    
+                    Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="4-px2rem.html">
+            
+                <a href="4-px2rem.html">
+            
+                    
+                    自适应布局方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../3-plugin/x-load.html">
+            
+                <a href="../3-plugin/x-load.html">
+            
+                    
+                    x-load
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../3-plugin/x-animate.html">
+            
+                <a href="../3-plugin/x-animate.html">
+            
+                    
+                    x-animate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../3-plugin/x-touch.html">
+            
+                <a href="../3-plugin/x-touch.html">
+            
+                    
+                    x-touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >自适应布局方案</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;"><a name="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;" class="plugin-anchor" href="#&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;</h2>
+<p>&#x91C7;&#x7528; <code>px2rem</code> + <code>hotcss</code> &#x7684;&#x5E03;&#x5C40;&#x65B9;&#x6848;&#xFF0C;css&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x4E0E;&#x8BBE;&#x8BA1;&#x7A3F;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x5957;&#x4EE3;&#x7801;&#x591A;&#x5C3A;&#x5BF8;&#x9002;&#x5E94;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x4E3A;<code>750px</code>&#x8BBE;&#x8BA1;&#x7A3F;&#x5F00;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x8BA1;&#x7A3F;&#x4E3A;&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x5BF9;webpack.config.js =&gt; remUnit&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF1A;</p>
+<ul>
+<li><p>&#x8BBE;&#x8BA1;&#x7A3F;640px : remUnit&#xFF08;40&#xFF09;</p>
+</li>
+<li><p>&#x8BBE;&#x8BA1;&#x7A3F;750px : remUnit&#xFF08;46.875&#xFF09;</p>
+</li>
+<li><p>&#x8BBE;&#x8BA1;&#x7A3F;818px : remUnit&#xFF08;51.75&#xFF09;</p>
+</li>
+</ul>
+<p>&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x53C2;&#x8003;&#x6839;&#x8282;&#x70B9;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-mixins.html" class="navigation navigation-prev " aria-label="Previous page: Mixins">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../3-plugin/x-load.html" class="navigation navigation-next " aria-label="Next page: x-load">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自适应布局方案","level":"2.4","depth":1,"next":{"title":"x-load","level":"3.1","depth":1,"path":"docs/3-plugin/x-load.md","ref":"docs/3-plugin/x-load.md","articles":[]},"previous":{"title":"Mixins","level":"2.3","depth":1,"path":"docs/2-basics/3-mixins.md","ref":"docs/2-basics/3-mixins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","anchors","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"sepia","family":"sans","size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD中文文档","gitbook":"*","description":"x-build&plugin文档"},"file":{"path":"docs/2-basics/4-px2rem.md","mtime":"2018-11-16T03:47:27.222Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-16T05:55:04.198Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

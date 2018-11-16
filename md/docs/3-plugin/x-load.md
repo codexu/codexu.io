@@ -6,11 +6,11 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
-# x-load
+<p align="center">
+  <a href="https://github.com/codexu/x-load">X-LOAD</a>是用于控制图片加载的ES6插件，主要功能为：提前加载、延迟加载、控制加载顺序和进度控制。
+</p>
 
-x-load是用于控制图片加载的ES6插件，主要功能为：提前加载、延迟加载、控制加载顺序和进度控制。
-
-#### 安装
+### 安装
 
 - 通过`npm` or `yarn`安装
 
@@ -21,7 +21,7 @@ x-load是用于控制图片加载的ES6插件，主要功能为：提前加载�
 
 - 通过script加载[x-load.min.js](https://raw.githubusercontent.com/codexu/x-load/master/dist/x-load.min.js)
 
-#### 引用
+### 引用
 
 - 通过npm或yarn安装：
 
@@ -36,7 +36,7 @@ x-load是用于控制图片加载的ES6插件，主要功能为：提前加载�
   new xLoad();
 ```
 
-#### 起步
+### 起步
 
 - 正文包裹层增加`id="xl-wrapper"`（与xl-load同层）。
 
@@ -51,7 +51,7 @@ x-load是用于控制图片加载的ES6插件，主要功能为：提前加载�
 </div>
 ```
 
-#### 参数表
+### 参数表
 
 实例化xLoad()，可以传入一个`[object]`自定义配置。
 

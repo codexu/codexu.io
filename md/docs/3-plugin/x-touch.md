@@ -6,11 +6,11 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
-# x-touch
+<p align="center">
+  <a href="https://github.com/codexu/x-touch">X-TOUCH</a>，移动端滑动组件，为DOM绑定点击事件和上下左右方向滑动事件。
+</p>
 
-`x-touch`，移动端滑动组件，为某个dom绑定点击事件和上下左右方向滑动事件。
-
-#### 安装
+### 安装
 
 - 通过`npm` or `yarn`安装
 
@@ -21,7 +21,7 @@
 
 - 通过script加载[x-touch.min.js](https://raw.githubusercontent.com/codexu/x-touch/master/dist/x-touch.min.js)
 
-#### 使用方式
+### 使用方式
 
 只需要通过import 'x-touch'即可，将HTMLElement.prototype添加`xtouch`函数。
 
@@ -36,7 +36,7 @@ root.xtouch('tap', function(status){
 
 ```
 
-#### 参数1 【事件名】
+### 参数1 【事件名】
 
 - 点击： `tap`
 
@@ -48,7 +48,7 @@ root.xtouch('tap', function(status){
 
 - 向右滑动： `swipRight`
 
-#### 参数2 【回调函数】
+### 参数2 【回调函数】
 
 - 函数内this指向实践绑定的DOM。
 

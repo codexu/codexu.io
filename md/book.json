@@ -1,0 +1,63 @@
+{
+  "title": "X-BUILD中文文档",
+  "description": "x-build&plugin文档",
+  "plugins": [
+    "splitter",
+    "anchors",
+    "sitemap",
+    "-fontsettings",
+    "prism",
+    "-highlight",
+    "github-buttons",
+    "-sharing"
+  ],
+  "pluginsConfig": {
+    
+    "sitemap": {
+      "hostname": "https://codexu.github.io/"
+    },
+
+    "fontsettings": {
+      "theme": "sepia",
+      "family": "sans",
+      "size": 2
+    },
+
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-okaidia.css"
+      ],
+      "lang": {
+        "flow": "stylus"
+      },
+      "ignore": [
+        "mermaid",
+        "eval-js"
+      ]
+    },
+
+    "github-buttons": {
+      "buttons": [{
+        "user": "codexu",
+        "type": "follow",
+        "width": "160",
+        "count": true,
+        "size": "small"
+      }]
+    },
+
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+          "facebook", "google", "twitter",
+          "weibo", "instapaper"
+      ]
+    }
+
+  }
+}
