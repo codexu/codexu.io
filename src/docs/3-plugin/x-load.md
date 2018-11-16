@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/codexu/x-load">X-LOAD</a>是用于控制图片加载的ES6插件，主要功能为：提前加载、延迟加载、控制加载顺序和进度控制。
+  <a href="https://github.com/codexu/x-load">X-LOAD</a>是控制图片加载方式的插件，主要功能为：提前加载、延迟加载、控制加载顺序和进度控制。
 </p>
 
 ### 安装
