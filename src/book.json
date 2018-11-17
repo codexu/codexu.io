@@ -1,9 +1,8 @@
 {
-  "title": "X-BUILD中文文档",
-  "description": "x-build&plugin文档",
+  "title": "X-BUILD文档",
+  "description": "x-build & plugins 文档",
   "plugins": [
     "splitter",
-    "anchors",
     "sitemap",
     "-fontsettings",
     "prism",
@@ -18,14 +17,12 @@
     },
 
     "fontsettings": {
-      "theme": "sepia",
-      "family": "sans",
       "size": 2
     },
 
     "prism": {
       "css": [
-        "prismjs/themes/prism-okaidia.css"
+        "prismjs/themes/prism-tomorrow.css"
       ],
       "lang": {
         "flow": "stylus"

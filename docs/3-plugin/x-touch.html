@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>x-touch · X-BUILD中文文档</title>
+        <title>x-touch · X-BUILD文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -21,11 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
                 
             
                 
@@ -136,7 +132,7 @@
                 <a href="../1-getting-start/3-init.html">
             
                     
-                    创建一个新项目
+                    创建一个项目
             
                 </a>
             
@@ -319,7 +315,7 @@
   <a href="https://github.com/codexu/x-touch" target="_blank">X-TOUCH</a>&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#x6ED1;&#x52A8;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E3A;DOM&#x7ED1;&#x5B9A;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x548C;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x65B9;&#x5411;&#x6ED1;&#x52A8;&#x4E8B;&#x4EF6;&#x3002;
 </p>
 
-<h3 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h3>
+<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
 <ul>
 <li>&#x901A;&#x8FC7;<code>npm</code> or <code>yarn</code>&#x5B89;&#x88C5;</li>
 </ul>
@@ -328,8 +324,8 @@
 </code></pre><ul>
 <li>&#x901A;&#x8FC7;script&#x52A0;&#x8F7D;<a href="https://raw.githubusercontent.com/codexu/x-touch/master/dist/x-touch.min.js" target="_blank">x-touch.min.js</a></li>
 </ul>
-<h3 id="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><a name="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h3>
-<p>&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;import &apos;x-touch&apos;&#x5373;&#x53EF;&#xFF0C;&#x5C06;HTMLElement.prototype&#x6DFB;&#x52A0;<code>xtouch</code>&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="&#x8D77;&#x6B65;">&#x8D77;&#x6B65;</h3>
+<p>&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;import &apos;x-touch&apos;&#x5373;&#x53EF;&#xFF0C;&#x5C06;HTMLElement.prototype&#x6DFB;&#x52A0;<code>xtouch</code>&#x51FD;&#x6570;&#xFF1A;</p>
 <pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token string">&apos;x-touch&apos;</span><span class="token punctuation">;</span>
 
 <span class="token keyword">let</span> root <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -338,26 +334,40 @@ root<span class="token punctuation">.</span><span class="token function">xtouch<
   <span class="token comment">// do someting!</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="&#x53C2;&#x6570;1-&#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;"><a name="&#x53C2;&#x6570;1-&#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;" class="plugin-anchor" href="#&#x53C2;&#x6570;1-&#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;1 &#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;</h3>
-<ul>
-<li><p>&#x70B9;&#x51FB;&#xFF1A; <code>tap</code></p>
-</li>
-<li><p>&#x5411;&#x4E0A;&#x6ED1;&#x52A8;&#xFF1A; <code>swipUp</code></p>
-</li>
-<li><p>&#x5411;&#x4E0B;&#x6ED1;&#x52A8;&#xFF1A; <code>swipDown</code></p>
-</li>
-<li><p>&#x5411;&#x5DE6;&#x6ED1;&#x52A8;&#xFF1A; <code>swipLeft</code></p>
-</li>
-<li><p>&#x5411;&#x53F3;&#x6ED1;&#x52A8;&#xFF1A; <code>swipRight</code></p>
-</li>
-</ul>
-<h3 id="&#x53C2;&#x6570;2-&#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;"><a name="&#x53C2;&#x6570;2-&#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;" class="plugin-anchor" href="#&#x53C2;&#x6570;2-&#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;2 &#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;</h3>
-<ul>
-<li><p>&#x51FD;&#x6570;&#x5185;this&#x6307;&#x5411;&#x5B9E;&#x8DF5;&#x7ED1;&#x5B9A;&#x7684;DOM&#x3002;</p>
-</li>
-<li><p>&#x51FD;&#x6570;&#x53C2;&#x6570;status&#xFF0C;&#x6B64;&#x6B21;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
-</li>
-</ul>
+<h4 id="&#x53C2;&#x6570;1-&#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;">&#x53C2;&#x6570;1 &#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x65B9;&#x5F0F;</th>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x23FA; &#x70B9;&#x51FB;</td>
+<td style="text-align:left"><code>tap</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x2B06;&#xFE0F; &#x5411;&#x4E0A;&#x6ED1;&#x52A8;</td>
+<td style="text-align:left"><code>swipUp</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x2B07;&#xFE0F; &#x5411;&#x4E0B;&#x6ED1;&#x52A8;</td>
+<td style="text-align:left"><code>swipDown</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x2B05;&#xFE0F; &#x5411;&#x5DE6;&#x6ED1;&#x52A8;</td>
+<td style="text-align:left"><code>swipLeft</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x27A1;&#xFE0F; &#x5411;&#x53F3;&#x6ED1;&#x52A8;</td>
+<td style="text-align:left"><code>swipRight</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x53C2;&#x6570;2-&#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;">&#x53C2;&#x6570;2 &#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;</h4>
+<p>&#x2139;&#xFE0F; &#x51FD;&#x6570;&#x5185;this&#x6307;&#x5411;&#x5B9E;&#x8DF5;&#x7ED1;&#x5B9A;&#x7684;DOM&#x3002;</p>
+<p>&#x2139;&#xFE0F; &#x51FD;&#x6570;&#x53C2;&#x6570;status&#xFF0C;&#x6B64;&#x6B21;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
 
                                 
                                 </section>
@@ -397,7 +407,7 @@ root<span class="token punctuation">.</span><span class="token function">xtouch<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"x-touch","level":"3.3","depth":1,"previous":{"title":"x-animate","level":"3.2","depth":1,"path":"docs/3-plugin/x-animate.md","ref":"docs/3-plugin/x-animate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","anchors","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"sepia","family":"sans","size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD中文文档","gitbook":"*","description":"x-build&plugin文档"},"file":{"path":"docs/3-plugin/x-touch.md","mtime":"2018-11-16T05:56:30.114Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-16T10:03:05.732Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"x-touch","level":"3.3","depth":1,"previous":{"title":"x-animate","level":"3.2","depth":1,"path":"docs/3-plugin/x-animate.md","ref":"docs/3-plugin/x-animate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/3-plugin/x-touch.md","mtime":"2018-11-17T16:46:39.638Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-17T16:56:33.922Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

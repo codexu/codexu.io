@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>自适应布局方案 · X-BUILD中文文档</title>
+        <title>自适应布局方案 · X-BUILD文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -21,11 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
                 
             
                 
@@ -138,7 +134,7 @@
                 <a href="../1-getting-start/3-init.html">
             
                     
-                    创建一个新项目
+                    创建一个项目
             
                 </a>
             
@@ -309,18 +305,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;"><a name="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;" class="plugin-anchor" href="#&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;</h2>
-<p>&#x91C7;&#x7528; <code>px2rem</code> + <code>hotcss</code> &#x7684;&#x5E03;&#x5C40;&#x65B9;&#x6848;&#xFF0C;css&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x4E0E;&#x8BBE;&#x8BA1;&#x7A3F;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x5957;&#x4EE3;&#x7801;&#x591A;&#x5C3A;&#x5BF8;&#x9002;&#x5E94;&#x3002;</p>
-<p>&#x9ED8;&#x8BA4;&#x4E3A;<code>750px</code>&#x8BBE;&#x8BA1;&#x7A3F;&#x5F00;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x8BA1;&#x7A3F;&#x4E3A;&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x5BF9;webpack.config.js =&gt; remUnit&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF1A;</p>
-<ul>
-<li><p>&#x8BBE;&#x8BA1;&#x7A3F;640px : remUnit&#xFF08;40&#xFF09;</p>
-</li>
-<li><p>&#x8BBE;&#x8BA1;&#x7A3F;750px : remUnit&#xFF08;46.875&#xFF09;</p>
-</li>
-<li><p>&#x8BBE;&#x8BA1;&#x7A3F;818px : remUnit&#xFF08;51.75&#xFF09;</p>
-</li>
-</ul>
-<p>&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x53C2;&#x8003;&#x6839;&#x8282;&#x70B9;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x3002;</p>
+                                <h3 id="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;">&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF08;&#x79FB;&#x52A8;&#x7AEF;&#xFF09;</h3>
+<p>X-BUILD &#x91C7;&#x7528; <code>px2rem</code> + <code>hotcss</code> &#x7684;&#x5E03;&#x5C40;&#x65B9;&#x6848;&#xFF0C;css&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x4E0E;&#x8BBE;&#x8BA1;&#x7A3F;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x4E3A;<code>750px</code>&#x8BBE;&#x8BA1;&#x7A3F;&#x5F00;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x8BA1;&#x7A3F;&#x4E3A;&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x4FEE;&#x6539; ./build/lib/isRem.js &#x6587;&#x4EF6;&#x5185;&#x7684; remUnit &#x53C2;&#x6570;&#xFF1A;</p>
+<p>&#x27A1;&#xFE0F; &#x8BBE;&#x8BA1;&#x7A3F;640px : remUnit&#xFF08;40&#xFF09;</p>
+<p>&#x27A1;&#xFE0F; &#x8BBE;&#x8BA1;&#x7A3F;750px : remUnit&#xFF08;46.875&#xFF09;</p>
+<p>&#x27A1;&#xFE0F; &#x8BBE;&#x8BA1;&#x7A3F;818px : remUnit&#xFF08;51.75&#xFF09;</p>
+<h4 id="&#x26A0;&#xFE0F;-&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;">&#x26A0;&#xFE0F; &#x5176;&#x4ED6;&#x5C3A;&#x5BF8;</h4>
+<blockquote>
+<p>1&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; X-BUILD &#x9879;&#x76EE;&#xFF0C;&#x521B;&#x5EFA;&#x65F6;&#x786E;&#x4FDD;&#x79FB;&#x52A8;&#x7AEF;&#x9009;&#x9879;&#x9009;&#x4E3A; true&#x3002;</p>
+<p>2&#x3001;&#x4F7F;&#x7528; chrome &#x6D4F;&#x89C8;&#x5668;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#xFF0C;&#x5207;&#x6362;&#x5230;&#x79FB;&#x52A8;&#x7AEF;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#xFF0C;&#x9009;&#x62E9;&#x6216;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x4E0E;&#x8BBE;&#x8BA1;&#x7A3F;&#x4E00;&#x81F4;&#x7684;&#x8BBE;&#x5907;&#x3002;</p>
+<p>3&#x3001;&#x6B64;&#x65F6; hotcss &#x5DF2;&#x7ECF;&#x4E3A; HTML &#x8282;&#x70B9;&#x8BBE;&#x7F6E;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x5C31;&#x662F; <strong>remUnit</strong>&#x3002;</p>
+</blockquote>
+<h3 id="pxcook">PxCook</h3>
+<p><a href="http://www.fancynode.com.cn/pxcook" target="_blank">PxCook</a> &#x9AD8;&#x6548;&#x6613;&#x7528;&#x7684;&#x81EA;&#x52A8;&#x6807;&#x6CE8;&#x5DE5;&#x5177;, &#x751F;&#x6210;&#x524D;&#x7AEF;&#x4EE3;&#x7801;, &#x8BBE;&#x8BA1;&#x7814;&#x53D1;&#x534F;&#x4F5C;&#x5229;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C06;PSD&#x8BBE;&#x8BA1;&#x7A3F;&#x62D6;&#x5165;&#xFF0C;&#x5E2E;&#x4F60;&#x6807;&#x8BB0;&#x6BCF;&#x4E2A;&#x56FE;&#x7247;&#x6216;&#x6587;&#x5B57;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fxbipw4gqrj31540u0n5x.jpg" alt=""></p>
 
                                 
                                 </section>
@@ -364,7 +363,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"自适应布局方案","level":"2.4","depth":1,"next":{"title":"x-load","level":"3.1","depth":1,"path":"docs/3-plugin/x-load.md","ref":"docs/3-plugin/x-load.md","articles":[]},"previous":{"title":"Mixins","level":"2.3","depth":1,"path":"docs/2-basics/3-mixins.md","ref":"docs/2-basics/3-mixins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","anchors","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"sepia","family":"sans","size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD中文文档","gitbook":"*","description":"x-build&plugin文档"},"file":{"path":"docs/2-basics/4-px2rem.md","mtime":"2018-11-16T05:56:30.112Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-16T10:03:05.732Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"自适应布局方案","level":"2.4","depth":1,"next":{"title":"x-load","level":"3.1","depth":1,"path":"docs/3-plugin/x-load.md","ref":"docs/3-plugin/x-load.md","articles":[]},"previous":{"title":"Mixins","level":"2.3","depth":1,"path":"docs/2-basics/3-mixins.md","ref":"docs/2-basics/3-mixins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/4-px2rem.md","mtime":"2018-11-17T16:22:14.189Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-17T16:56:33.922Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

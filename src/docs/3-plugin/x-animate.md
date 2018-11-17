@@ -10,35 +10,48 @@
   <a href="https://github.com/codexu/x-animate">X-ANIMATE</a>是通过屏幕滚动控制动画执行的插件，支持动画组，可以配合<a href="https://daneden.github.io/animate.css/">animate.css</a>使用。
 </p>
 
-### 快速起步
+### 安装
 
-- 安装
-
-通过npm或yarn安装，或使用script直接引用dist目录下的x-animate.min.js。
+- 通过`npm` or `yarn`安装：
 
 ```
-$ yarn add animate.css x-animate
-or
-<script src="dist/x-animate.min.js"></script>
+  $ yarn add animate.css x-animate
+  # OR
+  $ npm install animate.css x-animate --save
 ```
 
-- 引用
+- 通过script加载[x-animate.min.js](https://raw.githubusercontent.com/codexu/x-animate/master/dist/x-animate.min.js)
+
+### 引用
+
+- 通过包管理器安装：
 
 ```javascript
-// javascript
-import 'animate.css'
-import Animate from 'x-animate'
-let animate = new Animate();
+  // javascript
+  import 'animate.css'
+  import Animate from 'x-animate'
+  let animate = new Animate();
 ```
+
+- 通过`<script>`（此方式会污染全局变量）：
+
+```javascript
+  // javascript
+  new Aniamte();
+```
+
+### 起步
+
+为至少一个DOM添加 animate 属性，并赋值一个动画名称，例如：
 
 ```html
 <!-- html -->
 <div animate="bounceInLeft"></div>
-<!-- pug -->
-div(animate="bounceInLeft")
 ```
 
 ### 单元素动画
+
+只对单个元素生效的动画，当滚动到它的相应位置就会被执行：
 
 ```html
 <!-- html -->
@@ -51,19 +64,21 @@ div(animate="bounceInLeft")
 ></div>
 ```
 
-- `animate(必填项)` 参考animate.css动画名，或参考自定义动画。
+ℹ️ `animate(必填项)` 参考animate.css动画名，或参考自定义动画。
 
-- `delay(可选)` 延时：(毫秒)，当屏幕滚动到对应位置时，延时结束执行动画。
+ℹ️ `delay(可选)` 延时：(毫秒)，当屏幕滚动到对应位置时，延时结束执行动画。
 
-- `duration(可选)` 持续时间：(毫秒)，动画执行的持续时间，数值越大动画越慢。
+ℹ️ `duration(可选)` 持续时间：(毫秒)，动画执行的持续时间，数值越大动画越慢。
 
-- `offset(可选)` 偏移量：(px)，以屏幕底部为轴，默认滚动到某一元素已显示一半高度时执行动画。偏移量为正数，则需多滚动相应的距离；偏移量为负值，则会提前相应距离执行动画。
+ℹ️ `offset(可选)` 偏移量：(px)，以屏幕底部为轴，默认滚动到某一元素已显示一半高度时执行动画。偏移量为正数，则需多滚动相应的距离；偏移量为负值，则会提前相应距离执行动画。
 
-- `animateEnter(可选)` 钩子函数：(function(item))，当某个元素动画开始时执行函数。
+ℹ️ `animateEnter(可选)` 钩子函数：(function(item))，当某个元素动画开始时执行函数。
 
-- `animateLeave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
+ℹ️ `animateLeave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
 
 ### 动画组
+
+当滚动到某个区域需要它里面的子元素做连续动画时（例如为地图标记点做连续动画）：
 
 ```html
 <!-- html -->
@@ -72,11 +87,11 @@ div(animate="bounceInLeft")
 </div>
 ```
 
-- `animate-group(必填项)` 为一个动画组的父元素添加此属性。
+ℹ️ `animate-group(必填项)` 为一个动画组的父元素添加此属性。
 
-- `animateItem(必填项)` 子元素与单元素`animate`功能一至。
+ℹ️ `animateItem(必填项)` 子元素与单元素`animate`功能一至。
 
-- 子元素支持单元素的所有属性。
+ℹ️ 子元素支持单元素的所有属性。
 
 ### 钩子函数
 
@@ -87,7 +102,7 @@ div(animate="bounceInLeft")
 <div animate-enter="animateEnter" animate-leave="animateLeave"></div>
 ```
 
-将需要执行的函数定义在methods中。
+将需要执行的函数定义在methods中：
 
 ```javascript
 // javascript
@@ -108,6 +123,7 @@ new Animate({
 使用自定义的动画，例如新定义`newAnimate`动画:
 
 ```css
+/* css */
 @keyframes newAnimate {
   from {
     opacity: 0;
@@ -127,9 +143,7 @@ new Animate({
 <div animate="newAnimate"></div>
 ```
 
-### 深度配置
-
-配置属性名称、滚动节流调节、生命周期函数。
+### 其他配置
 
 ```javascript
 // javascript
@@ -139,8 +153,6 @@ new Animate({
   // 默认值'delay'，对应<div delay=""></div>，防止与其他插件命名冲突
   delay: 'delay',
   // 默认值'duration'，对应<div duration=""></div>，防止与其他插件命名冲突
-  duration: 'duration',
-  // 默认空，生命周期函数
-  methods: {}
+  duration: 'duration'
 });
 ```

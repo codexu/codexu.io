@@ -12,25 +12,26 @@
 
 ### 安装
 
-- 通过`npm` or `yarn`安装
+- 通过`npm` or `yarn`安装：
 
 ```
-  npm install x-load --save
-  yarn add x-load
+  $ npm install x-load --save
+  # OR
+  $ yarn add x-load
 ```
 
 - 通过script加载[x-load.min.js](https://raw.githubusercontent.com/codexu/x-load/master/dist/x-load.min.js)
 
 ### 引用
 
-- 通过npm或yarn安装：
+- 通过包管理器安装：
 
 ```javascript
   import xLoad from 'x-load';
   new xLoad();
 ```
 
-- 通过`<script>`加载（此方式会污染全局变量）：
+- 通过`<script>`（此方式会污染全局变量）：
 
 ```javascript
   new xLoad();
@@ -38,11 +39,13 @@
 
 ### 起步
 
-- 正文包裹层增加`id="xl-wrapper"`（与xl-load同层）。
+ℹ️ 正文包裹层增加 `id="xl-wrapper"` ，将你的所有正文内容写在这个 div 下。
 
-- `<img>`标签使用`data-src`传入图片链接，不要设置`src`属性。
+⚠️ X-BUILD 项目已经在 index.pug 中定义好 `div#xl-wrapper` ，所有的内容写在 app.pug 内即可。
 
-- 至少给一个`<img>`标签增加属性`prior`，表示此图片需要优先加载。
+ℹ️ `<img>` 标签使用 `data-src` 传入图片链接，不要设置 `src` 属性。
+
+ℹ️ 至少给一个 `<img>` 标签增加属性 `prior` ，表示此图片需要优先加载。
 
 ```html
 <!-- html -->

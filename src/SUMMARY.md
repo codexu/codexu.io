@@ -6,7 +6,7 @@
 
 * [安装（CLI）](docs/1-getting-start/2-install.md)
 
-* [创建一个新项目](docs/1-getting-start/3-init.md)
+* [创建一个项目](docs/1-getting-start/3-init.md)
 
 * [开发与打包](docs/1-getting-start/4-run.md)
 

@@ -1,46 +1,30 @@
 ## Mixins(Stylus)
 
-- [加载页面-图标 loader(width, height)](#加载页面-图标)
+### 目录
 
-- [包裹层 Wrapper()](#包裹层)
+➡️ [包裹层 Wrapper()](#包裹层)
 
-- [背景 Wrapper-background(width)](#背景)
+➡️ [背景 Wrapper-background(width)](#背景)
 
-- [元素定位 Item-position(width, height, x, y, z-index)](#元素定位)
+➡️ [加载页面-图标 loader(width, height)](#加载页面-图标)
 
-- [标题与文本 Text(size, width, align, color)](#标题与文本)
+➡️ [元素定位 Item-position(width, height, x, y, z-index)](#元素定位)
 
-- [装饰符 Pseudo(align, x, y)](#装饰符)
+➡️ [标题与文本 Text(size, width, align, color)](#标题与文本)
 
-- [列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)](#列表)
+➡️ [装饰符 Pseudo(align, x, y)](#装饰符)
 
----
-
-### 加载页面-图标
-
-** loader(width, height) **
-
-- `width` [30px] 图标宽度
-
-- `height` [30px] 图标高度
-
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fw20nmvmhqj30640d3js3.jpg)
-
-用于loading加载页面，宽高为屏幕的100%，子元素`<img>`水平垂直居中。
+➡️ [列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)](#列表)
 
 ---
 
-### 包裹层
-
-** Wrapper() **
+#### 包裹层 Wrapper()
 
 用于每一个模块的**包裹层**，`相对定位`、`宽度100%`、`overflow: hidden`。
 
 ---
 
-### 背景
-
-** Wrapper-background(width) **
+#### 背景 Wrapper-background(width)
 
 - `width` [750px] 背景图片宽度
 
@@ -57,9 +41,19 @@
 
 ---
 
-### 元素定位
+#### 加载页面-图标 loader(width, height)
 
-** Item-position(width, height, x, y, z-index) **
+- `width` [30px] 图标宽度
+
+- `height` [30px] 图标高度
+
+![](https://ws4.sinaimg.cn/large/006tNbRwly1fw20nmvmhqj30640d3js3.jpg)
+
+用于loading加载页面，宽高为屏幕的100%，子元素`<img>`水平垂直居中。
+
+---
+
+#### 元素定位 Item-position(width, height, x, y, z-index)
 
 - `width` [500px] 元素的宽度
 
@@ -75,9 +69,7 @@
 
 ---
 
-### 标题与文本
-
-** Text(size, width, align, color) **
+#### 标题与文本 Text(size, width, align, color)
 
 - `size` [H1-H6 or P] 文字大小，参考config.styl => $FONT_H*_SIZE
 
@@ -91,9 +83,7 @@
 
 ---
 
-### 装饰符
-
-** Pseudo(align, x, y) **
+#### 装饰符 Pseudo(align, x, y)
 
 - `align` [left, right] 图标对齐位置
 
@@ -121,9 +111,7 @@
 
 ---
 
-### 列表
-
-** List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor) **
+#### 列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)
 
 - `type` [circle, hollow-circle, square, hollow-square] 标记形状
 

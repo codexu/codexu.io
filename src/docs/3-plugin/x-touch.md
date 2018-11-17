@@ -21,9 +21,9 @@
 
 - 通过script加载[x-touch.min.js](https://raw.githubusercontent.com/codexu/x-touch/master/dist/x-touch.min.js)
 
-### 使用方式
+### 起步
 
-只需要通过import 'x-touch'即可，将HTMLElement.prototype添加`xtouch`函数。
+只需要通过import 'x-touch'即可，将HTMLElement.prototype添加`xtouch`函数：
 
 ``` javascript
 import 'x-touch';
@@ -36,20 +36,18 @@ root.xtouch('tap', function(status){
 
 ```
 
-### 参数1 【事件名】
+#### 参数1 【事件名】
 
-- 点击： `tap`
+| 方式 | 参数 |
+| :- | :- |
+| ⏺ 点击 | `tap` |
+| ⬆️ 向上滑动 | `swipUp` |
+| ⬇️ 向下滑动 | `swipDown` |
+| ⬅️ 向左滑动 | `swipLeft` |
+| ➡️ 向右滑动 | `swipRight` |
 
-- 向上滑动： `swipUp`
+#### 参数2 【回调函数】
 
-- 向下滑动： `swipDown`
+ℹ️ 函数内this指向实践绑定的DOM。
 
-- 向左滑动： `swipLeft`
-
-- 向右滑动： `swipRight`
-
-### 参数2 【回调函数】
-
-- 函数内this指向实践绑定的DOM。
-
-- 函数参数status，此次事件发生的参数。
+ℹ️ 函数参数status，此次事件发生的参数。

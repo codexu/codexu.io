@@ -10,21 +10,30 @@
   <a href="https://github.com/codexu/x-build-cli">X-BUILD-CLI</a>是一个快速生成X-BUILD项目的生成器，类似于@vue/cli。
 </p>
 
-### 
+### 命令行工具 (CLI)
 
-### 安装命令行工具 (CLI)
+X-BUILD-CLI是一个全局安装的 npm 包，提供了终端里的 x-build 命令。
 
-全局安装npm包，提供终端命令`x-build` or `x`。
+> #### ⚠️ Node 版本要求
 
-使用下列任一命令安装：
+> X-BUILD-CLI需要 [Node.js](http://nodejs.cn/) **8.9 或更高版本** (推荐 8.11.0+)。<br>你可以使用 [nvm](https://github.com/creationix/nvm) 在同一台电脑中管理多个 Node 版本。
+
+### 安装
+
+使用下列任一命令全局安装npm包：
 
 ```
   $ npm install -g x-build-cli
+  # OR
   $ yarn global add x-build-cli
+
+  # 安装报错，可能需要`sudo`获得权限权限！
 ```
 
-- 使用`-V`查看版本号
+安装之后，你就可以在命令行中访问 **x-build** 命令。
 
-- 使用`-n`参数禁止版本检测
+你还可以用这个命令来检查其版本是否正确，同时验证它是否安装成功。
 
-- 使用`-h`查看参数列表
+```
+  $ x-build --version
+```

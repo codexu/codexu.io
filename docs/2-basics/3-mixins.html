@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Mixins · X-BUILD中文文档</title>
+        <title>Mixins · X-BUILD文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -21,11 +21,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
                 
             
                 
@@ -138,7 +134,7 @@
                 <a href="../1-getting-start/3-init.html">
             
                     
-                    创建一个新项目
+                    创建一个项目
             
                 </a>
             
@@ -309,41 +305,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="mixinsstylus"><a name="mixinsstylus" class="plugin-anchor" href="#mixinsstylus"><i class="fa fa-link" aria-hidden="true"></i></a>Mixins(Stylus)</h2>
-<ul>
-<li><p><a href="#&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;">&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807; loader(width, height)</a></p>
-</li>
-<li><p><a href="#&#x5305;&#x88F9;&#x5C42;">&#x5305;&#x88F9;&#x5C42; Wrapper()</a></p>
-</li>
-<li><p><a href="#&#x80CC;&#x666F;">&#x80CC;&#x666F; Wrapper-background(width)</a></p>
-</li>
-<li><p><a href="#&#x5143;&#x7D20;&#x5B9A;&#x4F4D;">&#x5143;&#x7D20;&#x5B9A;&#x4F4D; Item-position(width, height, x, y, z-index)</a></p>
-</li>
-<li><p><a href="#&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;">&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C; Text(size, width, align, color)</a></p>
-</li>
-<li><p><a href="#&#x88C5;&#x9970;&#x7B26;">&#x88C5;&#x9970;&#x7B26; Pseudo(align, x, y)</a></p>
-</li>
-<li><p><a href="#&#x5217;&#x8868;">&#x5217;&#x8868; List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)</a></p>
-</li>
-</ul>
+                                <h2 id="mixinsstylus">Mixins(Stylus)</h2>
+<h3 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h3>
+<p>&#x27A1;&#xFE0F; <a href="#&#x5305;&#x88F9;&#x5C42;">&#x5305;&#x88F9;&#x5C42; Wrapper()</a></p>
+<p>&#x27A1;&#xFE0F; <a href="#&#x80CC;&#x666F;">&#x80CC;&#x666F; Wrapper-background(width)</a></p>
+<p>&#x27A1;&#xFE0F; <a href="#&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;">&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807; loader(width, height)</a></p>
+<p>&#x27A1;&#xFE0F; <a href="#&#x5143;&#x7D20;&#x5B9A;&#x4F4D;">&#x5143;&#x7D20;&#x5B9A;&#x4F4D; Item-position(width, height, x, y, z-index)</a></p>
+<p>&#x27A1;&#xFE0F; <a href="#&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;">&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C; Text(size, width, align, color)</a></p>
+<p>&#x27A1;&#xFE0F; <a href="#&#x88C5;&#x9970;&#x7B26;">&#x88C5;&#x9970;&#x7B26; Pseudo(align, x, y)</a></p>
+<p>&#x27A1;&#xFE0F; <a href="#&#x5217;&#x8868;">&#x5217;&#x8868; List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)</a></p>
 <hr>
-<h3 id="&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;"><a name="&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;" class="plugin-anchor" href="#&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;</h3>
-<p><strong> loader(width, height) </strong></p>
-<ul>
-<li><p><code>width</code> [30px] &#x56FE;&#x6807;&#x5BBD;&#x5EA6;</p>
-</li>
-<li><p><code>height</code> [30px] &#x56FE;&#x6807;&#x9AD8;&#x5EA6;</p>
-</li>
-</ul>
-<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fw20nmvmhqj30640d3js3.jpg" alt=""></p>
-<p>&#x7528;&#x4E8E;loading&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF0C;&#x5BBD;&#x9AD8;&#x4E3A;&#x5C4F;&#x5E55;&#x7684;100%&#xFF0C;&#x5B50;&#x5143;&#x7D20;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span></code>&#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x3002;</p>
-<hr>
-<h3 id="&#x5305;&#x88F9;&#x5C42;"><a name="&#x5305;&#x88F9;&#x5C42;" class="plugin-anchor" href="#&#x5305;&#x88F9;&#x5C42;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5305;&#x88F9;&#x5C42;</h3>
-<p><strong> Wrapper() </strong></p>
+<h4 id="&#x5305;&#x88F9;&#x5C42;-wrapper">&#x5305;&#x88F9;&#x5C42; Wrapper()</h4>
 <p>&#x7528;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;<strong>&#x5305;&#x88F9;&#x5C42;</strong>&#xFF0C;<code>&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;</code>&#x3001;<code>&#x5BBD;&#x5EA6;100%</code>&#x3001;<code>overflow: hidden</code>&#x3002;</p>
 <hr>
-<h3 id="&#x80CC;&#x666F;"><a name="&#x80CC;&#x666F;" class="plugin-anchor" href="#&#x80CC;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x80CC;&#x666F;</h3>
-<p><strong> Wrapper-background(width) </strong></p>
+<h4 id="&#x80CC;&#x666F;-wrapper-backgroundwidth">&#x80CC;&#x666F; Wrapper-background(width)</h4>
 <ul>
 <li><code>width</code> [750px] &#x80CC;&#x666F;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;</li>
 </ul>
@@ -355,8 +330,17 @@
     <span class="token func"><span class="token function">Wrapper-background</span><span class="token punctuation">(</span><span class="token number">750</span>px<span class="token punctuation">)</span></span>
 </code></pre>
 <hr>
-<h3 id="&#x5143;&#x7D20;&#x5B9A;&#x4F4D;"><a name="&#x5143;&#x7D20;&#x5B9A;&#x4F4D;" class="plugin-anchor" href="#&#x5143;&#x7D20;&#x5B9A;&#x4F4D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5143;&#x7D20;&#x5B9A;&#x4F4D;</h3>
-<p><strong> Item-position(width, height, x, y, z-index) </strong></p>
+<h4 id="&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;-loaderwidth-height">&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807; loader(width, height)</h4>
+<ul>
+<li><p><code>width</code> [30px] &#x56FE;&#x6807;&#x5BBD;&#x5EA6;</p>
+</li>
+<li><p><code>height</code> [30px] &#x56FE;&#x6807;&#x9AD8;&#x5EA6;</p>
+</li>
+</ul>
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fw20nmvmhqj30640d3js3.jpg" alt=""></p>
+<p>&#x7528;&#x4E8E;loading&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF0C;&#x5BBD;&#x9AD8;&#x4E3A;&#x5C4F;&#x5E55;&#x7684;100%&#xFF0C;&#x5B50;&#x5143;&#x7D20;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span></code>&#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x3002;</p>
+<hr>
+<h4 id="&#x5143;&#x7D20;&#x5B9A;&#x4F4D;-item-positionwidth-height-x-y-z-index">&#x5143;&#x7D20;&#x5B9A;&#x4F4D; Item-position(width, height, x, y, z-index)</h4>
 <ul>
 <li><p><code>width</code> [500px] &#x5143;&#x7D20;&#x7684;&#x5BBD;&#x5EA6;</p>
 </li>
@@ -370,8 +354,7 @@
 <p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fwi8nup29pj306307fmx8.jpg" alt=""></p>
 <p>&#x7528;&#x4E8E;&#x5143;&#x7D20;&#x5B9A;&#x4F4D;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5B9A;&#x4F4D;&#x5728;&#x7236;&#x5143;&#x7D20;&#x7684;&#x9876;&#x90E8;&#x6B63;&#x4E2D;&#x95F4;&#xFF0C;x&#x3001;y&#x63A7;&#x5236;&#x5143;&#x7D20;&#x504F;&#x79FB;&#x3002;</p>
 <hr>
-<h3 id="&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;"><a name="&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;" class="plugin-anchor" href="#&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;</h3>
-<p><strong> Text(size, width, align, color) </strong></p>
+<h4 id="&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;-textsize-width-align-color">&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C; Text(size, width, align, color)</h4>
 <ul>
 <li><p><code>size</code> [H1-H6 or P] &#x6587;&#x5B57;&#x5927;&#x5C0F;&#xFF0C;&#x53C2;&#x8003;config.styl =&gt; $FONT_H*_SIZE</p>
 </li>
@@ -384,8 +367,7 @@
 </ul>
 <p>&#x7528;&#x4E8E;&#x6807;&#x9898;&#x6216;&#x6587;&#x672C;&#x6BB5;&#x843D;&#xFF0C;&#x5916;&#x5C42;&#x5D4C;&#x5957;<code>Item-position</code>&#x505A;&#x5B9A;&#x4F4D;&#x3002;</p>
 <hr>
-<h3 id="&#x88C5;&#x9970;&#x7B26;"><a name="&#x88C5;&#x9970;&#x7B26;" class="plugin-anchor" href="#&#x88C5;&#x9970;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x88C5;&#x9970;&#x7B26;</h3>
-<p><strong> Pseudo(align, x, y) </strong></p>
+<h4 id="&#x88C5;&#x9970;&#x7B26;-pseudoalign-x-y">&#x88C5;&#x9970;&#x7B26; Pseudo(align, x, y)</h4>
 <ul>
 <li><p><code>align</code> [left, right] &#x56FE;&#x6807;&#x5BF9;&#x9F50;&#x4F4D;&#x7F6E;</p>
 </li>
@@ -409,8 +391,7 @@
     <span class="token func"><span class="token function">img</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
 </code></pre>
 <hr>
-<h3 id="&#x5217;&#x8868;"><a name="&#x5217;&#x8868;" class="plugin-anchor" href="#&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5217;&#x8868;</h3>
-<p><strong> List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor) </strong></p>
+<h4 id="&#x5217;&#x8868;-listtype-radius-paddingleft-fontsize-lineheight-backgroundcolor">&#x5217;&#x8868; List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)</h4>
 <ul>
 <li><p><code>type</code> [circle, hollow-circle, square, hollow-square] &#x6807;&#x8BB0;&#x5F62;&#x72B6;</p>
 </li>
@@ -476,7 +457,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mixins","level":"2.3","depth":1,"next":{"title":"自适应布局方案","level":"2.4","depth":1,"path":"docs/2-basics/4-px2rem.md","ref":"docs/2-basics/4-px2rem.md","articles":[]},"previous":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/2-basics/2-special.md","ref":"docs/2-basics/2-special.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","anchors","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"sepia","family":"sans","size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD中文文档","gitbook":"*","description":"x-build&plugin文档"},"file":{"path":"docs/2-basics/3-mixins.md","mtime":"2018-11-16T09:48:41.275Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-16T10:03:05.732Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mixins","level":"2.3","depth":1,"next":{"title":"自适应布局方案","level":"2.4","depth":1,"path":"docs/2-basics/4-px2rem.md","ref":"docs/2-basics/4-px2rem.md","articles":[]},"previous":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/2-basics/2-special.md","ref":"docs/2-basics/2-special.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/3-mixins.md","mtime":"2018-11-17T16:05:12.517Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-17T16:56:33.922Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
