@@ -23,11 +23,21 @@
 
 ### 起步
 
-只需要通过import 'x-touch'即可，将HTMLElement.prototype添加`xtouch`函数：
+使用import引用：
 
 ``` javascript
-import 'x-touch';
+import XTouch from 'x-touch';
 
+let xTouch = new XTouch({
+  longTapTime: 500
+});
+
+xTouch.init();
+```
+
+为DOM绑定touch事件：
+
+``` javascript
 let root = document.getElementById('root');
 
 root.xtouch('tap', function(status){
@@ -36,18 +46,39 @@ root.xtouch('tap', function(status){
 
 ```
 
-#### 参数1 【事件名】
+参数1 事件名：
 
 | 方式 | 参数 |
 | :- | :- |
 | ⏺ 点击 | `tap` |
+| ⏺ 长按 | `longTap` |
 | ⬆️ 向上滑动 | `swipUp` |
 | ⬇️ 向下滑动 | `swipDown` |
 | ⬅️ 向左滑动 | `swipLeft` |
 | ➡️ 向右滑动 | `swipRight` |
 
-#### 参数2 【回调函数】
+参数2 回调函数：
 
 ℹ️ 函数内this指向实践绑定的DOM。
 
 ℹ️ 函数参数status，此次事件发生的参数。
+
+### 配置
+
+| 参数 | 默认值 | 说明 |
+| :- | :- | :- |
+| slideMin | 50 | 滑动事件最小距离 |
+| tapMin | 10 | 点击最大距离 |
+| longTapTime | 300 | 长按最短时间 |
+
+在初始化XTouch时传递参数`<Object>`:
+
+``` javascript
+let config = {
+  slideMin: 50,
+  tapMin: 10,
+  longTapTime: 300
+}
+
+let xTouch = new XTouch(config);
+```

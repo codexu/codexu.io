@@ -325,16 +325,23 @@
 <li>&#x901A;&#x8FC7;script&#x52A0;&#x8F7D;<a href="https://raw.githubusercontent.com/codexu/x-touch/master/dist/x-touch.min.js" target="_blank">x-touch.min.js</a></li>
 </ul>
 <h3 id="&#x8D77;&#x6B65;">&#x8D77;&#x6B65;</h3>
-<p>&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;import &apos;x-touch&apos;&#x5373;&#x53EF;&#xFF0C;&#x5C06;HTMLElement.prototype&#x6DFB;&#x52A0;<code>xtouch</code>&#x51FD;&#x6570;&#xFF1A;</p>
-<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> <span class="token string">&apos;x-touch&apos;</span><span class="token punctuation">;</span>
+<p>&#x4F7F;&#x7528;import&#x5F15;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">import</span> XTouch <span class="token keyword">from</span> <span class="token string">&apos;x-touch&apos;</span><span class="token punctuation">;</span>
 
-<span class="token keyword">let</span> root <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> xTouch <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XTouch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  longTapTime<span class="token punctuation">:</span> <span class="token number">500</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+xTouch<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x4E3A;DOM&#x7ED1;&#x5B9A;touch&#x4E8B;&#x4EF6;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">let</span> root <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 root<span class="token punctuation">.</span><span class="token function">xtouch</span><span class="token punctuation">(</span><span class="token string">&apos;tap&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>status<span class="token punctuation">)</span><span class="token punctuation">{</span>
   <span class="token comment">// do someting!</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-<h4 id="&#x53C2;&#x6570;1-&#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;">&#x53C2;&#x6570;1 &#x3010;&#x4E8B;&#x4EF6;&#x540D;&#x3011;</h4>
+<p>&#x53C2;&#x6570;1 &#x4E8B;&#x4EF6;&#x540D;&#xFF1A;</p>
 <table>
 <thead>
 <tr>
@@ -346,6 +353,10 @@ root<span class="token punctuation">.</span><span class="token function">xtouch<
 <tr>
 <td style="text-align:left">&#x23FA; &#x70B9;&#x51FB;</td>
 <td style="text-align:left"><code>tap</code></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x23FA; &#x957F;&#x6309;</td>
+<td style="text-align:left"><code>longTap</code></td>
 </tr>
 <tr>
 <td style="text-align:left">&#x2B06;&#xFE0F; &#x5411;&#x4E0A;&#x6ED1;&#x52A8;</td>
@@ -365,9 +376,45 @@ root<span class="token punctuation">.</span><span class="token function">xtouch<
 </tr>
 </tbody>
 </table>
-<h4 id="&#x53C2;&#x6570;2-&#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;">&#x53C2;&#x6570;2 &#x3010;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3011;</h4>
+<p>&#x53C2;&#x6570;2 &#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1A;</p>
 <p>&#x2139;&#xFE0F; &#x51FD;&#x6570;&#x5185;this&#x6307;&#x5411;&#x5B9E;&#x8DF5;&#x7ED1;&#x5B9A;&#x7684;DOM&#x3002;</p>
 <p>&#x2139;&#xFE0F; &#x51FD;&#x6570;&#x53C2;&#x6570;status&#xFF0C;&#x6B64;&#x6B21;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<h3 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x9ED8;&#x8BA4;&#x503C;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">slideMin</td>
+<td style="text-align:left">50</td>
+<td style="text-align:left">&#x6ED1;&#x52A8;&#x4E8B;&#x4EF6;&#x6700;&#x5C0F;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td style="text-align:left">tapMin</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">&#x70B9;&#x51FB;&#x6700;&#x5927;&#x8DDD;&#x79BB;</td>
+</tr>
+<tr>
+<td style="text-align:left">longTapTime</td>
+<td style="text-align:left">300</td>
+<td style="text-align:left">&#x957F;&#x6309;&#x6700;&#x77ED;&#x65F6;&#x95F4;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x521D;&#x59CB;&#x5316;XTouch&#x65F6;&#x4F20;&#x9012;&#x53C2;&#x6570;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Object</span><span class="token punctuation">&gt;</span></span></code>:</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  slideMin<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+  tapMin<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  longTapTime<span class="token punctuation">:</span> <span class="token number">300</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> xTouch <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XTouch</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -407,7 +454,7 @@ root<span class="token punctuation">.</span><span class="token function">xtouch<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"x-touch","level":"3.3","depth":1,"previous":{"title":"x-animate","level":"3.2","depth":1,"path":"docs/3-plugin/x-animate.md","ref":"docs/3-plugin/x-animate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/3-plugin/x-touch.md","mtime":"2018-11-17T16:46:39.638Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-17T16:56:33.922Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"x-touch","level":"3.3","depth":1,"previous":{"title":"x-animate","level":"3.2","depth":1,"path":"docs/3-plugin/x-animate.md","ref":"docs/3-plugin/x-animate.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/3-plugin/x-touch.md","mtime":"2018-11-19T05:58:43.491Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-19T05:58:53.248Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
