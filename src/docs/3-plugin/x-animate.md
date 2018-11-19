@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v0.2.1-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.0.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -29,15 +29,16 @@
 ```javascript
   // javascript
   import 'animate.css'
-  import Animate from 'x-animate'
-  let animate = new Animate();
+  import XAnimate from 'x-animate'
+  let xAnimate = new XAnimate();
+  xAnimate.init();
 ```
 
 - 通过`<script>`（此方式会污染全局变量）：
 
 ```javascript
   // javascript
-  new Aniamte();
+  new XAniamte();
 ```
 
 ### 起步
@@ -106,7 +107,7 @@
 
 ```javascript
 // javascript
-new Animate({
+let xAnimate = new XAnimate({
   methods: {
     animateEnterFn(item) {
       console.log('animateEnter', item);
@@ -147,7 +148,7 @@ new Animate({
 
 ```javascript
 // javascript
-new Animate({
+let xAnimate = new XAnimate({
   // 默认值'animate'，对应<div animate=""></div>，防止与其他插件命名冲突
   name: 'animate',
   // 默认值'delay'，对应<div delay=""></div>，防止与其他插件命名冲突
