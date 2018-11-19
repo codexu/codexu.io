@@ -28,10 +28,7 @@
 ``` javascript
 import XTouch from 'x-touch';
 
-let xTouch = new XTouch({
-  longTapTime: 500
-});
-
+let xTouch = new XTouch();
 xTouch.init();
 ```
 
