@@ -8,9 +8,13 @@
     "prism",
     "-highlight",
     "github-buttons",
-    "-sharing"
+    "-sharing",
+    "baidu"
   ],
   "pluginsConfig": {
+    "baidu": {
+      "token": "12813795"
+    },
     
     "sitemap": {
       "hostname": "https://codexu.github.io/"
