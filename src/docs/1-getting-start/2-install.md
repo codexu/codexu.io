@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.3.16-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.3.17-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
