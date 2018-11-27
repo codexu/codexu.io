@@ -24,6 +24,8 @@
 
 ## 插件
 
+* [X-FULLPAGE](docs/3-plugin/x-fullpage.md)
+
 * [X-LOAD](docs/3-plugin/x-load.md)
 
 * [X-ANIMATE](docs/3-plugin/x-animate.md)

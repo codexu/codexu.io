@@ -1,30 +1,36 @@
 ## Mixins(Stylus)
 
+使用Mixins可以更快的帮助你搭建页面，引入mixins.styl：
+
+``` stylus
+  @import '~@/style/mixins.styl'
+```
+
 ### 目录
 
-➡️ [包裹层 Wrapper()](#包裹层)
+➡️ [包裹层 Wrapper()](#包裹层Wrapper())
 
-➡️ [背景 Wrapper-background(width)](#背景)
+➡️ [背景 Wrapper-background(width)](#背景Wrapper-background(width))
 
-➡️ [加载页面-图标 loader(width, height)](#加载页面-图标)
+➡️ [加载页面-图标 loader(width, height)](#加载页面-图标loader(width,height))
 
-➡️ [元素定位 Item-position(width, height, x, y, z-index)](#元素定位)
+➡️ [元素定位 Item-position(width, height, x, y, z-index)](#元素定位Item-position(width,height,x,y,z-index))
 
-➡️ [标题与文本 Text(size, width, align, color)](#标题与文本)
+➡️ [标题与文本 Text(size, width, align, color)](#标题与文本Text(size,width,align,color))
 
-➡️ [装饰符 Pseudo(align, x, y)](#装饰符)
+➡️ [装饰符 Pseudo(align, x, y)](#装饰符Pseudo(align,x,y))
 
-➡️ [列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)](#列表)
+➡️ [列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)](#列表List(type,radius,paddingLeft,fontSize,lineHeight,backgroundColor))
 
 ---
 
-#### 包裹层 Wrapper()
+#### 包裹层Wrapper()
 
 用于每一个模块的**包裹层**，`相对定位`、`宽度100%`、`overflow: hidden`。
 
 ---
 
-#### 背景 Wrapper-background(width)
+#### 背景Wrapper-background(width)
 
 - `width` [750px] 背景图片宽度
 
@@ -41,7 +47,7 @@
 
 ---
 
-#### 加载页面-图标 loader(width, height)
+#### 加载页面-图标loader(width,height)
 
 - `width` [30px] 图标宽度
 
@@ -53,7 +59,7 @@
 
 ---
 
-#### 元素定位 Item-position(width, height, x, y, z-index)
+#### 元素定位Item-position(width,height,x,y,z-index)
 
 - `width` [500px] 元素的宽度
 
@@ -69,7 +75,7 @@
 
 ---
 
-#### 标题与文本 Text(size, width, align, color)
+#### 标题与文本Text(size,width,align,color)
 
 - `size` [H1-H6 or P] 文字大小，参考config.styl => $FONT_H*_SIZE
 
@@ -83,7 +89,7 @@
 
 ---
 
-#### 装饰符 Pseudo(align, x, y)
+#### 装饰符Pseudo(align,x,y)
 
 - `align` [left, right] 图标对齐位置
 
@@ -111,7 +117,7 @@
 
 ---
 
-#### 列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)
+#### 列表List(type,radius,paddingLeft,fontSize,lineHeight,backgroundColor)
 
 - `type` [circle, hollow-circle, square, hollow-square] 标记形状
 
