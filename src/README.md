@@ -48,6 +48,7 @@ X-BUILD是针对H5开发的一套自动化构建工具，致力于提升开发�
 | :------ | :------ | :------ |
 | <a href="https://github.com/codexu/x-build">X-BUILD</a> | <img src="https://img.shields.io/badge/npm-v4.4.3-blue.svg"> | 基于Webpack的工程模板，CLI create时会被下载。 |
 | <a href="https://github.com/codexu/x-build-cli">X-BUILD-CLI</a> | <img src="https://img.shields.io/badge/npm-v1.3.16-blue.svg"> | 脚手架工具，快速生成工程目录，并安装依赖。 |
+| <a href="https://github.com/codexu/x-fullpage">X-FULLPAGE</a> | <img src="https://img.shields.io/badge/npm-v0.0.4-blue.svg"> | 多种控制图片的加载方式，创建Loading效果。 |
 | <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.0-blue.svg"> | 多种控制图片的加载方式，创建Loading效果。 |
 | <a href="https://github.com/codexu/x-animate">X-ANIMATE</a> | <img src="https://img.shields.io/badge/npm-v0.2.1-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
 | <a href="https://github.com/codexu/x-touch">X-TOUCH</a> | <img src="https://img.shields.io/badge/npm-v1.1.0-blue.svg"> | 使原生DOM支持轻触和滑动事件。 |
