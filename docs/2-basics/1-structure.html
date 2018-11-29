@@ -201,22 +201,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="4-px2rem.html">
+        <li class="chapter " data-level="2.4" data-path="4-eslint.html">
             
-                <a href="4-px2rem.html">
-            
-                    
-                    自适应布局方案（ REM ）
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="5-eslint.html">
-            
-                <a href="5-eslint.html">
+                <a href="4-eslint.html">
             
                     
                     代码规范（ ESLint ）
@@ -331,11 +318,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
-<pre class="language-"><code># &#x5F00;&#x53D1;&#x6A21;&#x5F0F;
-  .
-  &#x251C;&#x2500;&#x2500; .eslintrc.js # eslint&#x914D;&#x7F6E;&#xFF0C;&#x5F53;&#x7A0B;&#x5E8F;&#x62A5;&#x9519;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x6CE8;&#x91CA;
-  &#x251C;&#x2500;&#x2500; index.pug # html&#x5165;&#x53E3;&#x6587;&#x4EF6;
+                                <h1 id="&#x5F00;&#x53D1;&#x6A21;&#x5F0F;">&#x5F00;&#x53D1;&#x6A21;&#x5F0F;</h1>
+<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;(root/):</p>
+<pre class="language-"><code>  .
+  &#x251C;&#x2500;&#x2500; index.pug
   &#x251C;&#x2500;&#x2500; node_modules/
   |   &#x2514;&#x2500;&#x2500; ...
   &#x2514;&#x2500;&#x2500; src/ # &#x6E90;&#x7801;&#x76EE;&#x5F55;
@@ -349,11 +335,26 @@
   |   &#x2514;&#x2500;&#x2500; app.pug # html&#x6B63;&#x6587;
   &#x2514;&#x2500;&#x2500; build/ # webpack&#x914D;&#x7F6E;&#x6587;&#x4EF6;
       &#x251C;&#x2500;&#x2500; lib/ # &#x914D;&#x7F6E;&#x9879;&#x5DE5;&#x5177;&#x96C6;
+      &#x251C;&#x2500;&#x2500; config.json # x-build&#x53C2;&#x6570;&#x914D;&#x7F6E;
       &#x251C;&#x2500;&#x2500; webpack.config.js
       &#x251C;&#x2500;&#x2500; webpack.dev.js # &#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
       &#x2514;&#x2500;&#x2500; webpack.build.js # &#x751F;&#x4EA7;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
-</code></pre><pre class="language-"><code># &#x751F;&#x4EA7;&#x6A21;&#x5F0F;(./dist)
-  .
+</code></pre><ul>
+<li><p><strong>babel</strong> ( root/.babelrc ): &#x652F;&#x6301;ES7&#x8BED;&#x6CD5;(async&#x3001;await)&#x3002;</p>
+</li>
+<li><p><strong>editorconfig</strong> ( root/.editorconfig ): &#x7F16;&#x8F91;&#x5668;&#x914D;&#x7F6E;&#x89C4;&#x8303;&#xFF0C;&#x4F7F;&#x7528;&#x7A7A;&#x683C;(2)&#x7F29;&#x7D27;&#xFF0C;utf-8&#x7F16;&#x7801;&#x7B49;&#x3002;</p>
+</li>
+<li><p><strong>eslint</strong> ( root/eslintrc.js ): Javascript&#x4EE3;&#x7801;&#x89C4;&#x8303;&#x3002;</p>
+</li>
+<li><p><strong>gitignore</strong> ( root/.gitignore ): git&#x5FFD;&#x7565;&#x6587;&#x4EF6;&#x53CA;&#x6587;&#x4EF6;&#x5939;&#x3002;</p>
+</li>
+<li><p><strong>postcss</strong> ( root/postcss.config.js ): &#x5F00;&#x542F;autoprefixer()&#x3002;</p>
+</li>
+</ul>
+<hr>
+<h1 id="&#x751F;&#x4EA7;&#x6A21;&#x5F0F;">&#x751F;&#x4EA7;&#x6A21;&#x5F0F;</h1>
+<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;(root/dist):</p>
+<pre class="language-"><code>  .
   &#x251C;&#x2500;&#x2500; index.html
   &#x251C;&#x2500;&#x2500; bundle.[hash:8].css
   &#x251C;&#x2500;&#x2500; bundle.[hash:8].js
@@ -401,7 +402,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"2.1","depth":1,"next":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/2-basics/2-special.md","ref":"docs/2-basics/2-special.md","articles":[]},"previous":{"title":"开发与打包","level":"1.4","depth":1,"path":"docs/1-getting-start/4-run.md","ref":"docs/1-getting-start/4-run.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/1-structure.md","mtime":"2018-11-16T05:56:30.111Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-27T05:59:00.606Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"2.1","depth":1,"next":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/2-basics/2-special.md","ref":"docs/2-basics/2-special.md","articles":[]},"previous":{"title":"开发与打包","level":"1.4","depth":1,"path":"docs/1-getting-start/4-run.md","ref":"docs/1-getting-start/4-run.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/1-structure.md","mtime":"2018-11-29T06:09:35.190Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-29T06:22:42.203Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -18,9 +18,7 @@
 
 * [Mixins（ Stylus ）](docs/2-basics/3-mixins.md)
 
-* [自适应布局方案（ REM ）](docs/2-basics/4-px2rem.md)
-
-* [代码规范（ ESLint ）](docs/2-basics/5-eslint.md)
+* [代码规范（ ESLint ）](docs/2-basics/4-eslint.md)
 
 ## 插件
 

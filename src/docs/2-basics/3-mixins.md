@@ -3,24 +3,8 @@
 使用Mixins可以更快的帮助你搭建页面，引入mixins.styl：
 
 ``` stylus
-  @import '~@/style/mixins.styl'
+  @import './mixins.styl'
 ```
-
-### 目录
-
-➡️ [包裹层 Wrapper()](#包裹层Wrapper())
-
-➡️ [背景 Wrapper-background(width)](#背景Wrapper-background(width))
-
-➡️ [加载页面-图标 loader(width, height)](#加载页面-图标loader(width,height))
-
-➡️ [元素定位 Item-position(width, height, x, y, z-index)](#元素定位Item-position(width,height,x,y,z-index))
-
-➡️ [标题与文本 Text(size, width, align, color)](#标题与文本Text(size,width,align,color))
-
-➡️ [装饰符 Pseudo(align, x, y)](#装饰符Pseudo(align,x,y))
-
-➡️ [列表 List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)](#列表List(type,radius,paddingLeft,fontSize,lineHeight,backgroundColor))
 
 ---
 
@@ -44,18 +28,6 @@
   img.bg
     Wrapper-background(750px)
 ```
-
----
-
-#### 加载页面-图标loader(width,height)
-
-- `width` [30px] 图标宽度
-
-- `height` [30px] 图标高度
-
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fw20nmvmhqj30640d3js3.jpg)
-
-用于loading加载页面，宽高为屏幕的100%，子元素`<img>`水平垂直居中。
 
 ---
 

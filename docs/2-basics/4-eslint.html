@@ -1,0 +1,1401 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>代码规范（ ESLint ） · X-BUILD文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../3-plugin/x-fullpage.html" />
+    
+    
+    <link rel="prev" href="3-mixins.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">快速上手</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../1-getting-start/2-install.html">
+            
+                <a href="../1-getting-start/2-install.html">
+            
+                    
+                    安装（CLI）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../1-getting-start/3-init.html">
+            
+                <a href="../1-getting-start/3-init.html">
+            
+                    
+                    创建一个项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../1-getting-start/4-run.html">
+            
+                <a href="../1-getting-start/4-run.html">
+            
+                    
+                    开发与打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="1-structure.html">
+            
+                <a href="1-structure.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="2-special.html">
+            
+                <a href="2-special.html">
+            
+                    
+                    特殊语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="3-mixins.html">
+            
+                <a href="3-mixins.html">
+            
+                    
+                    Mixins（ Stylus ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="4-eslint.html">
+            
+                <a href="4-eslint.html">
+            
+                    
+                    代码规范（ ESLint ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../3-plugin/x-fullpage.html">
+            
+                <a href="../3-plugin/x-fullpage.html">
+            
+                    
+                    X-FULLPAGE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../3-plugin/x-load.html">
+            
+                <a href="../3-plugin/x-load.html">
+            
+                    
+                    X-LOAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../3-plugin/x-animate.html">
+            
+                <a href="../3-plugin/x-animate.html">
+            
+                    
+                    X-ANIMATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../3-plugin/x-touch.html">
+            
+                <a href="../3-plugin/x-touch.html">
+            
+                    
+                    X-TOUCH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >代码规范（ ESLint ）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x4EE3;&#x7801;&#x89C4;&#x8303;">&#x4EE3;&#x7801;&#x89C4;&#x8303;</h3>
+<p>JavaScript &#x662F;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x7684;&#x5F31;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#xFF0C;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x6BD4;&#x8F83;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#x3002;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x7F16;&#x8BD1;&#x7A0B;&#x5E8F;&#xFF0C;&#x4E3A;&#x4E86;&#x5BFB;&#x627E; JavaScript &#x4EE3;&#x7801;&#x9519;&#x8BEF;&#x901A;&#x5E38;&#x9700;&#x8981;&#x5728;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x65AD;&#x8C03;&#x8BD5;&#x3002;&#x50CF; ESLint &#x8FD9;&#x6837;&#x7684;&#x53EF;&#x4EE5;&#x8BA9;&#x7A0B;&#x5E8F;&#x5458;&#x5728;&#x7F16;&#x7801;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x73B0;&#x95EE;&#x9898;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x6267;&#x884C;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x3002;</p>
+<blockquote>
+<h4 id="&#x26A0;&#xFE0F;-&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x62A5;&#x9519;">&#x26A0;&#xFE0F; &#x5982;&#x4F55;&#x89E3;&#x51B3;&#x62A5;&#x9519;</h4>
+<p>&#x521A;&#x521A;&#x63A5;&#x89E6;es-lint&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;&#x6781;&#x5EA6;&#x4E0D;&#x9002;&#xFF0C;&#x4F46;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x4EE5;&#x6162;&#x6162;&#x89C4;&#x8303;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x5F53;&#x7A0B;&#x5E8F;&#x62A5;&#x9519;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x662F;ESLint&#x9519;&#x8BEF;&#xFF0C;&#x590D;&#x5236;&#x62A5;&#x9519;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x6B64;&#x8868;&#x6216;.eslintrc.js&#x4E2D;&#x67E5;&#x627E;&#xFF0C;&#x4E86;&#x89E3;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x89C4;&#x5219;&#x4FEE;&#x6539;&#x5B83;&#x3002;</p>
+</blockquote>
+<h4 id="eslint&#x914D;&#x7F6E;&#x8868;">ESLint&#x914D;&#x7F6E;&#x8868;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Rules</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">accessor-pairs</td>
+<td style="text-align:left">&#x8BBE;&#x7F6E;&#x4E86; setter &#xFF0C;&#x5FC5;&#x987B;&#x76F8;&#x5E94;&#x8BBE;&#x7F6E; getter &#xFF0C;&#x53CD;&#x4E4B;&#x4E0D;&#x5FC5;&#x987B;</td>
+</tr>
+<tr>
+<td style="text-align:left">array-bracket-newline</td>
+<td style="text-align:left">&#x274C; &#x6570;&#x7EC4;&#x65B9;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x7684;&#x6362;&#x884C;&#x7B26;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">array-bracket-spacing</td>
+<td style="text-align:left">&#x274C; &#x6570;&#x7EC4;&#x65B9;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">array-callback-return</td>
+<td style="text-align:left">&#x6570;&#x7EC4;&#x7684; map&#x3001;filter&#x3001;sort &#x7B49;&#x65B9;&#x6CD5;&#xFF0C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x6709;&#x8FD4;&#x56DE;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">array-element-newline</td>
+<td style="text-align:left">&#x274C; &#x6BCF;&#x4E2A;&#x6570;&#x7EC4;&#x9879;&#x662F;&#x5426;&#x72EC;&#x5360;&#x4E00;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">arrow-body-style</td>
+<td style="text-align:left">&#x274C; &#x7BAD;&#x5934;&#x51FD;&#x6570;&#x7684;&#x4E66;&#x5199;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">arrow-parens</td>
+<td style="text-align:left">&#x274C; &#x7BAD;&#x5934;&#x51FD;&#x6570;&#x7684;&#x5706;&#x62EC;&#x53F7;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">arrow-spacing</td>
+<td style="text-align:left">&#x274C; &#x7BAD;&#x5934;&#x51FD;&#x6570;&#x7684;&#x7A7A;&#x683C;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">block-scoped-var</td>
+<td style="text-align:left">&#x4E0D;&#x80FD;&#x5728;&#x5757;&#x5916;&#x4F7F;&#x7528;&#x5757;&#x4F5C;&#x7528;&#x57DF;&#x5185; var &#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">block-spacing</td>
+<td style="text-align:left">&#x274C; &#x4EE3;&#x7801;&#x5757;&#x82B1;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">brace-style</td>
+<td style="text-align:left">&#x274C; if else &#x7684;&#x82B1;&#x62EC;&#x53F7;&#x6362;&#x884C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">callback-return</td>
+<td style="text-align:left">&#x274C; callback &#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x7ACB;&#x5373; return</td>
+</tr>
+<tr>
+<td style="text-align:left">camelcase</td>
+<td style="text-align:left">&#x274C; &#x53D8;&#x91CF;&#x540D;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x9A7C;&#x5CF0;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">capitalized-comments</td>
+<td style="text-align:left">&#x274C; &#x6CE8;&#x91CA;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5E94;&#x8BE5;&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td style="text-align:left">class-methods-use-this</td>
+<td style="text-align:left">class &#x7684;&#x975E;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x5305;&#x542B; this &#x5173;&#x952E;&#x5B57;</td>
+</tr>
+<tr>
+<td style="text-align:left">comma-dangle</td>
+<td style="text-align:left">&#x274C; &#x5BF9;&#x8C61;&#x7684;&#x6700;&#x540E;&#x4E00;&#x9879;&#x540E;&#x9762;&#x662F;&#x5426;&#x5199;&#x9017;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">comma-spacing</td>
+<td style="text-align:left">&#x274C; &#x9017;&#x53F7;&#x524D;&#x540E;&#x662F;&#x5426;&#x6709;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">comma-style</td>
+<td style="text-align:left">&#x274C; &#x9017;&#x53F7;&#x5199;&#x5728;&#x884C;&#x9996;&#x8FD8;&#x662F;&#x884C;&#x5C3E;</td>
+</tr>
+<tr>
+<td style="text-align:left">complexity</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FD;&#x6570; if ... else if ... else &#x7684;&#x590D;&#x6742;&#x5EA6;&#x8D85;&#x8FC7; 20</td>
+</tr>
+<tr>
+<td style="text-align:left">computed-property-spacing</td>
+<td style="text-align:left">&#x274C; &#x4F7F;&#x7528;&#x65B9;&#x62EC;&#x53F7;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x65B9;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">consistent-return</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x51FD;&#x6570;&#x5728;&#x4E0D;&#x540C;&#x6761;&#x4EF6;&#x4E0B;&#x8FD4;&#x56DE;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">consistent-this</td>
+<td style="text-align:left">this &#x7684;&#x522B;&#x540D;&#x89C4;&#x5219;&#xFF0C;&#x53EA;&#x5141;&#x8BB8; self &#x6216; that</td>
+</tr>
+<tr>
+<td style="text-align:left">constructor-super</td>
+<td style="text-align:left">&#x274C; &#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x5FC5;&#x987B;&#x8C03;&#x7528; super</td>
+</tr>
+<tr>
+<td style="text-align:left">curly</td>
+<td style="text-align:left">if &#x540E;&#x5FC5;&#x987B;&#x5305;&#x542B; { &#xFF0C;&#x5355;&#x884C; if &#x9664;&#x5916;</td>
+</tr>
+<tr>
+<td style="text-align:left">default-case</td>
+<td style="text-align:left">switch &#x8BED;&#x53E5;&#x5FC5;&#x987B;&#x5305;&#x542B; default</td>
+</tr>
+<tr>
+<td style="text-align:left">dot-location</td>
+<td style="text-align:left">&#x274C; &#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x662F;&#x5728;&#x4E0A;&#x4E00;&#x884C;&#x7ED3;&#x5C3E;&#x8FD8;&#x662F;&#x4E0B;&#x4E00;&#x884C;&#x5F00;&#x5934;</td>
+</tr>
+<tr>
+<td style="text-align:left">eol-last</td>
+<td style="text-align:left">&#x274C; &#x6587;&#x4EF6;&#x6700;&#x540E;&#x5FC5;&#x987B;&#x6709;&#x7A7A;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">eqeqeq</td>
+<td style="text-align:left">&#x5FC5;&#x987B;&#x4F7F;&#x7528; === &#x548C; !== &#xFF0C;&#x548C; null &#x5BF9;&#x6BD4;&#x65F6;&#x9664;&#x5916;</td>
+</tr>
+<tr>
+<td style="text-align:left">for-direction</td>
+<td style="text-align:left">for &#x5FAA;&#x73AF;&#x4E0D;&#x5F97;&#x56E0;&#x65B9;&#x5411;&#x9519;&#x8BEF;&#x9020;&#x6210;&#x6B7B;&#x5FAA;&#x73AF;</td>
+</tr>
+<tr>
+<td style="text-align:left">func-call-spacing</td>
+<td style="text-align:left">&#x6267;&#x884C;&#x51FD;&#x6570;&#x7684;&#x5706;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">func-name-matching</td>
+<td style="text-align:left">&#x628A;&#x51FD;&#x6570;&#x8D4B;&#x7ED9;&#x53D8;&#x91CF;&#x6216;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x51FD;&#x6570;&#x540D;&#x548C;&#x53D8;&#x91CF;&#x540D;&#x6216;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;&#x540D;&#x5FC5;&#x987B;&#x4E00;&#x81F4;</td>
+</tr>
+<tr>
+<td style="text-align:left">func-names</td>
+<td style="text-align:left">&#x4E0D;&#x5141;&#x8BB8;&#x533F;&#x540D;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">func-style</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x53EA;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x7533;&#x660E;&#x6216;&#x53EA;&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">generator-star-spacing</td>
+<td style="text-align:left">&#x274C; generator &#x7684; * &#x524D;&#x540E;&#x7A7A;&#x683C;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">getter-return</td>
+<td style="text-align:left">getter &#x5FC5;&#x987B;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5141;&#x8BB8;&#x8FD4;&#x56DE; undefined</td>
+</tr>
+<tr>
+<td style="text-align:left">global-require</td>
+<td style="text-align:left">&#x274C; require &#x5FC5;&#x987B;&#x5728;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x4E0B;</td>
+</tr>
+<tr>
+<td style="text-align:left">guard-for-in</td>
+<td style="text-align:left">for in &#x65F6;&#x9700;&#x68C0;&#x6D4B; hasOwnProperty</td>
+</tr>
+<tr>
+<td style="text-align:left">handle-callback-err</td>
+<td style="text-align:left">callback &#x4E2D;&#x7684; err&#x3001;error &#x53C2;&#x6570;&#x548C;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x88AB;&#x5904;&#x7406;</td>
+</tr>
+<tr>
+<td style="text-align:left">id-blacklist</td>
+<td style="text-align:left">&#x274C; id &#x9ED1;&#x540D;&#x5355;</td>
+</tr>
+<tr>
+<td style="text-align:left">id-length</td>
+<td style="text-align:left">&#x274C; &#x53D8;&#x91CF;&#x540D;&#x957F;&#x5EA6;&#x9650;&#x5236;</td>
+</tr>
+<tr>
+<td style="text-align:left">id-match</td>
+<td style="text-align:left">&#x274C; &#x9650;&#x5236;&#x53D8;&#x91CF;&#x540D;&#x5FC5;&#x987B;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">indent</td>
+<td style="text-align:left">&#x274C; &#x7F29;&#x8FDB;&#x4F7F;&#x7528; tab &#x8FD8;&#x662F;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">init-declarations</td>
+<td style="text-align:left">&#x274C; &#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x5728;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x5019;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">jsx-quotes</td>
+<td style="text-align:left">jsx &#x8BED;&#x6CD5;&#x4E2D;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x53CC;&#x5F15;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">key-spacing</td>
+<td style="text-align:left">&#x274C; &#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x5192;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">keyword-spacing</td>
+<td style="text-align:left">&#x5173;&#x952E;&#x5B57;&#x524D;&#x540E;&#x5FC5;&#x987B;&#x6709;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">linebreak-style</td>
+<td style="text-align:left">&#x274C; &#x6362;&#x884C;&#x7B26;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">line-comment-position</td>
+<td style="text-align:left">&#x274C; &#x5355;&#x884C;&#x6CE8;&#x91CA;&#x5FC5;&#x987B;&#x5199;&#x5728;&#x524D;&#x4E00;&#x884C;&#x8FD8;&#x662F;&#x884C;&#x5C3E;</td>
+</tr>
+<tr>
+<td style="text-align:left">lines-around-comment</td>
+<td style="text-align:left">&#x274C; &#x6CE8;&#x91CA;&#x524D;&#x540E;&#x662F;&#x5426;&#x8981;&#x7A7A;&#x4E00;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-depth</td>
+<td style="text-align:left">&#x6700;&#x5927;&#x5757;&#x5D4C;&#x5957;&#x6DF1;&#x5EA6;&#x4E3A; 5 &#x5C42;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-len</td>
+<td style="text-align:left">&#x274C; &#x9650;&#x5236;&#x5355;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-lines</td>
+<td style="text-align:left">&#x274C; &#x9650;&#x5236;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x6700;&#x5927;&#x884C;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-nested-callbacks</td>
+<td style="text-align:left">&#x6700;&#x5927;&#x56DE;&#x8C03;&#x6DF1;&#x5EA6;&#x4E3A; 3 &#x5C42;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-params</td>
+<td style="text-align:left">&#x51FD;&#x6570;&#x7684;&#x5F62;&#x53C2;&#x4E0D;&#x80FD;&#x591A;&#x4E8E;8&#x4E2A;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-statements-per-line</td>
+<td style="text-align:left">&#x274C; &#x9650;&#x5236;&#x4E00;&#x884C;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">max-statements</td>
+<td style="text-align:left">&#x274C; &#x9650;&#x5236;&#x51FD;&#x6570;&#x5757;&#x4E2D;&#x7684;&#x8BED;&#x53E5;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">multiline-ternary</td>
+<td style="text-align:left">&#x274C; &#x4E09;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6362;&#x884C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">new-cap</td>
+<td style="text-align:left">new&#x5173;&#x952E;&#x5B57;&#x540E;&#x7C7B;&#x540D;&#x5E94;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td style="text-align:left">capIsNew</td>
+<td style="text-align:left">&#x5141;&#x8BB8;&#x5927;&#x5199;&#x5F00;&#x5934;&#x7684;&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x6267;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">new-parens</td>
+<td style="text-align:left">new &#x5173;&#x952E;&#x5B57;&#x540E;&#x7C7B;&#x5E94;&#x5305;&#x542B;&#x5706;&#x62EC;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">newline-per-chained-call</td>
+<td style="text-align:left">&#x274C; &#x94FE;&#x5F0F;&#x8C03;&#x7528;&#x662F;&#x5426;&#x8981;&#x6362;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-alert</td>
+<td style="text-align:left">&#x7981;&#x6B62; alert&#xFF0C;&#x63D0;&#x9192;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4E0A;&#x7EBF;&#x65F6;&#x8981;&#x53BB;&#x6389;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-array-constructor</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; Array &#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x4F7F;&#x7528; Array(num) &#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x957F;&#x5EA6;&#x4E3A; num &#x7684;&#x6570;&#x7EC4;&#x65F6;&#x53EF;&#x4EE5;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-await-in-loop</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5C06; await &#x5199;&#x5728;&#x5FAA;&#x73AF;&#x91CC;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-bitwise</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F4D;&#x8FD0;&#x7B97;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-buffer-constructor</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728; Node.js &#x4E2D;&#x76F4;&#x63A5;&#x8C03;&#x7528; Buffer &#x6784;&#x9020;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-caller</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; arguments.caller &#x548C; arguments.callee</td>
+</tr>
+<tr>
+<td style="text-align:left">no-case-declarations</td>
+<td style="text-align:left">switch&#x7684;&#x6761;&#x4EF6;&#x4E2D;&#x51FA;&#x73B0; var&#x3001;let&#x3001;const&#x3001;function&#x3001;class &#x7B49;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x628A;&#x5185;&#x5BB9;&#x62EC;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-catch-shadow</td>
+<td style="text-align:left">catch&#x4E2D;&#x4E0D;&#x5F97;&#x4F7F;&#x7528;&#x5DF2;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-class-assign</td>
+<td style="text-align:left">class&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x540D;&#x4E0D;&#x5F97;&#x4E0E;&#x5176;&#x5B83;&#x53D8;&#x91CF;&#x91CD;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-compare-neg-zero</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4E0E; -0 &#x505A;&#x6BD4;&#x8F83;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-cond-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728; if&#x3001;for&#x3001;while &#x4E2D;&#x51FA;&#x73B0;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#xFF0C;&#x9664;&#x975E;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-confusing-arrow</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x96BE;&#x4EE5;&#x7406;&#x89E3;&#x7684;&#x7BAD;&#x5934;&#x51FD;&#x6570;&#xFF0C;&#x9664;&#x975E;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-console</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; console&#xFF0C;&#x63D0;&#x9192;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4E0A;&#x7EBF;&#x65F6;&#x8981;&#x53BB;&#x6389;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-constant-condition</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x5E38;&#x91CF;&#x4F5C;&#x4E3A;&#x5224;&#x65AD;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-const-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5BF9; const &#x5B9A;&#x4E49;&#x91CD;&#x65B0;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-continue</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; continue</td>
+</tr>
+<tr>
+<td style="text-align:left">no-control-regex</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x51FA;&#x73B0; Ctrl &#x952E;&#x7684; ASCII &#x8868;&#x793A;&#xFF0C;&#x5373;/\x1f/</td>
+</tr>
+<tr>
+<td style="text-align:left">no-debugger</td>
+<td style="text-align:left">&#x7981;&#x6B62; debugger &#x8BED;&#x53E5;&#xFF0C;&#x63D0;&#x9192;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4E0A;&#x7EBF;&#x65F6;&#x8981;&#x53BB;&#x6389;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-delete-var</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5BF9;&#x53D8;&#x91CF;&#x4F7F;&#x7528; delete &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5220;&#x9664;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x4E0D;&#x53D7;&#x9650;&#x5236;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-div-regex</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x51FA;&#x73B0;&#x5F62;&#x4F3C;&#x9664;&#x6CD5;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x5F00;&#x5934;&#xFF0C;&#x5982; let a = /=foo/</td>
+</tr>
+<tr>
+<td style="text-align:left">no-dupe-args</td>
+<td style="text-align:left">&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7981;&#x6B62;&#x91CD;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-dupe-keys</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5BF9;&#x8C61;&#x51FA;&#x73B0;&#x91CD;&#x540D;&#x952E;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-dupe-class-members</td>
+<td style="text-align:left">&#x7C7B;&#x65B9;&#x6CD5;&#x7981;&#x6B62;&#x91CD;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-duplicate-case</td>
+<td style="text-align:left">&#x7981;&#x6B62; switch &#x4E2D;&#x51FA;&#x73B0;&#x76F8;&#x540C;&#x7684; case</td>
+</tr>
+<tr>
+<td style="text-align:left">no-duplicate-imports</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x91CD;&#x590D; import</td>
+</tr>
+<tr>
+<td style="text-align:left">no-else-return</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x51FA;&#x73B0; if (cond) { return a } else { return b }&#xFF0C;&#x5E94;&#x8BE5;&#x5199;&#x4E3A; if (cond) { return a } return b</td>
+</tr>
+<tr>
+<td style="text-align:left">no-empty-character-class</td>
+<td style="text-align:left">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x7A7A;&#x7684;&#x5B57;&#x7B26;&#x96C6;[]</td>
+</tr>
+<tr>
+<td style="text-align:left">no-empty-function</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x7A7A;&#x7684; function</td>
+</tr>
+<tr>
+<td style="text-align:left">no-empty-pattern</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x89E3;&#x6784;&#x4E2D;&#x51FA;&#x73B0;&#x7A7A; {} &#x6216; []</td>
+</tr>
+<tr>
+<td style="text-align:left">no-empty</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x7A7A;&#x4EE3;&#x7801;&#x5757;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-eq-null</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; == &#x548C; != &#x4E0E; null &#x505A;&#x6BD4;&#x8F83;&#xFF0C;&#x5FC5;&#x987B;&#x7528; === &#x6216; !==</td>
+</tr>
+<tr>
+<td style="text-align:left">no-eval</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; eval</td>
+</tr>
+<tr>
+<td style="text-align:left">no-ex-assign</td>
+<td style="text-align:left">catch &#x5B9A;&#x4E49;&#x7684;&#x53C2;&#x6570;&#x7981;&#x6B62;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-extend-native</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x6269;&#x5C55;&#x539F;&#x751F;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-extra-bind</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x989D;&#x5916;&#x7684; bind</td>
+</tr>
+<tr>
+<td style="text-align:left">no-extra-boolean-cast</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x989D;&#x5916;&#x7684;&#x5E03;&#x5C14;&#x503C;&#x8F6C;&#x6362;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-extra-label</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x989D;&#x5916;&#x7684; label</td>
+</tr>
+<tr>
+<td style="text-align:left">no-extra-parens</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x989D;&#x5916;&#x7684;&#x62EC;&#x53F7;&#xFF0C;&#x4EC5;&#x9488;&#x5BF9;&#x51FD;&#x6570;&#x4F53;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-extra-semi</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x989D;&#x5916;&#x7684;&#x5206;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-fallthrough</td>
+<td style="text-align:left">&#x6BCF;&#x4E00;&#x4E2A; switch &#x7684; case &#x90FD;&#x9700;&#x8981;&#x6709; break, return &#x6216; throw &#x5305;&#x542B;&#x6CE8;&#x91CA;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5141;&#x8BB8;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-floating-decimal</td>
+<td style="text-align:left">&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528; 2. &#x6216; .5 &#x6765;&#x8868;&#x793A;&#x6570;&#x5B57;&#xFF0C;&#x9700;&#x8981;&#x7528; 2&#x3001;2.0&#x3001;0.5 &#x7684;&#x683C;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-func-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5BF9;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x91CD;&#x65B0;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-global-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5BF9;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-implicit-coercion</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-implied-eval</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728; setTimeout &#x548C; setInterval &#x4E2D;&#x4F20;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x56E0;&#x4F1A;&#x89E6;&#x53D1;&#x9690;&#x5F0F; eval</td>
+</tr>
+<tr>
+<td style="text-align:left">no-implicit-globals</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x9690;&#x5F0F;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-inline-comments</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x884C;&#x5185;&#x6CE8;&#x91CA;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-inner-declarations</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;&#x5757;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x4F7F;&#x7528; var &#x6216;&#x51FD;&#x6570;&#x58F0;&#x660E;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-invalid-regexp</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x975E;&#x6CD5;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-invalid-this</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x5728;&#x7C7B;&#x4E4B;&#x5916;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528; this</td>
+</tr>
+<tr>
+<td style="text-align:left">no-irregular-whitespace</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x4E0D;&#x89C4;&#x8303;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-iterator</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; <strong>iterator</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">no-label-var</td>
+<td style="text-align:left">label &#x4E0D;&#x5F97;&#x4E0E;&#x5DF2;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x91CD;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-labels</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528; label</td>
+</tr>
+<tr>
+<td style="text-align:left">no-lone-blocks</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x65E0;&#x6548;&#x7684;&#x5757;&#x4F5C;&#x7528;&#x57DF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-lonely-if</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; else &#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684; if</td>
+</tr>
+<tr>
+<td style="text-align:left">no-loop-func</td>
+<td style="text-align:left">&#x7981;&#x6B62; for (var i) { function() { use i } }&#xFF0C;&#x4F7F;&#x7528; let &#x5219;&#x53EF;&#x4EE5;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-magic-numbers</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x9B54;&#x6CD5;&#x6570;&#x5B57;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-mixed-operators</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#x7684;&#x903B;&#x8F91;&#x5224;&#x65AD;&#xFF0C;&#x5FC5;&#x987B;&#x628A;&#x4E0D;&#x540C;&#x7684;&#x903B;&#x8F91;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-mixed-requires</td>
+<td style="text-align:left">&#x274C; &#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684; require &#x5FC5;&#x987B;&#x653E;&#x5728;&#x4E00;&#x8D77;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-mixed-spaces-and-tabs</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x6DF7;&#x7528;&#x7A7A;&#x683C;&#x548C; tab &#x6765;&#x505A;&#x7F29;&#x8FDB;&#xFF0C;&#x5FC5;&#x987B;&#x7EDF;&#x4E00;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-multi-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x8FDE;&#x7B49;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-multi-spaces</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x8FDE;&#x7EED;&#x7684;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-multi-str</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; \ &#x6765;&#x5B9A;&#x4E49;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7EDF;&#x4E00;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x505A;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-multiple-empty-lines</td>
+<td style="text-align:left">&#x8FDE;&#x7EED;&#x7A7A;&#x884C;&#x7684;&#x6570;&#x91CF;&#x9650;&#x5236;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-negated-condition</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; if &#x4E2D;&#x51FA;&#x73B0;&#x5426;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F; !==</td>
+</tr>
+<tr>
+<td style="text-align:left">no-nested-ternary</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x5D4C;&#x5957;&#x7684;&#x4E09;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-new-func</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; new Function</td>
+</tr>
+<tr>
+<td style="text-align:left">no-new-object</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; new Object</td>
+</tr>
+<tr>
+<td style="text-align:left">no-new-require</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; new require</td>
+</tr>
+<tr>
+<td style="text-align:left">no-new-symbol</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; new Symbol</td>
+</tr>
+<tr>
+<td style="text-align:left">no-new-wrappers</td>
+<td style="text-align:left">&#x7981;&#x6B62; new Boolean&#x3001;Number &#x6216; String</td>
+</tr>
+<tr>
+<td style="text-align:left">no-new</td>
+<td style="text-align:left">&#x7981;&#x6B62; new &#x4E00;&#x4E2A;&#x7C7B;&#x800C;&#x4E0D;&#x5B58;&#x50A8;&#x8BE5;&#x5B9E;&#x4F8B;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-obj-calls</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x628A;&#x539F;&#x751F;&#x5BF9;&#x8C61; Math&#x3001;JSON&#x3001;Reflect &#x5F53;&#x51FD;&#x6570;&#x4F7F;&#x7528;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-octal-escape</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x516B;&#x8FDB;&#x5236;&#x8F6C;&#x4E49;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-octal</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;0&#x5F00;&#x5934;&#x7684;&#x6570;&#x5B57;&#x8868;&#x793A;&#x516B;&#x8FDB;&#x5236;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-path-concat</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; __dirname + &apos;file&apos; &#x7684;&#x5F62;&#x5F0F;&#x62FC;&#x63A5;&#x8DEF;&#x5F84;&#xFF0C;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; path.join &#x6216; path.resolve &#x6765;&#x4EE3;&#x66FF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-param-reassign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5BF9;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x91CD;&#x65B0;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-plusplus</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; ++ &#x548C; --</td>
+</tr>
+<tr>
+<td style="text-align:left">no-process-env</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528; process.env.NODE_ENV</td>
+</tr>
+<tr>
+<td style="text-align:left">no-process-exit</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528; process.exit(0)</td>
+</tr>
+<tr>
+<td style="text-align:left">no-prototype-builtins</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528; hasOwnProperty, isPrototypeOf &#x6216; propertyIsEnumerable</td>
+</tr>
+<tr>
+<td style="text-align:left">no-proto</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; <code>__proto__</code></td>
+</tr>
+<tr>
+<td style="text-align:left">no-redeclare</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x91CD;&#x590D;&#x58F0;&#x660E;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-regex-spaces</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x51FA;&#x73B0;&#x8FDE;&#x7EED;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-restricted-globals</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x7279;&#x5B9A;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-restricted-imports</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62; import &#x7279;&#x5B9A;&#x7684;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-restricted-modules</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;&#x6A21;&#x5757;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-restricted-properties</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x7279;&#x5B9A;&#x7684;&#x5BF9;&#x8C61;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-restricted-syntax</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684;&#x8BED;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-return-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;return&#x4E2D;&#x8D4B;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-return-await</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728; return &#x4E2D;&#x4F7F;&#x7528; await</td>
+</tr>
+<tr>
+<td style="text-align:left">no-script-url</td>
+<td style="text-align:left">&#x7981;&#x6B62; location.href = &apos;javascript:void&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-self-assign</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5C06;&#x81EA;&#x5DF1;&#x8D4B;&#x503C;&#x7ED9;&#x81EA;&#x5DF1;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-self-compare</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x81EA;&#x5DF1;&#x4E0E;&#x81EA;&#x5DF1;&#x4F5C;&#x6BD4;&#x8F83;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-sequences</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-shadow-restricted-names</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x4FDD;&#x7559;&#x5B57;&#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-shadow</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x51FA;&#x73B0;&#x91CD;&#x540D;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x5982; let a; function b() { let a }</td>
+</tr>
+<tr>
+<td style="text-align:left">no-sparse-arrays</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x6570;&#x7EC4;&#x4E2D;&#x51FA;&#x73B0;&#x8FDE;&#x7EED;&#x9017;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-sync</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528; node &#x4E2D;&#x7684;&#x540C;&#x6B65;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982; fs.readFileSync</td>
+</tr>
+<tr>
+<td style="text-align:left">no-tabs</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4F7F;&#x7528; tabs</td>
+</tr>
+<tr>
+<td style="text-align:left">no-template-curly-in-string</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x666E;&#x901A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x51FA;&#x73B0;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x8BED;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-ternary</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x4E09;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-this-before-super</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684; super &#x4E4B;&#x524D;&#x4F7F;&#x7528; this</td>
+</tr>
+<tr>
+<td style="text-align:left">no-throw-literal</td>
+<td style="text-align:left">&#x7981;&#x6B62; throw &#x5B57;&#x9762;&#x91CF;&#xFF0C;&#x5FC5;&#x987B; throw &#x4E00;&#x4E2A; Error &#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-trailing-spaces</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x884C;&#x5C3E;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-undef-init</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5C06; undefined &#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-undef</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x8BBF;&#x95EE;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x6216;&#x65B9;&#x6CD5;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-undefined</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; undefined&#xFF0C;&#x5982;&#x9700;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x4E3A; undefined&#xFF0C;&#x8BF7;&#x4F7F;&#x7528; typeof a === &apos;undefined&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-underscore-dangle</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x53D8;&#x91CF;&#x540D;&#x4E2D;&#x4F7F;&#x7528;&#x4E0B;&#x5212;&#x7EBF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unexpected-multiline</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x96BE;&#x4EE5;&#x7406;&#x89E3;&#x7684;&#x591A;&#x884C;&#x4EE3;&#x7801;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unmodified-loop-condition</td>
+<td style="text-align:left">&#x5FAA;&#x73AF;&#x4F53;&#x5185;&#x5FC5;&#x987B;&#x5BF9;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#x8FDB;&#x884C;&#x4FEE;&#x6539;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unneeded-ternary</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x4E09;&#x5143;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unreachable</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x4E0D;&#x53EF;&#x5230;&#x8FBE;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x5728; return&#x3001;throw &#x4E4B;&#x540E;&#x7684;&#x4EE3;&#x7801;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unsafe-finally</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;finally&#x5757;&#x4E2D;&#x51FA;&#x73B0; return&#x3001;throw&#x3001;break&#x3001;continue</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unsafe-negation</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x5426;&#x5B9A;&#xFF0C;&#x5982; for (!key in obj} {}&#xFF0C;&#x5E94;&#x8BE5;&#x5199;&#x4E3A; for (!(key in obj)} {}</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unused-expressions</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x51FA;&#x73B0;&#x65E0;&#x7528;&#x7684;&#x8868;&#x8FBE;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unused-labels</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5B9A;&#x4E49;&#x4E0D;&#x4F7F;&#x7528;&#x7684; label</td>
+</tr>
+<tr>
+<td style="text-align:left">no-unused-vars</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5B9A;&#x4E49;&#x4E0D;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-use-before-define</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5728;&#x53D8;&#x91CF;&#x88AB;&#x5B9A;&#x4E49;&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x5B83;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-call</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4E0D;&#x5FC5;&#x8981;&#x7684; call &#x548C; apply</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-computed-key</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x4E0D;&#x5FC5;&#x8981;&#x8BA1;&#x7B97;&#x7684;key&#xFF0C;&#x5982; var a = { [&apos;0&apos;]: 0 }</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-concat</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-constructor</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x65E0;&#x7528;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-escape</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x65E0;&#x7528;&#x7684;&#x8F6C;&#x4E49;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-rename</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x65E0;&#x6548;&#x7684;&#x91CD;&#x547D;&#x540D;&#xFF0C;&#x5982; import {a as a} from xxx</td>
+</tr>
+<tr>
+<td style="text-align:left">no-useless-return</td>
+<td style="text-align:left">&#x274C; &#x7981;&#x6B62;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x7684; return</td>
+</tr>
+<tr>
+<td style="text-align:left">no-var</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528; var&#xFF0C;&#x5FC5;&#x987B;&#x7528; let &#x6216; const</td>
+</tr>
+<tr>
+<td style="text-align:left">no-void</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x4F7F;&#x7528;void</td>
+</tr>
+<tr>
+<td style="text-align:left">no-warning-comments</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x6CE8;&#x91CA;&#x4E2D;&#x51FA;&#x73B0; TODO &#x6216; FIXME&#xFF0C;&#x7528;&#x8FD9;&#x4E2A;&#x6765;&#x63D0;&#x9192;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5199;&#x4E86; TODO &#x5C31;&#x4E00;&#x5B9A;&#x8981;&#x505A;&#x5B8C;</td>
+</tr>
+<tr>
+<td style="text-align:left">no-whitespace-before-property</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x5C5E;&#x6027;&#x524D;&#x51FA;&#x73B0;&#x7A7A;&#x683C;&#xFF0C;&#x5982; foo. bar()</td>
+</tr>
+<tr>
+<td style="text-align:left">no-with</td>
+<td style="text-align:left">&#x7981;&#x6B62; with</td>
+</tr>
+<tr>
+<td style="text-align:left">nonblock-statement-body-position</td>
+<td style="text-align:left">&#x7981;&#x6B62; if &#x8BED;&#x53E5;&#x5728;&#x6CA1;&#x6709;&#x82B1;&#x62EC;&#x53F7;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6362;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">object-curly-newline</td>
+<td style="text-align:left">&#x274C; &#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x82B1;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x662F;&#x5426;&#x8981;&#x52A0;&#x7A7A;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">object-curly-spacing</td>
+<td style="text-align:left">&#x274C; &#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x7684;&#x82B1;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x662F;&#x5426;&#x8981;&#x52A0;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">object-property-newline</td>
+<td style="text-align:left">&#x274C; &#x5BF9;&#x8C61;&#x6BCF;&#x4E2A;&#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x72EC;&#x5360;&#x4E00;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">object-shorthand</td>
+<td style="text-align:left">&#x274C; obj = { a: a } &#x5FC5;&#x987B;&#x8F6C;&#x6362;&#x6210; obj = { a }</td>
+</tr>
+<tr>
+<td style="text-align:left">one-var-declaration-per-line</td>
+<td style="text-align:left">&#x274C; &#x6BCF;&#x4E2A;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x5FC5;&#x987B;&#x72EC;&#x5360;&#x4E00;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">one-var</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x4E00;&#x6B21;&#x58F0;&#x660E;&#x591A;&#x4E2A;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">operator-assignment</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528; x = x + y &#x800C;&#x4E0D;&#x662F; x += y</td>
+</tr>
+<tr>
+<td style="text-align:left">operator-linebreak</td>
+<td style="text-align:left">&#x274C; &#x65AD;&#x884C;&#x65F6;&#x64CD;&#x4F5C;&#x7B26;&#x4F4D;&#x4E8E;&#x884C;&#x9996;&#x8FD8;&#x662F;&#x884C;&#x5C3E;</td>
+</tr>
+<tr>
+<td style="text-align:left">padded-blocks</td>
+<td style="text-align:left">&#x274C; &#x4EE3;&#x7801;&#x5757;&#x9996;&#x5C3E;&#x5FC5;&#x987B;&#x8981;&#x7A7A;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">padding-line-between-statements</td>
+<td style="text-align:left">&#x274C; &#x9650;&#x5236;&#x8BED;&#x53E5;&#x4E4B;&#x95F4;&#x7684;&#x7A7A;&#x884C;&#x89C4;&#x5219;&#xFF0C;&#x6BD4;&#x5982;&#x53D8;&#x91CF;&#x5B9A;&#x4E49;&#x5B8C;&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x8981;&#x7A7A;&#x884C;</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-arrow-callback</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x7BAD;&#x5934;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-const</td>
+<td style="text-align:left">&#x274C; &#x58F0;&#x660E;&#x540E;&#x4E0D;&#x518D;&#x4FEE;&#x6539;&#x7684;&#x53D8;&#x91CF;&#x5FC5;&#x987B;&#x4F7F;&#x7528; const</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-destructuring</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x89E3;&#x6784;</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-numeric-literals</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528; 0b11111011 &#x800C;&#x4E0D;&#x662F; parseInt(&apos;111110111&apos;, 2)</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-promise-reject-errors</td>
+<td style="text-align:left">promise &#x7684; reject &#x4E2D;&#x5FC5;&#x987B;&#x4F20;&#x5165; Error &#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x5B57;&#x9762;&#x91CF;</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-rest-params</td>
+<td style="text-align:left">&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x89E3;&#x6784; ...args &#x6765;&#x4EE3;&#x66FF; arguments</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-spread</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528; func(...args) &#x6765;&#x4EE3;&#x66FF; func.apply(args)</td>
+</tr>
+<tr>
+<td style="text-align:left">prefer-template</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x4EE3;&#x66FF;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;</td>
+</tr>
+<tr>
+<td style="text-align:left">quotes</td>
+<td style="text-align:left">&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5355;&#x5F15;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">quote-props</td>
+<td style="text-align:left">&#x274C; &#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x952E;&#x540D;&#x7981;&#x6B62;&#x7528;&#x5F15;&#x53F7;&#x62EC;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">radix</td>
+<td style="text-align:left">parseInt&#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x4F20;&#x8FDB;&#x5236;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">require-await</td>
+<td style="text-align:left">&#x274C; async &#x51FD;&#x6570;&#x4E2D;&#x5FC5;&#x987B;&#x5B58;&#x5728; await &#x8BED;&#x53E5;</td>
+</tr>
+<tr>
+<td style="text-align:left">require-jsdoc</td>
+<td style="text-align:left">&#x274C; &#x5FC5;&#x987B;&#x4F7F;&#x7528; jsdoc &#x98CE;&#x683C;&#x7684;&#x6CE8;&#x91CA;</td>
+</tr>
+<tr>
+<td style="text-align:left">require-yield</td>
+<td style="text-align:left">generator &#x51FD;&#x6570;&#x5185;&#x5FC5;&#x987B;&#x6709; yield</td>
+</tr>
+<tr>
+<td style="text-align:left">rest-spread-spacing</td>
+<td style="text-align:left">...&#x540E;&#x9762;&#x4E0D;&#x5141;&#x8BB8;&#x6709;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">semi-spacing</td>
+<td style="text-align:left">&#x274C; &#x5206;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">semi-style</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x884C;&#x9996;&#x51FA;&#x73B0;&#x5206;&#x53F7;</td>
+</tr>
+<tr>
+<td style="text-align:left">semi</td>
+<td style="text-align:left">&#x884C;&#x5C3E;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5206;&#x53F7;&#x7ED3;&#x675F;</td>
+</tr>
+<tr>
+<td style="text-align:left">sort-imports</td>
+<td style="text-align:left">&#x274C; imports &#x5FC5;&#x987B;&#x6392;&#x597D;&#x5E8F;</td>
+</tr>
+<tr>
+<td style="text-align:left">sort-keys</td>
+<td style="text-align:left">&#x274C; &#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x952E;&#x540D;&#x5FC5;&#x987B;&#x6392;&#x597D;&#x5E8F;</td>
+</tr>
+<tr>
+<td style="text-align:left">sort-vars</td>
+<td style="text-align:left">&#x274C; &#x53D8;&#x91CF;&#x58F0;&#x660E;&#x5FC5;&#x987B;&#x6392;&#x597D;&#x5E8F;</td>
+</tr>
+<tr>
+<td style="text-align:left">space-before-blocks</td>
+<td style="text-align:left">&#x274C; function &#x7B49;&#x7684;&#x82B1;&#x62EC;&#x53F7;&#x4E4B;&#x524D;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">space-before-function-paren</td>
+<td style="text-align:left">&#x274C; function &#x7684;&#x5706;&#x62EC;&#x53F7;&#x4E4B;&#x524D;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">space-in-parens</td>
+<td style="text-align:left">&#x274C; &#x5706;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x7A7A;&#x683C;&#x4F7F;&#x7528;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">space-infix-ops</td>
+<td style="text-align:left">&#x64CD;&#x4F5C;&#x7B26;&#x524D;&#x540E;&#x8981;&#x52A0;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">space-unary-ops</td>
+<td style="text-align:left">new, delete, typeof, void, yield &#x7B49;&#x8868;&#x8FBE;&#x5F0F;&#x524D;&#x540E;&#x5FC5;&#x987B;&#x6709;&#x7A7A;&#x683C;&#xFF0C;-, +, --, ++, !, !! &#x7B49;&#x8868;&#x8FBE;&#x5F0F;&#x524D;&#x540E;&#x4E0D;&#x8BB8;&#x6709;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">spaced-comment</td>
+<td style="text-align:left">&#x6CE8;&#x91CA;&#x7684;&#x659C;&#x7EBF;&#x548C;&#x661F;&#x53F7;&#x540E;&#x8981;&#x52A0;&#x7A7A;&#x683C;</td>
+</tr>
+<tr>
+<td style="text-align:left">strict</td>
+<td style="text-align:left">&#x7981;&#x7528;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#xFF0C;&#x7981;&#x6B62;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x51FA;&#x73B0; &apos;use strict&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">switch-colon-spacing</td>
+<td style="text-align:left">&#x274C; switch &#x4E2D;&#x5192;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">symbol-description</td>
+<td style="text-align:left">&#x521B;&#x5EFA; Symbol &#x7684;&#x65F6;&#x5019;&#x5FC5;&#x987B;&#x4F20;&#x5165;&#x63CF;&#x8FF0;</td>
+</tr>
+<tr>
+<td style="text-align:left">template-curly-spacing</td>
+<td style="text-align:left">&#x274C; &#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32; ${} &#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">template-tag-spacing</td>
+<td style="text-align:left">&#x274C; &#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">unicode-bom</td>
+<td style="text-align:left">&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5934;&#x7981;&#x6B62;&#x51FA;&#x73B0; BOM</td>
+</tr>
+<tr>
+<td style="text-align:left">use-isnan</td>
+<td style="text-align:left">&#x7981;&#x6B62;&#x76F4;&#x63A5;&#x5BF9; NaN &#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528; isNaN</td>
+</tr>
+<tr>
+<td style="text-align:left">valid-jsdoc</td>
+<td style="text-align:left">&#x274C; &#x6CE8;&#x91CA;&#x5FC5;&#x987B;&#x7B26;&#x5408; jsdoc &#x7684;&#x89C4;&#x8303;</td>
+</tr>
+<tr>
+<td style="text-align:left">valid-typeof</td>
+<td style="text-align:left">typeof &#x5224;&#x65AD;&#x6761;&#x4EF6;&#x53EA;&#x80FD;&#x662F; &quot;undefined&quot;, &quot;object&quot;, &quot;boolean&quot;, &quot;number&quot;, &quot;string&quot;, &quot;function&quot; &#x6216; &quot;symbol&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">vars-on-top</td>
+<td style="text-align:left">&#x274C; var &#x5FC5;&#x987B;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x6700;&#x524D;&#x9762;</td>
+</tr>
+<tr>
+<td style="text-align:left">wrap-iife</td>
+<td style="text-align:left">&#x81EA;&#x6267;&#x884C;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#xFF0C;&#x5982; (function(){do something...})()</td>
+</tr>
+<tr>
+<td style="text-align:left">wrap-regex</td>
+<td style="text-align:left">&#x274C; &#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5FC5;&#x987B;&#x7528;&#x5706;&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">yield-star-spacing</td>
+<td style="text-align:left">&#x274C; yield &#x7684; * &#x524D;&#x540E;&#x7A7A;&#x683C;&#x89C4;&#x5219;</td>
+</tr>
+<tr>
+<td style="text-align:left">yoda</td>
+<td style="text-align:left">&#x7981;&#x6B62;Yoda&#x683C;&#x5F0F;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#xFF0C;&#x5982; if (true === a)&#xFF0C;&#x5E94;&#x4F7F;&#x7528; if (a === true)</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-mixins.html" class="navigation navigation-prev " aria-label="Previous page: Mixins（ Stylus ）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../3-plugin/x-fullpage.html" class="navigation navigation-next " aria-label="Next page: X-FULLPAGE">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"代码规范（ ESLint ）","level":"2.4","depth":1,"next":{"title":"X-FULLPAGE","level":"3.1","depth":1,"path":"docs/3-plugin/x-fullpage.md","ref":"docs/3-plugin/x-fullpage.md","articles":[]},"previous":{"title":"Mixins（ Stylus ）","level":"2.3","depth":1,"path":"docs/2-basics/3-mixins.md","ref":"docs/2-basics/3-mixins.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/4-eslint.md","mtime":"2018-11-29T05:51:06.483Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-29T06:22:42.203Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

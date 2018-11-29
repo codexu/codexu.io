@@ -58,7 +58,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="4-px2rem.html" />
+    <link rel="next" href="4-eslint.html" />
     
     
     <link rel="prev" href="2-special.html" />
@@ -201,22 +201,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="4-px2rem.html">
+        <li class="chapter " data-level="2.4" data-path="4-eslint.html">
             
-                <a href="4-px2rem.html">
-            
-                    
-                    自适应布局方案（ REM ）
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="5-eslint.html">
-            
-                <a href="5-eslint.html">
+                <a href="4-eslint.html">
             
                     
                     代码规范（ ESLint ）
@@ -333,16 +320,8 @@
                                 
                                 <h2 id="mixinsstylus">Mixins(Stylus)</h2>
 <p>&#x4F7F;&#x7528;Mixins&#x53EF;&#x4EE5;&#x66F4;&#x5FEB;&#x7684;&#x5E2E;&#x52A9;&#x4F60;&#x642D;&#x5EFA;&#x9875;&#x9762;&#xFF0C;&#x5F15;&#x5165;mixins.styl&#xFF1A;</p>
-<pre class="language-"><code class="lang-stylus">  <span class="token atrule-declaration"><span class="token atrule">@import</span> <span class="token string">&apos;~@/style/mixins.styl&apos;</span></span>
+<pre class="language-"><code class="lang-stylus">  <span class="token atrule-declaration"><span class="token atrule">@import</span> <span class="token string">&apos;./mixins.styl&apos;</span></span>
 </code></pre>
-<h3 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h3>
-<p>&#x27A1;&#xFE0F; <a href="#&#x5305;&#x88F9;&#x5C42;Wrapper(">&#x5305;&#x88F9;&#x5C42; Wrapper()</a>)</p>
-<p>&#x27A1;&#xFE0F; <a href="#&#x80CC;&#x666F;Wrapper-background(width">&#x80CC;&#x666F; Wrapper-background(width)</a>)</p>
-<p>&#x27A1;&#xFE0F; <a href="#&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;loader(width,height">&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807; loader(width, height)</a>)</p>
-<p>&#x27A1;&#xFE0F; <a href="#&#x5143;&#x7D20;&#x5B9A;&#x4F4D;Item-position(width,height,x,y,z-index">&#x5143;&#x7D20;&#x5B9A;&#x4F4D; Item-position(width, height, x, y, z-index)</a>)</p>
-<p>&#x27A1;&#xFE0F; <a href="#&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C;Text(size,width,align,color">&#x6807;&#x9898;&#x4E0E;&#x6587;&#x672C; Text(size, width, align, color)</a>)</p>
-<p>&#x27A1;&#xFE0F; <a href="#&#x88C5;&#x9970;&#x7B26;Pseudo(align,x,y">&#x88C5;&#x9970;&#x7B26; Pseudo(align, x, y)</a>)</p>
-<p>&#x27A1;&#xFE0F; <a href="#&#x5217;&#x8868;List(type,radius,paddingLeft,fontSize,lineHeight,backgroundColor">&#x5217;&#x8868; List(type, radius, paddingLeft, fontSize, lineHeight, backgroundColor)</a>)</p>
 <hr>
 <h4 id="&#x5305;&#x88F9;&#x5C42;wrapper">&#x5305;&#x88F9;&#x5C42;Wrapper()</h4>
 <p>&#x7528;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x7684;<strong>&#x5305;&#x88F9;&#x5C42;</strong>&#xFF0C;<code>&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;</code>&#x3001;<code>&#x5BBD;&#x5EA6;100%</code>&#x3001;<code>overflow: hidden</code>&#x3002;</p>
@@ -358,16 +337,6 @@
   <span class="token selector">img.bg</span>
     <span class="token func"><span class="token function">Wrapper-background</span><span class="token punctuation">(</span><span class="token number">750</span>px<span class="token punctuation">)</span></span>
 </code></pre>
-<hr>
-<h4 id="&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;loaderwidthheight">&#x52A0;&#x8F7D;&#x9875;&#x9762;-&#x56FE;&#x6807;loader(width,height)</h4>
-<ul>
-<li><p><code>width</code> [30px] &#x56FE;&#x6807;&#x5BBD;&#x5EA6;</p>
-</li>
-<li><p><code>height</code> [30px] &#x56FE;&#x6807;&#x9AD8;&#x5EA6;</p>
-</li>
-</ul>
-<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fw20nmvmhqj30640d3js3.jpg" alt=""></p>
-<p>&#x7528;&#x4E8E;loading&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF0C;&#x5BBD;&#x9AD8;&#x4E3A;&#x5C4F;&#x5E55;&#x7684;100%&#xFF0C;&#x5B50;&#x5143;&#x7D20;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span></code>&#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x3002;</p>
 <hr>
 <h4 id="&#x5143;&#x7D20;&#x5B9A;&#x4F4D;item-positionwidthheightxyz-index">&#x5143;&#x7D20;&#x5B9A;&#x4F4D;Item-position(width,height,x,y,z-index)</h4>
 <ul>
@@ -475,7 +444,7 @@
                 </a>
                 
                 
-                <a href="4-px2rem.html" class="navigation navigation-next " aria-label="Next page: 自适应布局方案（ REM ）">
+                <a href="4-eslint.html" class="navigation navigation-next " aria-label="Next page: 代码规范（ ESLint ）">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -486,7 +455,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mixins（ Stylus ）","level":"2.3","depth":1,"next":{"title":"自适应布局方案（ REM ）","level":"2.4","depth":1,"path":"docs/2-basics/4-px2rem.md","ref":"docs/2-basics/4-px2rem.md","articles":[]},"previous":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/2-basics/2-special.md","ref":"docs/2-basics/2-special.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/3-mixins.md","mtime":"2018-11-27T03:29:28.440Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-27T05:59:00.606Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mixins（ Stylus ）","level":"2.3","depth":1,"next":{"title":"代码规范（ ESLint ）","level":"2.4","depth":1,"path":"docs/2-basics/4-eslint.md","ref":"docs/2-basics/4-eslint.md","articles":[]},"previous":{"title":"特殊语法","level":"2.2","depth":1,"path":"docs/2-basics/2-special.md","ref":"docs/2-basics/2-special.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/2-basics/3-mixins.md","mtime":"2018-11-29T05:58:38.187Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-29T06:22:42.203Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
