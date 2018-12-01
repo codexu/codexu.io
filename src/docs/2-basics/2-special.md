@@ -67,9 +67,7 @@ Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的�
 
 ---
 
-# Stylus
-
-Stylus的风格与Pug类似，所以在这里采用了这个css预处理器，[参考文档](https://www.zhangxinxu.com/jq/stylus/)
+# CSS
 
 #### 强制使用px单位
 

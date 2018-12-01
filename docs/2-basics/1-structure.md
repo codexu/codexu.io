@@ -10,11 +10,10 @@
   └── src/ # 源码目录
   |   ├── assets/ # 静态资源
   |   ├── scripts/
-  |   |   └── index.js
+  |   |   └── index.js # JavaScript主入口文件
   |   ├── styles/
-  |   |   ├── config.styl # 用于字体、颜色等配置
-  |   |   ├── mixins.styl # 一些常用的css布局函数
-  |   |   └── index.styl
+  |   |   ├── x-build.css # x-build欢迎界面样式（删除即可）
+  |   |   └── index.[scss\less\styl] # 样式入口文件
   |   └── app.pug # html正文
   └── build/ # webpack配置文件
       ├── lib/ # 配置项工具集

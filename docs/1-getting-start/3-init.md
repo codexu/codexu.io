@@ -24,6 +24,8 @@
 
 ➡️ 选择包管理器 `yarn npm cnpm`
 
+➡️ 选择css预处理器 `sass less stylus`
+
 ➡️ 选择安装插件 `x-load x-animate x-touch`
 
 下载及安装：
