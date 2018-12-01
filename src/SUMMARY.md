@@ -16,8 +16,6 @@
 
 * [特殊语法](docs/2-basics/2-special.md)
 
-* [Mixins（ Stylus ）](docs/2-basics/3-mixins.md)
-
 * [代码规范（ ESLint ）](docs/2-basics/4-eslint.md)
 
 ## 插件
