@@ -14,6 +14,8 @@
 
 * [目录结构](docs/2-basics/1-structure.md)
 
+* [配置](docs/2-basics/4-options.md)
+
 * [特殊语法](docs/2-basics/2-special.md)
 
 * [代码规范（ ESLint ）](docs/2-basics/3-eslint.md)

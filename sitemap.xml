@@ -5,6 +5,7 @@
 <url> <loc>https://codexu.github.io/docs/1-getting-start/3-init.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://codexu.github.io/docs/1-getting-start/4-run.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://codexu.github.io/docs/2-basics/1-structure.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://codexu.github.io/docs/2-basics/4-options.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://codexu.github.io/docs/2-basics/2-special.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://codexu.github.io/docs/2-basics/3-eslint.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://codexu.github.io/docs/3-plugin/x-fullpage.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
