@@ -1,6 +1,8 @@
-# Pug
+# Pug模板引擎
 
-Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档](https://pugjs.org/zh-cn/api/getting-started.html)
+⚠️ 如果你不想使用这种模板，可以将 HTML 直接写入 app.pug 中。
+
+Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档](https://pugjs.org/zh-cn/api/getting-started.html)。
 
 #### 在pug模板引擎下引用静态文件：
 
@@ -71,7 +73,7 @@ Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的�
 
 #### 强制使用px单位
 
-当启用rem布局时，所有的px单位会自动转化成rem，如果想强制使用px请参考：
+当启用rem布局时，所有的px单位会自动转化成rem，如果想强制使用px请在句尾添加 `/*px*/` ：
 
 ``` stylus
   # stylus

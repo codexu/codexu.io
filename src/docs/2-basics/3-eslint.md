@@ -8,7 +8,7 @@ JavaScript 是一个动态的弱类型语言，在开发中比较容易出错。
 
 #### ESLint配置表
 
-| Rules | Description |
+| Rules | Description ( ❌ no use ) |
 | :- | :- |
 | accessor-pairs | 设置了 setter ，必须相应设置 getter ，反之不必须 |
 | array-bracket-newline | ❌ 数组方括号前后的换行符使用规则 |

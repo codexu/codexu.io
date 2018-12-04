@@ -1,6 +1,6 @@
 ## 创建一个新项目
 
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fxbes09q2dj31by0sck1h.jpg)
+![](https://ws4.sinaimg.cn/large/006tNbRwly1fxunsqr965j31bq0sok1v.jpg)
 
 通过以下指令创建一个新项目：
 
@@ -13,27 +13,3 @@
 > 为了保证程序的正常运行，v1.3.10起会进行版本检测，强制更新到最新版本才可以使用！
 
 > **使用 `-n` 参数可以忽略版本检测！**
-
-### 创建过程
-
-你会被提示输入或选择一系列问题来自定义你的项目：
-
-➡️ 默认端口 `默认8080`
-
-➡️ 移动端开发？ `默认yes`
-
-➡️ 选择包管理器 `yarn npm cnpm`
-
-➡️ 选择css预处理器 `sass less stylus`
-
-➡️ 选择安装插件 `x-load x-animate x-touch`
-
-下载及安装：
-
-➡️ 下载最新的模板文件
-
-➡️ 安装开发依赖
-
-➡️ 安装自选插件
-
-随后根据提示完成最后的操作！

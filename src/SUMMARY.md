@@ -8,17 +8,17 @@
 
 * [创建一个项目](docs/1-getting-start/3-init.md)
 
-* [开发与打包](docs/1-getting-start/4-run.md)
+* [目录结构](docs/1-getting-start/4-structure.md)
 
-## 基础
+* [开发与打包](docs/1-getting-start/5-run.md)
 
-* [目录结构](docs/2-basics/1-structure.md)
+## 进阶
 
-* [配置](docs/2-basics/4-options.md)
+* [配置](docs/2-basics/1-options.md)
 
 * [特殊语法](docs/2-basics/2-special.md)
 
-* [代码规范（ ESLint ）](docs/2-basics/3-eslint.md)
+* [ESLint](docs/2-basics/3-eslint.md)
 
 ## 插件
 

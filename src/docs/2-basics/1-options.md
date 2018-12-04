@@ -4,7 +4,7 @@
 
 #### 服务端口(port)
 
-通过修改 por t，改变 devServer 端口号。
+通过修改 port，改变 devServer 端口号。
 
 #### 布局(isRem)
 

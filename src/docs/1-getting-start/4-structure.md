@@ -23,18 +23,6 @@
       └── webpack.build.js # 生产模式配置文件
 ```
 
-- **babel** ( root/.babelrc ): 支持ES7语法(async、await)。
-
-- **editorconfig** ( root/.editorconfig ): 编辑器配置规范，使用空格(2)缩紧，utf-8编码等。
-
-- **eslint** ( root/eslintrc.js ): Javascript代码规范。
-
-- **gitignore** ( root/.gitignore ): git忽略文件及文件夹。
-
-- **postcss** ( root/postcss.config.js ): 开启autoprefixer()。
-
----
-
 # 生产模式
 
 目录结构(root/dist):
