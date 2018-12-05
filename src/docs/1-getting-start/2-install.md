@@ -12,7 +12,7 @@
 
 ### 命令行工具 (CLI)
 
-X-BUILD-CLI是一个全局安装的 npm 包，提供了终端里的 x-build 命令。
+X-BUILD-CLI是一个全局安装的 npm 包，提供了终端里的 x-build 和 x(简写) 命令。
 
 > #### ⚠️ Node 版本要求
 
