@@ -22,6 +22,8 @@
 
 ## 插件
 
+* [插件使用须知](docs/3-plugin/about-plugins.md)
+
 * [X-FULLPAGE](docs/3-plugin/x-fullpage.md)
 
 * [X-LOAD](docs/3-plugin/x-load.md)

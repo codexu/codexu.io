@@ -1,12 +1,36 @@
 ## 创建一个新项目
 
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fxvxi0qlnaj31bs0tmwpb.jpg)
+![](https://ws4.sinaimg.cn/large/006tNbRwly1fxx1lxlnq3j31a00u0gxi.jpg)
 
 通过以下指令创建一个新项目：
 
 ```
   $ x-build create [name]
 ```
+
+### Questions
+
+X-BUILD会跟据你的选则个性化的创建你的项目：
+
+##### ESLint
+
+ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。
+
+##### REM布局
+
+REM布局方案，采用 hotcss 获取设备信息（ dpr、尺寸等）并设置根节点 font-size，px2rem-loader会帮你将px转化为rem，从而实现自适应布局。
+
+##### PUG模板引擎
+
+Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档](https://pugjs.org/zh-cn/api/getting-started.html)。
+
+##### CSS预处理器
+
+支持常用的三种预处理器。CSS预处理器定义了一种新的语言，基本的思想是用一种专门的编程语言，开发者只需要使用这种语言进行编码工作，减少枯燥无味的CSS代码的编写过程的同时，它能让你的CSS具备更加简洁、适应性更强、可读性更加、层级关系更加明显、更易于代码的维护等诸多好处。
+
+##### 插件
+
+插件可以选择安装，或创建项目后通过 npm 安装，使用插件可以加快你的开发速度，避免业务逻辑上耽误开发时间。
 
 ### 参数
 
