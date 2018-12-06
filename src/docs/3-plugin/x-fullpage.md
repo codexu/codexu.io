@@ -91,3 +91,16 @@
 | indicatorCurrentColor | 'rgba(100%, 100%, 100%, .6)' | 指示器焦点颜色 |
 | beforeChange | null | 传入回调，附带一个参数滚动后的页面index，从0开始，当页面开始滚动时触发。 |
 | afterChange | null | 传入回调，附带一个参数滚动后的页面index，从0开始，当页面滚动结束时触发。 |
+
+### API
+
+##### pageTo(index)
+
+通过实例调用pageTo，可以跳转到指定页面，参数index[0-n]：
+
+```javascript
+  // 两秒后跳转到第3页
+  setTimeout(() => {
+    xFullpage.pageTo(2);
+  }, 2000);
+```
