@@ -13,7 +13,7 @@
   |   |   └── index.js # JavaScript主入口文件
   |   ├── styles/
   |   |   ├── x-build.css # x-build欢迎界面样式（删除即可）
-  |   |   └── index.[scss\less\styl] # 样式入口文件
+  |   |   └── index.[css\scss\less\styl] # 样式入口文件
   |   └── app.pug # html正文
   └── build/ # webpack配置文件
       ├── lib/ # 配置项工具集
@@ -22,6 +22,24 @@
       ├── webpack.dev.js # 开发模式配置文件
       └── webpack.build.js # 生产模式配置文件
 ```
+
+#### 入口文件
+
+- **PUG**：使用 pug 模板引擎，入口文件为 root/index.pug，它引入了 root/src/app.pug。
+
+- **HTML**：未使用 pug 模板引擎，入口文件为 root/src/index.html。
+
+- **CSS**：不论是否使用 CSS 预处理器，入口文件始终位于 root/src/styles/index.[css\scss\less\styl]，文件类型取决于你创建时的选择。
+
+- **JS**: root/src/scripts/index.js 是唯一的 js 入口文件，它并不需要 impot css 入口文件，这一步 X-BUILD 已经为你做好。
+
+#### assets 静态资源目录
+
+默认状态下X-BUILD只为你创建了assets/images目录存放你的图片，如果你要使用其他静态资源：
+
+- **字体**：创建目录 assets/font，支持 woff、eot、ttf、otf 格式。
+
+- **视频**：创建目录 static/media/，支持mp4、webm、ogg、mp3、wav、flac、aac 格式。
 
 # 生产模式
 

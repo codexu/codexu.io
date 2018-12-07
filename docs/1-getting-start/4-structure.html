@@ -343,7 +343,7 @@
   |   |   &#x2514;&#x2500;&#x2500; index.js # JavaScript&#x4E3B;&#x5165;&#x53E3;&#x6587;&#x4EF6;
   |   &#x251C;&#x2500;&#x2500; styles/
   |   |   &#x251C;&#x2500;&#x2500; x-build.css # x-build&#x6B22;&#x8FCE;&#x754C;&#x9762;&#x6837;&#x5F0F;&#xFF08;&#x5220;&#x9664;&#x5373;&#x53EF;&#xFF09;
-  |   |   &#x2514;&#x2500;&#x2500; index.[scss\less\styl] # &#x6837;&#x5F0F;&#x5165;&#x53E3;&#x6587;&#x4EF6;
+  |   |   &#x2514;&#x2500;&#x2500; index.[css\scss\less\styl] # &#x6837;&#x5F0F;&#x5165;&#x53E3;&#x6587;&#x4EF6;
   |   &#x2514;&#x2500;&#x2500; app.pug # html&#x6B63;&#x6587;
   &#x2514;&#x2500;&#x2500; build/ # webpack&#x914D;&#x7F6E;&#x6587;&#x4EF6;
       &#x251C;&#x2500;&#x2500; lib/ # &#x914D;&#x7F6E;&#x9879;&#x5DE5;&#x5177;&#x96C6;
@@ -351,7 +351,26 @@
       &#x251C;&#x2500;&#x2500; webpack.config.js
       &#x251C;&#x2500;&#x2500; webpack.dev.js # &#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
       &#x2514;&#x2500;&#x2500; webpack.build.js # &#x751F;&#x4EA7;&#x6A21;&#x5F0F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
-</code></pre><h1 id="&#x751F;&#x4EA7;&#x6A21;&#x5F0F;">&#x751F;&#x4EA7;&#x6A21;&#x5F0F;</h1>
+</code></pre><h4 id="&#x5165;&#x53E3;&#x6587;&#x4EF6;">&#x5165;&#x53E3;&#x6587;&#x4EF6;</h4>
+<ul>
+<li><p><strong>PUG</strong>&#xFF1A;&#x4F7F;&#x7528; pug &#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x4E3A; root/index.pug&#xFF0C;&#x5B83;&#x5F15;&#x5165;&#x4E86; root/src/app.pug&#x3002;</p>
+</li>
+<li><p><strong>HTML</strong>&#xFF1A;&#x672A;&#x4F7F;&#x7528; pug &#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x4E3A; root/src/index.html&#x3002;</p>
+</li>
+<li><p><strong>CSS</strong>&#xFF1A;&#x4E0D;&#x8BBA;&#x662F;&#x5426;&#x4F7F;&#x7528; CSS &#x9884;&#x5904;&#x7406;&#x5668;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x59CB;&#x7EC8;&#x4F4D;&#x4E8E; root/src/styles/index.[css\scss\less\styl]&#xFF0C;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x521B;&#x5EFA;&#x65F6;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+</li>
+<li><p><strong>JS</strong>: root/src/scripts/index.js &#x662F;&#x552F;&#x4E00;&#x7684; js &#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x5E76;&#x4E0D;&#x9700;&#x8981; impot css &#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65; X-BUILD &#x5DF2;&#x7ECF;&#x4E3A;&#x4F60;&#x505A;&#x597D;&#x3002;</p>
+</li>
+</ul>
+<h4 id="assets-&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;">assets &#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;</h4>
+<p>&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x4E0B;X-BUILD&#x53EA;&#x4E3A;&#x4F60;&#x521B;&#x5EFA;&#x4E86;assets/images&#x76EE;&#x5F55;&#x5B58;&#x653E;&#x4F60;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF1A;</p>
+<ul>
+<li><p><strong>&#x5B57;&#x4F53;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/font&#xFF0C;&#x652F;&#x6301; woff&#x3001;eot&#x3001;ttf&#x3001;otf &#x683C;&#x5F0F;&#x3002;</p>
+</li>
+<li><p><strong>&#x89C6;&#x9891;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; static/media/&#xFF0C;&#x652F;&#x6301;mp4&#x3001;webm&#x3001;ogg&#x3001;mp3&#x3001;wav&#x3001;flac&#x3001;aac &#x683C;&#x5F0F;&#x3002;</p>
+</li>
+</ul>
+<h1 id="&#x751F;&#x4EA7;&#x6A21;&#x5F0F;">&#x751F;&#x4EA7;&#x6A21;&#x5F0F;</h1>
 <p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;(root/dist):</p>
 <pre class="language-"><code>  .
   &#x251C;&#x2500;&#x2500; index.html
@@ -401,7 +420,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.4","depth":1,"next":{"title":"开发与打包","level":"1.5","depth":1,"path":"docs/1-getting-start/5-run.md","ref":"docs/1-getting-start/5-run.md","articles":[]},"previous":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/1-getting-start/3-init.md","ref":"docs/1-getting-start/3-init.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/1-getting-start/4-structure.md","mtime":"2018-12-06T07:12:27.978Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-06T09:15:52.229Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.4","depth":1,"next":{"title":"开发与打包","level":"1.5","depth":1,"path":"docs/1-getting-start/5-run.md","ref":"docs/1-getting-start/5-run.md","articles":[]},"previous":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/1-getting-start/3-init.md","ref":"docs/1-getting-start/3-init.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"12813795"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/1-getting-start/4-structure.md","mtime":"2018-12-07T03:33:03.659Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-07T03:44:48.315Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
