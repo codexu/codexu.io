@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.1.0-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.2.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -85,6 +85,7 @@
 | root | '#root' | 当你的根节点不想使用#root时改变这项。 |
 | pageClassName | 'x-page' | 当你的页面节点不想使用.x-page时改变这项。 |
 | loop | false | 翻页循环，开启后，最后一页继续滑动会返回第一页，反之同理。 |
+| flex | true | flex布局模式，内容将均处于屏幕的正中间。 |
 | duration | 1000 | 翻页的持续时间。 |
 | indicator | true | 指示器开关。 |
 | indicatorWidth | '20px' | 指示器圆点直径。 |
