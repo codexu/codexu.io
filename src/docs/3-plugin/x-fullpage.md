@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.0.0-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.1.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -82,13 +82,14 @@
 
 | 参数 | 默认值 | 说明 |
 | :- | :- | :- |
-| root | '#root' | 当你的根节点不想使用#root时改变这项 |
-| pageClassName | 'x-page' | 当你的页面节点不想使用.x-page时改变这项 |
-| duration | 1000 | 翻页的持续时间 |
-| indicator | true | 指示器开关 |
-| indicatorWidth | '20px' | 指示器圆点直径 |
-| indicatorColor | 'rgba(100%, 100%, 100%, .3)' | 指示器默认颜色 |
-| indicatorCurrentColor | 'rgba(100%, 100%, 100%, .6)' | 指示器焦点颜色 |
+| root | '#root' | 当你的根节点不想使用#root时改变这项。 |
+| pageClassName | 'x-page' | 当你的页面节点不想使用.x-page时改变这项。 |
+| loop | false | 翻页循环，开启后，最后一页继续滑动会返回第一页，反之同理。 |
+| duration | 1000 | 翻页的持续时间。 |
+| indicator | true | 指示器开关。 |
+| indicatorWidth | '20px' | 指示器圆点直径。 |
+| indicatorColor | 'rgba(100%, 100%, 100%, .3)' | 指示器默认颜色。 |
+| indicatorCurrentColor | 'rgba(100%, 100%, 100%, .6)' | 指示器焦点颜色。 |
 | beforeChange | null | 传入回调，附带一个参数滚动后的页面index，从0开始，当页面开始滚动时触发。 |
 | afterChange | null | 传入回调，附带一个参数滚动后的页面index，从0开始，当页面滚动结束时触发。 |
 
