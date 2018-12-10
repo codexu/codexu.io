@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.3.3-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.3.2-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -39,9 +39,9 @@
 
 ### 起步
 
-ℹ️ 正文包裹层增加 `id="xl-wrapper"` ，将你的所有正文内容写在这个 div 下。
+ℹ️ 正文包裹层增加 `id="root"` ，将你的所有正文内容写在这个 div 下。
 
-⚠️ X-BUILD 项目已经在 index.pug 中定义好 `div#xl-wrapper` ，所有的内容写在 app.pug 内即可。
+⚠️ X-BUILD 项目已经在 index.pug 中定义好 `div#root` ，所有的内容写在 app.pug 内即可。
 
 ℹ️ `<img>` 标签使用 `data-src` 传入图片链接，不要设置 `src` 属性。
 
@@ -49,7 +49,7 @@
 
 ```html
 <!-- html -->
-<div id="xl-wrapper">
+<div id="root">
   <img data-src="./abc.jpg" prior>
 </div>
 ```
@@ -62,7 +62,7 @@
 
 **wrapper** *`<HTMLelement>`*
 
-- 默认值`#xl-wrapper`
+- 默认值`#root`
 
 - 传入正文包裹层DOM。
 
@@ -70,7 +70,7 @@
 
 **loader** *`<HTMLelement>`*
 
-- 默认值`#xl-load`
+- 默认值`null`
 
 - 如果需要自定义loading效果，请将自定义DOM传入。
 

@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v4.4.9-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v4.4.10-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -54,10 +54,10 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 | Project | Status | Description |
 | :------ | :------ | :------ |
-| <a href="https://github.com/codexu/x-build">X-BUILD</a> | <img src="https://img.shields.io/badge/npm-v4.4.9-blue.svg"> | 基于Webpack的工程模板，CLI create时会被下载。 |
+| <a href="https://github.com/codexu/x-build">X-BUILD</a> | <img src="https://img.shields.io/badge/npm-v4.4.10-blue.svg"> | 基于Webpack的工程模板，CLI create时会被下载。 |
 | <a href="https://github.com/codexu/x-build-cli">X-BUILD-CLI</a> | <img src="https://img.shields.io/badge/npm-v1.4.9-blue.svg"> | 脚手架工具，快速生成工程目录，并安装依赖。 |
 | <a href="https://github.com/codexu/x-fullpage">X-FULLPAGE</a> | <img src="https://img.shields.io/badge/npm-v1.2.0-blue.svg"> | 适用于移动端的整屏滚动插件，支持动画触发。 |
-| <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.3-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
+| <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.2-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
 | <a href="https://github.com/codexu/x-animate">X-ANIMATE</a> | <img src="https://img.shields.io/badge/npm-v1.0.1-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
 | <a href="https://github.com/codexu/x-touch">X-TOUCH</a> | <img src="https://img.shields.io/badge/npm-v1.2.0-blue.svg"> | 使原生DOM支持轻触、长按和滑动事件。 |
 
