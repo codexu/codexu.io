@@ -31,3 +31,5 @@
 * [X-ANIMATE](docs/3-plugin/x-animate.md)
 
 * [X-TOUCH](docs/3-plugin/x-touch.md)
+
+* [X-MUSIC](docs/3-plugin/x-music.md)

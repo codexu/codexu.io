@@ -60,6 +60,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 | <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.2-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
 | <a href="https://github.com/codexu/x-animate">X-ANIMATE</a> | <img src="https://img.shields.io/badge/npm-v1.0.1-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
 | <a href="https://github.com/codexu/x-touch">X-TOUCH</a> | <img src="https://img.shields.io/badge/npm-v1.2.0-blue.svg"> | 使原生DOM支持轻触、长按和滑动事件。 |
+| <a href="https://github.com/codexu/x-music">X-MUSIC</a> | <img src="https://img.shields.io/badge/npm-v1.0.1-blue.svg"> | 设置背景音乐与按钮控制。 |
 
 ### 讨论交流
 
@@ -79,3 +80,4 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 [X-LOAD](https://github.com/codexu/x-load/issues) | 
 [X-ANIMATE](https://github.com/codexu/x-animate/issues) | 
 [X-TOUCH](https://github.com/codexu/x-touch/issues)
+[X-MUSIC](https://github.com/codexu/x-music/issues)
