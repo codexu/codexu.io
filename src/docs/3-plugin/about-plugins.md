@@ -1,3 +1,15 @@
+### 概述
+
+X系列插件都是针对 H5 项目开发的，使用 Rollup 打包，无其他框架或库依赖，可以直接使用。
+
+### 安装
+
+- 使用 NPM 进行安装，通过 import 引入插件。
+
+- 使用 `<script>` 标签引入，源码在 github dist 目录下。
+
+- 使用 UMD 格式打包，支持 amd，cjs 和 iife。
+
 ### 通过CLI安装插件
 
 x-build create 时会选择要使用的插件，这些插件会被直接打包在 bundle.js 中：
@@ -5,10 +17,6 @@ x-build create 时会选择要使用的插件，这些插件会被直接打包�
 - 安装 x-animate 和 x-fullpage 会自动将 animate.css 下载并打包，无需使用 import 'animate.css'。
 
 - x-fullpage 依赖 x-touch，务必一起安装。
-
-### 通过NPM安装插件
-
-所有的插件都并不是集成在 X-BUILD 中的，只要你的项目支持 ES6 import，就可以使用 NPM 安装，同时这些插件并没有依赖某些库（ jquery、zepto 等），体积小，效率高，更适合现代的浏览器使用。
 
 ### 多个插件调用
 
@@ -18,12 +26,12 @@ x-load 是处理图片加载的，在加载过程中会创建 loading 效果遮�
 
 ```javascript
   // 以 x-load 与 x-animate 为例
-  import xLoad from 'x-load';
+  import XLoad from 'x-load';
   import XAnimate from 'x-animate'
 
   let xAnimate = new XAnimate();
 
-  new xLoad({
+  new XLoad({
     afterLoading: function() {
       xAnimate.init();
     }

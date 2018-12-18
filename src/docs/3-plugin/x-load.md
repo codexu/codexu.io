@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.3.2-blue.svg">
+  <img src="https://img.shields.io/badge/npm-v1.3.4-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </p>
 
@@ -27,14 +27,14 @@
 - 通过包管理器安装：
 
 ```javascript
-  import xLoad from 'x-load';
-  new xLoad();
+  import XLoad from 'x-load';
+  new XLoad();
 ```
 
 - 通过`<script>`（此方式会污染全局变量）：
 
 ```javascript
-  new xLoad();
+  new XLoad();
 ```
 
 ### 起步
