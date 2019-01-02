@@ -1,26 +1,18 @@
-<p align="center"><img width="160" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx32anjngzj308w06x415.jpg" alt="x-animate"></p>
+# X-ANIMATE
 
-<p align="center">
-  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg">
-  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
-</p>
+![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
+![](https://img.shields.io/badge/NPM-v1.0.2-blue.svg)
+![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-<p align="center">
-  <a href="https://github.com/codexu/x-animate">X-ANIMATE</a>是通过屏幕滚动控制动画执行的插件，支持动画组，可以配合<a href="https://daneden.github.io/animate.css/">animate.css</a>使用。
-</p>
+通过屏幕滚动实现执行动画，支持延时动画、控制动画执行时间、执行偏移量、生命周期回调、动画组，完美支持Animate.css。
 
 ### 安装
 
 - 通过`npm` or `yarn`安装：
 
 ```
-  $ yarn add animate.css x-animate
-  # OR
   $ npm install animate.css x-animate --save
 ```
-
-- 通过script加载[x-animate.min.js](https://raw.githubusercontent.com/codexu/x-animate/master/dist/x-animate.min.js)
 
 ### 引用
 
@@ -34,12 +26,7 @@
   xAnimate.init();
 ```
 
-- 通过`<script>`（此方式会污染全局变量）：
-
-```javascript
-  // javascript
-  new XAniamte();
-```
+> 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-animate/tree/master/dist)
 
 ### 起步
 

@@ -1,16 +1,8 @@
-<p align="center"><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fxbaxq9dbqj308w06x3z1.jpg" width="150px"></p>
-
-<p align="center">
-  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v4.4.10-blue.svg">
-  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
-</p>
-
-<p align="center">
-  <a href="https://github.com/codexu/x-build">X-BUILD</a>一套基于<a href="https://webpack.docschina.org/concepts/">Webpack</a>(v4.21.0)快速搭建H5场景开发环境的脚手架，只需要几分钟的时间就可以运行起来。
-</p>
-
-### H5场景开发
+# X-BUILD
+![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
+![](https://img.shields.io/badge/NPM-v4.4.10-blue.svg)
+![](https://img.shields.io/badge/CLI-v1.4.9-blue.svg)
+![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开发效率，减小开发难度。它可以让你在没有任何构建工具（例如 grunt 、 gulp 或 webpack 等工具）配置经验的情况下，帮你快速生成一个完整的前端工程，并可以打包代码和静态资源，使你的项目以最优异的性能上线。
 
@@ -66,18 +58,16 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 #### QQ群
 
-欢迎加入 X-BUILD QQ交流群，在这里可以互相交流前端问题。
-
-群号: 374406559
+欢迎加入 QQ交流群（374406559），在这里可以互相交流前端问题。
 
 #### 提问 & BUG
 
-请将BUG提交在不同项目的 **github issues** 里，或者加QQ：461229187讨论交流。
+请将BUG提交在不同项目的 **Github issues** 里：
 
 [X-BUILD模板](https://github.com/codexu/x-build/issues) | 
 [CLI工具](https://github.com/codexu/x-build-cli/issues) | 
 [X-FULLPAGE](https://github.com/codexu/x-fullpage/issues) | 
 [X-LOAD](https://github.com/codexu/x-load/issues) | 
 [X-ANIMATE](https://github.com/codexu/x-animate/issues) | 
-[X-TOUCH](https://github.com/codexu/x-touch/issues)
+[X-TOUCH](https://github.com/codexu/x-touch/issues) | 
 [X-MUSIC](https://github.com/codexu/x-music/issues)

@@ -1,22 +1,16 @@
-<p align="center"><img width="160" src="https://ws1.sinaimg.cn/large/006tNbRwly1fxlklaxrizj308w06xmzo.jpg" alt="x-fullpage"></p>
+# X-FULLPAGE
 
-<p align="center">
-  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg">
-  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
-</p>
+![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
+![](https://img.shields.io/badge/NPM-v1.2.2-blue.svg)
+![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-<p align="center">
-  <a href="https://github.com/codexu/x-fullpage">X-FULLPAGE</a>适用于移动端的全屏滚动插件，依赖Animate.css（或其他css动画库）和X-TOUCH，它可以帮助你简单快速创建高性能的移动端全屏滚动特效。
-</p>
+适用于移动端的全屏滚动插件，依赖Animate.css（或其他css动画库）和X-TOUCH，它可以帮助你简单快速创建高性能的移动端全屏滚动特效。
 
 ### 安装
 
 - 通过`npm` or `yarn`安装：
 
 ```
-  $ yarn add x-fullpage x-touch animate.css
-  # OR
   $ npm install x-fullpage x-touch animate.css --save
 ```
 
@@ -36,6 +30,8 @@
   xTouch.init();
   xFullpage.init();
 ```
+
+> 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-fullpage/tree/master/dist)
 
 ### 起步
 
@@ -89,8 +85,8 @@
 | duration | 1000 | 翻页的持续时间。 |
 | indicator | true | 指示器开关。 |
 | indicatorWidth | '20px' | 指示器圆点直径。 |
-| indicatorColor | 'rgba(100%, 100%, 100%, .3)' | 指示器默认颜色。 |
-| indicatorCurrentColor | 'rgba(100%, 100%, 100%, .6)' | 指示器焦点颜色。 |
+| indicatorColor | 半透明 | 指示器默认颜色。 |
+| indicatorCurrentColor | 半透明 | 指示器焦点颜色。 |
 | beforeChange | null | 传入回调，附带一个参数滚动后的页面index，从0开始，当页面开始滚动时触发。 |
 | afterChange | null | 传入回调，附带一个参数滚动后的页面index，从0开始，当页面滚动结束时触发。 |
 

@@ -1,14 +1,10 @@
-<p align="center"><img width="160" src="https://ws2.sinaimg.cn/large/006tNbRwly1fx67hwnhw1j308w06xdig.jpg" alt="x-animate"></p>
+# X-LOAD
 
-<p align="center">
-  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.3.4-blue.svg">
-  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
-</p>
+![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
+![](https://img.shields.io/badge/NPM-v1.3.4-blue.svg)
+![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-<p align="center">
-  <a href="https://github.com/codexu/x-load">X-LOAD</a>是控制图片加载方式的插件，主要功能为：提前加载、延迟加载、控制加载顺序和进度控制。
-</p>
+通过预加载、懒加载、顺序加载控制图片下载方式，主要针对H5页面的Loading加载进度实现。
 
 ### 安装
 
@@ -16,11 +12,7 @@
 
 ```
   $ npm install x-load --save
-  # OR
-  $ yarn add x-load
 ```
-
-- 通过script加载[x-load.min.js](https://raw.githubusercontent.com/codexu/x-load/master/dist/x-load.min.js)
 
 ### 引用
 
@@ -31,11 +23,7 @@
   new XLoad();
 ```
 
-- 通过`<script>`（此方式会污染全局变量）：
-
-```javascript
-  new XLoad();
-```
+> 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-load/tree/master/dist)
 
 ### 起步
 

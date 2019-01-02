@@ -1,18 +1,12 @@
-<p align="center"><img width="160" src="https://ws4.sinaimg.cn/large/006tNbRwly1fx9qzs85mzj308w06x40w.jpg" alt="x-build-cli"></p>
+# X-BUILD-CLI
 
-<p align="center">
-  <img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg">
-  <img src="https://img.shields.io/badge/npm-v1.4.9-blue.svg">
-  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
-</p>
-
-<p align="center">
-  <a href="https://github.com/codexu/x-build-cli">X-BUILD-CLI</a>是一个快速生成X-BUILD项目的生成器，类似于@vue/cli。
-</p>
+![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
+![](https://img.shields.io/badge/NPM-v1.4.9-blue.svg)
+![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ### 命令行工具 (CLI)
 
-X-BUILD-CLI是一个全局安装的 npm 包，提供了终端里的 x-build 和 x(简写) 命令。
+X-BUILD-CLI 是一个快速生成 X-BUILD 项目的生成器，类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
 
 > #### ⚠️ Node 版本要求
 
