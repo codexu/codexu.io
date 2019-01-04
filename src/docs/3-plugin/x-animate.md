@@ -1,8 +1,7 @@
 # X-ANIMATE
-
-![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
-![](https://img.shields.io/badge/NPM-v1.0.2-blue.svg)
-![](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![](https://img.shields.io/badge/npm-v1.0.2-blue.svg)](https://www.npmjs.com/package/x-animate)
+[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-animate/blob/master/LICENSE)
 
 通过屏幕滚动实现执行动画，支持延时动画、控制动画执行时间、执行偏移量、生命周期回调、动画组，完美支持Animate.css。
 

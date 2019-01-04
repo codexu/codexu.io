@@ -1,8 +1,7 @@
 # X-FULLPAGE
-
-![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
-![](https://img.shields.io/badge/NPM-v1.2.2-blue.svg)
-![](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![](https://img.shields.io/badge/npm-v1.2.2-blue.svg)](https://www.npmjs.com/package/x-fullpage)
+[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-fullpage/blob/master/LICENSE)
 
 适用于移动端的全屏滚动插件，依赖Animate.css（或其他css动画库）和X-TOUCH，它可以帮助你简单快速创建高性能的移动端全屏滚动特效。
 

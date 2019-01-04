@@ -1,8 +1,7 @@
 # X-LOAD
-
-![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
-![](https://img.shields.io/badge/NPM-v1.0.2-blue.svg)
-![](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![](https://img.shields.io/badge/npm-v1.0.2-blue.svg)](https://www.npmjs.com/package/x-music)
+[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-music/blob/master/LICENSE)
 
 设置背景音乐及播放控制按钮。
 
