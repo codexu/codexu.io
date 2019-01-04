@@ -1,4 +1,4 @@
-# X-LOAD
+# X-MUSIC
 [![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
 [![](https://img.shields.io/badge/npm-v1.0.2-blue.svg)](https://www.npmjs.com/package/x-music)
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-music/blob/master/LICENSE)
