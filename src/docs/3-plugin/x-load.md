@@ -1,7 +1,9 @@
 # X-LOAD
 [![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
-[![](https://img.shields.io/badge/npm-v1.3.4-blue.svg)](https://www.npmjs.com/package/x-load)
-[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-load/blob/master/LICENSE)
+[![](https://img.shields.io/npm/v/x-load.svg)](https://www.npmjs.com/package/x-load)
+[![](https://img.shields.io/github/size/codexu/x-load/dist/x-load.min.js.svg)](https://github.com/codexu/x-load/tree/master/dist)
+[![](https://img.shields.io/npm/dm/x-load.svg)](https://www.npmjs.com/package/x-load)
+[![](https://img.shields.io/github/license/codexu/x-load.svg)](https://github.com/codexu/x-load/blob/master/LICENSE)
 
 通过预加载、懒加载、顺序加载控制图片下载方式，主要针对H5页面的Loading加载进度实现。
 

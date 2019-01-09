@@ -1,7 +1,9 @@
 # X-MUSIC
 [![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
-[![](https://img.shields.io/badge/npm-v1.0.2-blue.svg)](https://www.npmjs.com/package/x-music)
-[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-music/blob/master/LICENSE)
+[![](https://img.shields.io/npm/v/x-music.svg)](https://www.npmjs.com/package/x-music)
+[![](https://img.shields.io/github/size/codexu/x-music/dist/x-music.min.js.svg)](https://github.com/codexu/x-music/tree/master/dist)
+[![](https://img.shields.io/npm/dm/x-music.svg)](https://www.npmjs.com/package/x-music)
+[![](https://img.shields.io/github/license/codexu/x-music.svg)](https://github.com/codexu/x-music/blob/master/LICENSE)
 
 设置背景音乐及播放控制按钮。
 

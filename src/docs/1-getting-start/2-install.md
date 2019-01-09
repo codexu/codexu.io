@@ -1,7 +1,8 @@
 # X-BUILD-CLI
 
 ![](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg)
-![](https://img.shields.io/badge/NPM-v1.4.9-blue.svg)
+[![](https://img.shields.io/npm/v/x-load.svg)](https://www.npmjs.com/package/x-load)
+[![](https://img.shields.io/npm/dm/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
 ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ### 命令行工具 (CLI)
