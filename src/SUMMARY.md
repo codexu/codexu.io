@@ -4,32 +4,32 @@
 
 * [概述](README.md)
 
-* [安装（CLI）](docs/1-getting-start/2-install.md)
+* [安装（CLI）](docs/getting-start/2-install.md)
 
-* [创建一个项目](docs/1-getting-start/3-init.md)
+* [创建一个项目](docs/getting-start/3-init.md)
 
-* [目录结构](docs/1-getting-start/4-structure.md)
+* [目录结构](docs/getting-start/4-structure.md)
 
-* [开发与打包](docs/1-getting-start/5-run.md)
+* [开发与打包](docs/getting-start/5-run.md)
 
-## 进阶
+* [配置](docs/getting-start/6-options.md)
 
-* [配置](docs/2-basics/1-options.md)
-
-* [特殊语法](docs/2-basics/2-special.md)
-
-* [ESLint](docs/2-basics/3-eslint.md)
+* [特殊语法](docs/getting-start/7-special.md)
 
 ## 插件
 
-* [插件使用须知](docs/3-plugin/about-plugins.md)
+* [插件使用须知](docs/plugin/about-plugins.md)
 
-* [X-FULLPAGE](docs/3-plugin/x-fullpage.md)
+* [X-FULLPAGE](docs/plugin/x-fullpage.md)
 
-* [X-LOAD](docs/3-plugin/x-load.md)
+* [X-LOAD](docs/plugin/x-load.md)
 
-* [X-ANIMATE](docs/3-plugin/x-animate.md)
+* [X-ANIMATE](docs/plugin/x-animate.md)
 
-* [X-TOUCH](docs/3-plugin/x-touch.md)
+* [X-TOUCH](docs/plugin/x-touch.md)
 
-* [X-MUSIC](docs/3-plugin/x-music.md)
+* [X-MUSIC](docs/plugin/x-music.md)
+
+## 附录
+
+* [ESLint](docs/others/eslint.md)
