@@ -23,7 +23,7 @@
   // javascript
   import 'animate.css'
   import XAnimate from 'x-animate'
-  let xAnimate = new XAnimate();
+  const xAnimate = new XAnimate();
   xAnimate.init();
 ```
 
@@ -136,7 +136,7 @@ let xAnimate = new XAnimate({
 
 ```javascript
 // javascript
-let xAnimate = new XAnimate({
+const xAnimate = new XAnimate({
   // 默认值'animate'，对应<div animate=""></div>，防止与其他插件命名冲突
   name: 'animate',
   // 默认值'delay'，对应<div delay=""></div>，防止与其他插件命名冲突

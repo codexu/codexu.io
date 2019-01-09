@@ -18,7 +18,7 @@
 
 ## 插件
 
-* [插件使用须知](docs/plugin/about-plugins.md)
+* [快速上手](docs/plugin/about.md)
 
 * [X-FULLPAGE](docs/plugin/x-fullpage.md)
 

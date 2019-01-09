@@ -22,7 +22,7 @@
 ``` javascript
 import XTouch from 'x-touch';
 
-let xTouch = new XTouch();
+const xTouch = new XTouch();
 xTouch.init();
 ```
 
@@ -31,7 +31,7 @@ xTouch.init();
 - 为DOM绑定touch事件：
 
 ``` javascript
-let root = document.getElementById('root');
+const root = document.getElementById('root');
 
 root.xtouch('tap', function(status){
   // do someting!
@@ -67,11 +67,11 @@ root.xtouch('tap', function(status){
 在初始化XTouch时传递参数`<Object>`:
 
 ``` javascript
-let config = {
+const config = {
   slideMin: 50,
   tapMin: 10,
   longTapTime: 300
 }
 
-let xTouch = new XTouch(config);
+const xTouch = new XTouch(config);
 ```

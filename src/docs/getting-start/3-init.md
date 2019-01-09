@@ -14,15 +14,15 @@ X-BUILD会跟据你的选则个性化的创建你的项目：
 
 ##### ESLint
 
-ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格。
+ESLint是一个用来识别 ECMAScript 并且按照规则给出报告的代码检测工具，使用它可以避免低级错误和统一代码的风格，[详解>>](../others/eslint.md)
 
 ##### REM布局
 
-REM布局方案，采用 hotcss 获取设备信息（ dpr、尺寸等）并设置根节点 font-size，px2rem-loader会帮你将px转化为rem，从而实现自适应布局。
+REM布局方案，采用 hotcss 获取设备信息（ dpr、尺寸等）并设置根节点 font-size，px2rem-loader会帮你将px转化为rem，从而实现自适应布局，[详解>>](./7-special.md)
 
 ##### PUG模板引擎
 
-Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档](https://pugjs.org/zh-cn/api/getting-started.html)。
+Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[详解>>](./7-special.md)
 
 ##### CSS预处理器
 

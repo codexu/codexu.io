@@ -8,7 +8,8 @@
   },
   "scripts": {
     "serve": "cd src && gitbook serve",
-    "build": "cd src && gitbook build && cp -r _book/* ../"
+    "build": "cd src && gitbook build && cp -r _book/* ../",
+    "push": "git add . && git commit -m 'docs' && git push"
   },
   "repository": {
     "type": "git",

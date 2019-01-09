@@ -25,8 +25,8 @@
   import XTouch from 'x-touch';
   import 'animate.css';
 
-  let xTouch = new XTouch();
-  let xFullpage = new XFullpage();
+  const xTouch = new XTouch();
+  const xFullpage = new XFullpage();
 
   xTouch.init();
   xFullpage.init();

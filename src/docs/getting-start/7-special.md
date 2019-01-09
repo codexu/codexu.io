@@ -1,8 +1,6 @@
 # Pug模板引擎
 
-⚠️ 如果你不想使用这种模板，可以将 HTML 直接写入 app.pug 中。
-
-Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档](https://pugjs.org/zh-cn/api/getting-started.html)。
+Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档>>](https://pugjs.org/zh-cn/api/getting-started.html)
 
 #### 在pug模板引擎下引用静态文件：
 
@@ -22,54 +20,9 @@ Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的�
 
 - 通过` index.pug `改变title等属性。
 
-#### Pug常用语法
-
-- **属性**：使用括号增加HTML属性，class 与 id 可以跟在标签后或单独使用，多个属性之间使用使用逗号或空格分隔。
-
-```pug
-  a.button#btn(href='https://codexu.github.io')
-```
-
-- **代码**：Pug 为你在模板中嵌入 JavaScript 提供了可能。
-
-```pug
-  //- for循环
-  - for (var x = 0; x < 3; x++)
-    li item
-
-  //- each
-  - var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
-  each item in list
-    li= item
-
-  //- case
-  - var friends = 10
-  case friends
-    when 0
-      p 您没有朋友
-    when 1
-      p 您有一个朋友
-    default
-      p 您有 #{friends} 个朋友
-
-  //- if else
-  - var user = { description: 'hello, codexu!' }
-  #user
-    if user.description
-      p.description= user.description
-    else
-      p.description 用户没有描述
-```
-
-- **包含**：包含（include）功能允许您把另外的文件内容插入进来。
-
-```pug
-  include includes/head.pug
-```
-
 ---
 
-# CSS
+# REM布局
 
 #### 强制使用px单位
 
@@ -80,7 +33,7 @@ Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的�
   font-size 12px; /*px*/
 ```
 
-⚠️ 在stylus下，别忘记结尾添加分号！
+⚠️ 使用stylus时，别忘记结尾添加分号！
 
 #### REM布局
 
