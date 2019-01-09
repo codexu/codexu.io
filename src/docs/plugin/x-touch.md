@@ -1,5 +1,5 @@
 # X-TOUCH
-[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![Build Status](https://travis-ci.org/codexu/x-touch.svg?branch=master)](https://travis-ci.org/codexu/x-touch)
 [![](https://img.shields.io/npm/v/x-touch.svg)](https://www.npmjs.com/package/x-touch)
 [![](https://img.shields.io/github/size/codexu/x-touch/dist/x-touch.min.js.svg)](https://github.com/codexu/x-touch/tree/master/dist)
 [![](https://img.shields.io/npm/dm/x-touch.svg)](https://www.npmjs.com/package/x-touch)

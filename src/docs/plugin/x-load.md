@@ -1,5 +1,5 @@
 # X-LOAD
-[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![Build Status](https://travis-ci.org/codexu/x-load.svg?branch=master)](https://travis-ci.org/codexu/x-load)
 [![](https://img.shields.io/npm/v/x-load.svg)](https://www.npmjs.com/package/x-load)
 [![](https://img.shields.io/github/size/codexu/x-load/dist/x-load.min.js.svg)](https://github.com/codexu/x-load/tree/master/dist)
 [![](https://img.shields.io/npm/dm/x-load.svg)](https://www.npmjs.com/package/x-load)

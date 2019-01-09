@@ -1,5 +1,5 @@
 # X-ANIMATE
-[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![Build Status](https://travis-ci.org/codexu/x-animate.svg?branch=master)](https://travis-ci.org/codexu/x-animate)
 [![](https://img.shields.io/npm/v/x-animate.svg)](https://www.npmjs.com/package/x-animate)
 [![](https://img.shields.io/github/size/codexu/x-animate/dist/x-animate.min.js.svg)](https://github.com/codexu/x-animate/tree/master/dist)
 [![](https://img.shields.io/npm/dm/x-animate.svg)](https://www.npmjs.com/package/x-animate)

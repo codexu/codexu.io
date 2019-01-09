@@ -1,5 +1,5 @@
 # X-FULLPAGE
-[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
+[![Build Status](https://travis-ci.org/codexu/x-fullpage.svg?branch=master)](https://travis-ci.org/codexu/x-fullpage)
 [![](https://img.shields.io/npm/v/x-fullpage.svg)](https://www.npmjs.com/package/x-fullpage)
 [![](https://img.shields.io/github/size/codexu/x-fullpage/dist/x-fullpage.min.js.svg)](https://github.com/codexu/x-fullpage/tree/master/dist)
 [![](https://img.shields.io/npm/dm/x-fullpage.svg)](https://www.npmjs.com/package/x-fullpage)

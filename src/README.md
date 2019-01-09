@@ -1,6 +1,6 @@
 # X-BUILD
 [![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
-[![](https://img.shields.io/npm/v/x-build.svg)](https://www.npmjs.com/package/x-build)
+[![](https://img.shields.io/npm/v/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
 [![](https://img.shields.io/npm/dm/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
 
