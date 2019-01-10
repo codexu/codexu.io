@@ -1,6 +1,4 @@
-# x-build
-
-## 快速上手
+## X-BUILD
 
 * [概述](README.md)
 

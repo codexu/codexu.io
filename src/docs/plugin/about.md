@@ -6,11 +6,11 @@
 
 | Plugins | Status | Description |
 | :------ | :------ | :------ |
-| <a href="https://github.com/codexu/x-fullpage">X-FULLPAGE</a> | <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg"> | 适用于移动端的整屏滚动插件，支持动画触发。 |
-| <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.4-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
-| <a href="https://github.com/codexu/x-animate">X-ANIMATE</a> | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
-| <a href="https://github.com/codexu/x-touch">X-TOUCH</a> | <img src="https://img.shields.io/badge/npm-v1.2.1-blue.svg"> | 使原生DOM支持轻触、长按和滑动事件。 |
-| <a href="https://github.com/codexu/x-music">X-MUSIC</a> | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 设置背景音乐与按钮控制。 |
+| [X-FULLPAGE](x-fullpage.md) | <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg"> | 适用于移动端的整屏滚动插件，支持动画触发。 |
+| [X-LOAD](x-load.md) | <img src="https://img.shields.io/badge/npm-v1.3.4-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
+| [X-ANIMATE](x-animate.md) | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
+| [X-TOUCH](x-touch.md) | <img src="https://img.shields.io/badge/npm-v1.2.1-blue.svg"> | 使原生DOM支持轻触、长按和滑动事件。 |
+| [X-MUSIC](x-music.md) | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 设置背景音乐与按钮控制。 |
 
 
 ### 安装
@@ -21,13 +21,9 @@
 
 3. 使用 `<script>` 标签引入 **(不推荐)**。
 
-### 关于使用 CLI 安装插件
+> #### 关于使用 CLI 安装插件
 
-x-build create 时会选择要使用的插件，这些插件会被直接打包在 bundle.js 中：
-
-- 安装 x-animate 和 x-fullpage 会自动将 animate.css 下载并打包，无需使用 import 'animate.css'。
-
-- x-fullpage 依赖 x-touch，务必一起安装。
+> x-build create 时会选择要使用的插件，这些插件会被直接打包在 bundle.js 中，安装 x-animate 和 x-fullpage 会自动将 animate.css 下载并打包，无需使用 import 'animate.css'，x-fullpage 依赖 x-touch，务必一起安装。
 
 ### 多个插件调用
 
