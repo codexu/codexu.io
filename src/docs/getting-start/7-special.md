@@ -20,16 +20,13 @@ Pug是一种用于编写HTML的干净、空格敏感的语法，通过缩进的�
 
 - 通过` index.pug `改变title等属性。
 
----
-
 # REM布局
 
 #### 强制使用px单位
 
 当启用rem布局时，所有的px单位会自动转化成rem，如果想强制使用px请在句尾添加 `/*px*/` ：
 
-``` stylus
-  # stylus
+```stylus
   font-size 12px; /*px*/
 ```
 

@@ -7,16 +7,16 @@
 
 设置背景音乐及播放控制按钮。
 
-### 安装
+## 安装
 
-- 通过`npm` or `yarn`安装：
+- 通过 <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font> 安装：
 
 ```
-  npm install x-music --save
-  yarn add x-music
+**[terminal]
+**[delimiter $ ]**[command npm install x-music --save]
 ```
 
-### 起步
+## 起步
 
 - 使用 ES6 方式引用：
 
@@ -33,18 +33,38 @@ xMusic.init();
 
 > 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-music/tree/master/dist)
 
-### 参数
+## 参数
 
 如果使用webpack进行打包，请使用import加载静态资源：
 
-##### src 音乐路径 (必填)
+### src*
 
-##### playImg 播放按钮图片路径 (必填)
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-##### pauseImg 暂停按钮图片路径 (必填)
+音乐路径
 
-##### width 按钮图片宽度
+### playImg*
 
-##### height 按钮图片高度
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
+
+播放按钮图片路径
+
+### pauseImg*
+
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
+
+暂停按钮图片路径
+
+### width 
+
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
+
+按钮图片宽度(px)
+
+### height 
+
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
+
+按钮图片高度(px)
 
 

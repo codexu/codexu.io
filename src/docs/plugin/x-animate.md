@@ -7,15 +7,16 @@
 
 通过屏幕滚动实现执行动画，支持延时动画、控制动画执行时间、执行偏移量、生命周期回调、动画组，完美支持Animate.css。
 
-### 安装
+## 安装
 
-- 通过`npm` or `yarn`安装：
+- 通过 <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font> 安装：
 
 ```
-  $ npm install animate.css x-animate --save
+**[terminal]
+**[delimiter $ ]**[command npm install animate.css x-animate --save]
 ```
 
-### 引用
+## 引用
 
 - 通过包管理器安装：
 
@@ -29,16 +30,16 @@
 
 > 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-animate/tree/master/dist)
 
-### 起步
+## 起步
 
-为至少一个DOM添加 animate 属性，并赋值一个动画名称，例如：
+为至少一个 DOM 添加 animate 属性，并赋值一个动画名称，例如：
 
 ```html
 <!-- html -->
 <div animate="bounceInLeft"></div>
 ```
 
-### 单元素动画
+## 单元素动画
 
 只对单个元素生效的动画，当滚动到它的相应位置就会被执行：
 
@@ -53,19 +54,43 @@
 ></div>
 ```
 
-ℹ️ `animate(必填项)` 参考animate.css动画名，或参考自定义动画。
+### animate*
 
-ℹ️ `delay(可选)` 延时：(毫秒)，当屏幕滚动到对应位置时，延时结束执行动画。
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-ℹ️ `duration(可选)` 持续时间：(毫秒)，动画执行的持续时间，数值越大动画越慢。
+参考animate.css动画名，或参考自定义动画。
 
-ℹ️ `offset(可选)` 偏移量：(px)，以屏幕底部为轴，默认滚动到某一元素已显示一半高度时执行动画。偏移量为正数，则需多滚动相应的距离；偏移量为负值，则会提前相应距离执行动画。
+### delay
 
-ℹ️ `animateEnter(可选)` 钩子函数：(function(item))，当某个元素动画开始时执行函数。
+`0(ms)` <font color=MediumSeaGreen>&lt;Number&gt;</font>
 
-ℹ️ `animateLeave(可选)` 钩子函数：(function(item))，当某个元素动画结束时执行函数。
+延时：当屏幕滚动到对应位置时，延时结束执行动画。
 
-### 动画组
+### duration
+
+`1000(ms)` <font color=MediumSeaGreen>&lt;Number&gt;</font>
+
+持续时间：动画执行的持续时间，数值越大动画越慢。
+
+### offset
+
+`0(px)` <font color=MediumSeaGreen>&lt;Number&gt;</font>
+
+偏移量：以屏幕底部为轴，默认滚动到某一元素已显示一半高度时执行动画。偏移量为正数，则需多滚动相应的距离；偏移量为负值，则会提前相应距离执行动画。
+
+### animateEnter(item)
+
+`none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
+
+生命周期函数：当某个元素动画开始时执行函数。
+
+### animateLeave(item)
+
+`none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
+
+生命周期函数：当某个元素动画结束时执行函数。
+
+## 动画组
 
 当滚动到某个区域需要它里面的子元素做连续动画时（例如为地图标记点做连续动画）：
 
@@ -76,13 +101,15 @@
 </div>
 ```
 
-ℹ️ `animate-group(必填项)` 为一个动画组的父元素添加此属性。
+### animate-group*
 
-ℹ️ `animateItem(必填项)` 子元素与单元素`animate`功能一至。
+为一个动画组的父元素添加此属性。
 
-ℹ️ 子元素支持单元素的所有属性。
+### animateItem*
 
-### 钩子函数
+动画名，同时子元素支持单元素的所有属性。
+
+## 绑定生命周期函数
 
 在需要触发的元素上增加属性`animate-enter`(动画前)或`animate-leave`(动画后)，值为定义在methods中的函数名。
 
@@ -107,7 +134,7 @@ let xAnimate = new XAnimate({
 });
 ```
 
-### 自定义动画
+## 自定义动画
 
 使用自定义的动画，例如新定义`newAnimate`动画:
 
@@ -132,7 +159,7 @@ let xAnimate = new XAnimate({
 <div animate="newAnimate"></div>
 ```
 
-### 其他配置
+## 其他配置
 
 ```javascript
 // javascript

@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="codexu">
         
         
     
@@ -21,11 +21,19 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -34,20 +42,11 @@
 
     
         
-    
-        
-    
-        
-    
-        
-    
-        
-    
+        <link rel="stylesheet" href="../../styles/website.css">
         
     
 
         
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -64,17 +63,6 @@
     <link rel="prev" href="../../" />
     
 
-    <style>
-    @media only screen and (max-width: 640px) {
-        .book-header .hidden-mobile {
-            display: none;
-        }
-    }
-    </style>
-    <script>
-        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]};
-    </script>
-
     </head>
     <body>
         
@@ -82,10 +70,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -306,7 +290,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -339,49 +323,30 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="x-build-cli">X-BUILD-CLI</h1>
-<p><img src="https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg" alt="">
-<a href="https://www.npmjs.com/package/x-load" target="_blank"><img src="https://img.shields.io/npm/v/x-load.svg" alt=""></a>
+                                <h1 id="&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;-cli">&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177; (CLI)</h1>
+<p><a href="https://travis-ci.org/codexu/x-build-cli" target="_blank"><img src="https://travis-ci.org/codexu/x-build-cli.svg?branch=master" alt="Build Status"></a>
+<a href="https://www.npmjs.com/package/x-build-cli" target="_blank"><img src="https://img.shields.io/npm/v/x-build-cli.svg" alt=""></a>
 <a href="https://www.npmjs.com/package/x-build-cli" target="_blank"><img src="https://img.shields.io/npm/dm/x-build-cli.svg" alt=""></a>
-<img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt=""></p>
-<h3 id="&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;-cli">&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177; (CLI)</h3>
-<p>X-BUILD-CLI &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x751F;&#x6210; X-BUILD &#x9879;&#x76EE;&#x7684;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; @vue/cli&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x7EC8;&#x7AEF;&#x91CC;&#x7684; x-build &#x548C; x(&#x7B80;&#x5199;) &#x547D;&#x4EE4;&#x3002;</p>
+<a href="https://github.com/codexu/x-build/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt=""></a></p>
+<p><strong>X-BUILD-CLI</strong> &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x751F;&#x6210; X-BUILD &#x9879;&#x76EE;&#x7684;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; @vue/cli&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x7EC8;&#x7AEF;&#x91CC;&#x7684; x-build &#x548C; x(&#x7B80;&#x5199;) &#x547D;&#x4EE4;&#x3002;</p>
 <blockquote>
 <h4 id="&#x26A0;&#xFE0F;-node-&#x7248;&#x672C;&#x8981;&#x6C42;">&#x26A0;&#xFE0F; Node &#x7248;&#x672C;&#x8981;&#x6C42;</h4>
 <p>X-BUILD-CLI&#x9700;&#x8981; <a href="http://nodejs.cn/" target="_blank">Node.js</a> <strong>8.9 &#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;</strong> (&#x63A8;&#x8350; 8.11.0+)&#x3002;<br>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="https://github.com/creationix/nvm" target="_blank">nvm</a> &#x5728;&#x540C;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x4E2D;&#x7BA1;&#x7406;&#x591A;&#x4E2A; Node &#x7248;&#x672C;&#x3002;</p>
 </blockquote>
-<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
-<p>&#x4F7F;&#x7528;&#x4E0B;&#x5217;&#x547D;&#x4EE4;&#x5168;&#x5C40;&#x5B89;&#x88C5;npm&#x5305;&#xFF1A;</p>
-<pre class="language-"><code>  $ npm install -g x-build-cli
-  # &#x5B89;&#x88C5;&#x62A5;&#x9519;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;`sudo`&#x83B7;&#x5F97;&#x6743;&#x9650;&#x6743;&#x9650;&#xFF01;
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<p>&#x4F7F;&#x7528;&#x4E0B;&#x5217;&#x547D;&#x4EE4;&#x5168;&#x5C40;&#x5B89;&#x88C5; <font color="DodgerBlue">npm</font> &#x5305;&#xFF1A;</p>
+<pre><code>**[terminal]
+**[delimiter $ ]**[command npm install -g x-build-cli]
 </code></pre><p>&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8BBF;&#x95EE; <strong>x-build</strong> &#x547D;&#x4EE4;&#x3002;</p>
 <p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x68C0;&#x67E5;&#x5176;&#x7248;&#x672C;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF0C;&#x540C;&#x65F6;&#x9A8C;&#x8BC1;&#x5B83;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
-<pre class="language-"><code>  $ x-build --version
+<pre><code>**[terminal]
+**[delimiter $ ]**[command x-build --version]
 </code></pre>
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -405,7 +370,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"安装（CLI）","level":"1.2","depth":1,"next":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/getting-start/3-init.md","ref":"docs/getting-start/3-init.md","articles":[]},"previous":{"title":"概述","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","sitemap","-fontsettings","prism","-highlight","github-buttons","-sharing","baidu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"stylus"},"ignore":["mermaid","eval-js"]},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"size":2},"sitemap":{"hostname":"https://codexu.github.io/"},"github-buttons":{"buttons":[{"user":"codexu","type":"follow","width":"160","count":true,"size":"small"}]},"baidu":{"token":"a712521c12fe763eae4612a921600b1a"},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/2-install.md","mtime":"2019-01-09T02:52:12.923Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-10T03:48:42.848Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"安装（CLI）","level":"1.2","depth":1,"next":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/getting-start/3-init.md","ref":"docs/getting-start/3-init.md","articles":[]},"previous":{"title":"概述","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/2-install.md","mtime":"2019-01-14T09:19:21.033Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-14T09:19:39.545Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -419,19 +384,11 @@
         
     
         
-        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="../../gitbook/gitbook-plugin-baidu/plugin.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
         
     
         
@@ -440,6 +397,14 @@
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

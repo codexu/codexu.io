@@ -1,4 +1,4 @@
-# 开发模式
+# 开发环境
 
 目录结构(root/):
 
@@ -23,7 +23,7 @@
       └── webpack.build.js # 生产模式配置文件
 ```
 
-#### 入口文件
+## 入口文件
 
 - **PUG**：使用 pug 模板引擎，入口文件为 root/index.pug，它引入了 root/src/app.pug。
 
@@ -33,7 +33,7 @@
 
 - **JS**: root/src/scripts/index.js 是唯一的 js 入口文件，它并不需要 impot css 入口文件，这一步 X-BUILD 已经为你做好。
 
-#### assets 静态资源目录
+## assets 静态资源目录
 
 默认状态下X-BUILD只为你创建了assets/images目录存放你的图片，如果你要使用其他静态资源：
 
@@ -41,7 +41,7 @@
 
 - **视频**：创建目录 static/media/，支持mp4、webm、ogg、mp3、wav、flac、aac 格式。
 
-# 生产模式
+# 生产环境
 
 目录结构(root/dist):
 

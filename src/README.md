@@ -10,7 +10,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 > 有一定的 **HTML** 、**CSS** 基础，了解 **JavaScript** 、 **NPM** 和 **命令行**，如果以上这些都掌握的话，那继续吧～！
 
-### 适用场景
+## 适用场景
 
 1. H5 项目开发周期短，新的项目需要重新搭建开发环境，**请使用 X-BUILD-CLI 快速生成项目（类似 @vue/cli）**。
 
@@ -20,7 +20,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 4. 对前端工程化不熟悉，没有 webpack 的配置经验，**X-BUILD提供开箱即用的解决方案，无需关注配置**。
 
-### 功能特性
+## 功能特性
 
 | Speciality | Description |
 | :- | :- |
@@ -32,7 +32,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 | 代码规范 | 使用[ESLint](https://eslint.org/)避免低级错误和统一代码的风格。 |
 | 静态资源服务 | 提供代码压缩、图片压缩、文件hash、base64处理等服务。 |
 
-### 生态系统
+## 生态系统
 
 | Project | Status | Description |
 | :------ | :------ | :------ |
@@ -44,13 +44,13 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 | <a href="https://github.com/codexu/x-touch">X-TOUCH</a> | <img src="https://img.shields.io/badge/npm-v1.2.1-blue.svg"> | 使原生DOM支持轻触、长按和滑动事件。 |
 | <a href="https://github.com/codexu/x-music">X-MUSIC</a> | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 设置背景音乐与按钮控制。 |
 
-### 讨论交流
+## 讨论交流
 
-#### QQ群
+### QQ群
 
 欢迎加入 QQ交流群（374406559），在这里可以互相交流前端问题。
 
-#### 提问 & BUG
+### 提问 & BUG
 
 请将BUG提交在不同项目的 **Github issues** 里：
 

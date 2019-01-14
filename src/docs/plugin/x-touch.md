@@ -7,15 +7,16 @@
 
 为原生DOM实现移动端点击、长按、方向滑动事件。
 
-### 安装
+## 安装
 
-- 通过`npm` or `yarn`安装：
+- 通过 <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font> 安装：
 
 ```
-  npm install x-touch --save
+**[terminal]
+**[delimiter $ ]**[command npm install x-touch --save]
 ```
 
-### 起步
+## 起步
 
 - 使用 ES6 方式引用：
 
@@ -38,33 +39,29 @@ root.xtouch('tap', function(status){
 })
 
 ```
+### 事件名
 
-参数1 事件名：
+- `'tap'` <font color=MediumSeaGreen>&lt;String&gt;</font> 点击
 
-| 方式 | 参数 |
-| :- | :- |
-| ⏺ 点击 | `tap` |
-| ⏺ 长按 | `longTap` |
-| ⬆️ 向上滑动 | `swipUp` |
-| ⬇️ 向下滑动 | `swipDown` |
-| ⬅️ 向左滑动 | `swipLeft` |
-| ➡️ 向右滑动 | `swipRight` |
+- `'longTap'` <font color=MediumSeaGreen>&lt;String&gt;</font> 长按
 
-参数2 回调函数：
+- `'swipUp'` <font color=MediumSeaGreen>&lt;String&gt;</font> 向上滑动
 
-ℹ️ 函数内this指向实践绑定的DOM。
+- `'swipDown'` <font color=MediumSeaGreen>&lt;String&gt;</font> 向下滑动
 
-ℹ️ 函数参数status，此次事件发生的参数。
+- `'swipLeft'` <font color=MediumSeaGreen>&lt;String&gt;</font> 向左滑动
 
-### 配置
+- `'swipRight'` <font color=MediumSeaGreen>&lt;String&gt;</font> 向右滑动
 
-| 参数 | 默认值 | 说明 |
-| :- | :- | :- |
-| slideMin | 50 | 滑动事件最小距离 |
-| tapMin | 10 | 点击最大距离 |
-| longTapTime | 300 | 长按最短时间 |
+### 回调函数
 
-在初始化XTouch时传递参数`<Object>`:
+- `this` <font color=MediumSeaGreen>&lt;Object&gt;</font> ` this指向绑定的DOM。
+
+- `status` <font color=MediumSeaGreen>&lt;Object&gt;</font> ` 此次事件发生的参数。
+
+## 配置
+
+在初始化XTouch时传递参数:
 
 ``` javascript
 const config = {
@@ -75,3 +72,21 @@ const config = {
 
 const xTouch = new XTouch(config);
 ```
+
+### slideMin
+
+`50` <font color=MediumSeaGreen>&lt;Number&gt;</font>
+
+滑动事件最小距离。
+
+### tapMin
+
+`10` <font color=MediumSeaGreen>&lt;Number&gt;</font>
+
+点击最大距离。
+
+### longTapTime
+
+`300` <font color=MediumSeaGreen>&lt;Number&gt;</font>
+
+长按最短时间。
