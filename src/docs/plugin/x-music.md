@@ -13,7 +13,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm install x-music --save]
+**[command npm install x-music --save]
 ```
 
 ## 起步

@@ -13,7 +13,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm install x-touch --save]
+**[command npm install x-touch --save]
 ```
 
 ## 起步

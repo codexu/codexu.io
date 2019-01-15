@@ -7,3 +7,17 @@ p{
 hr{
   height: 1px !important;
 }
+.terminal{
+  position: relative;
+  border-radius: 5px;
+  padding-left: 20px !important;
+}
+.terminal::before{
+  color: #5AA4D5;
+  content: '$';
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 12px;
+  font-size: 12px;
+}

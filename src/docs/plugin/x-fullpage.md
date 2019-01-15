@@ -14,7 +14,7 @@ X-FULLPAGE 只能辅助你触发动画，使用 css动画库（推荐animate.css
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm install x-fullpage x-touch animate.css --save]
+**[command npm install x-fullpage x-touch animate.css --save]
 ```
 
 > 本教程默认使用 animate.css 作为动画库

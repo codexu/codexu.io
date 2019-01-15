@@ -17,7 +17,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm install -g x-build-cli]
+**[command npm install -g x-build-cli]
 ```
 
 安装之后，你就可以在命令行中访问 **x-build** 命令。
@@ -26,5 +26,5 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command x-build --version]
+**[command x-build --version]
 ```

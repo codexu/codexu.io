@@ -13,7 +13,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm install x-load --save]
+**[command npm install x-load --save]
 ```
 
 ## 引用

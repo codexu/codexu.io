@@ -6,7 +6,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command x-build create [name]]
+**[command x-build create [name]]
 ```
 ## 选项
 

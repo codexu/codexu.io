@@ -2,7 +2,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm run serve]
+**[command npm run serve]
 ```
 
 - 启动 sourse-map 追踪到错误和警告在源代码中的原始位置。
@@ -19,7 +19,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm run build]
+**[command npm run build]
 ```
 
 - webpack 将所有具有依赖关系的文件进行打包，输出在 dist/ 目录下。

@@ -13,7 +13,7 @@
 
 ```
 **[terminal]
-**[delimiter $ ]**[command npm install animate.css x-animate --save]
+**[command npm install animate.css x-animate --save]
 ```
 
 ## 引用
