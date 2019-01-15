@@ -32,7 +32,7 @@
 
 ## 起步
 
-为至少一个 DOM 添加 animate 属性，并赋值一个动画名称，例如：
+为至少一个 DOM 添加 <font color=Green>animate</font> 属性，并赋值一个动画名称，例如：
 
 ```html
 <!-- html -->
@@ -58,7 +58,7 @@
 
 `none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-参考animate.css动画名，或参考自定义动画。
+参考 animate.css 动画名，或参考自定义动画。
 
 ### delay
 
@@ -111,14 +111,14 @@
 
 ## 绑定生命周期函数
 
-在需要触发的元素上增加属性`animate-enter`(动画前)或`animate-leave`(动画后)，值为定义在methods中的函数名。
+在需要触发的元素上增加属性 <font color=Green>animate-enter</font> (动画前)或 <font color=Green>animate-leave</font> (动画后)，值为定义在 methods 中的函数名。
 
 ```html
 <!-- html -->
 <div animate-enter="animateEnter" animate-leave="animateLeave"></div>
 ```
 
-将需要执行的函数定义在methods中：
+将需要执行的函数定义在 methods 中：
 
 ```javascript
 // javascript
@@ -136,7 +136,7 @@ let xAnimate = new XAnimate({
 
 ## 自定义动画
 
-使用自定义的动画，例如新定义`newAnimate`动画:
+使用自定义的动画，例如新定义 newAnimate 动画:
 
 ```css
 /* css */

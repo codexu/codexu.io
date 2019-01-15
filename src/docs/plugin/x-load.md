@@ -28,13 +28,13 @@
 
 ## 起步
 
-1. 正文包裹层增加 `id="root"` ，将你的所有正文内容写在这个 div 下。
+1. 正文包裹层增加 <font color=Green>id="root"</font> ，将你的所有正文内容写在这个 <font color=Green>div</font> 下。
 
-2. X-BUILD 项目已经在 index.pug 中定义好 `div#root` ，所有的内容写在 app.pug 内即可。
+2. X-BUILD 项目已经在 index.pug 中定义好 <font color=Crimson>div#root</font> ，所有的内容写在 app.pug 内即可。
 
-3. `<img>` 标签使用 `data-src` 传入图片链接，不要设置 `src` 属性。
+3. <font color=Crimson>&lt;img&gt;</font> 标签使用 <font color=Green>data-src</font> 传入图片链接，不要设置 <font color=Green>src</font> 属性。
 
-4. 至少给一个 `<img>` 标签增加属性 `prior` ，表示此图片需要优先加载。
+4. 至少给一个 <font color=Crimson>&lt;img&gt;</font> 标签增加属性 <font color=Green>prior</font> ，表示此图片需要优先加载。
 
 ```html
 <!-- html -->
@@ -45,7 +45,7 @@
 
 ## 参数
 
-实例化XLoad时，传入object配置参数：
+实例化 XLoad 时，传入 object 配置参数：
 
 ``` javascript
   new XLoad({
@@ -57,37 +57,37 @@
 
 `#root` <font color=MediumSeaGreen>&lt;HTMLelement&gt;</font>
 
-传入正文包裹层DOM。
+传入正文包裹层 DOM。
 
 ### loader 
 
 `null` <font color=MediumSeaGreen>&lt;HTMLelement&gt;</font>
 
-如果需要自定义loading效果，请将自定义DOM传入。
+如果需要自定义 loading 效果，请将自定义 DOM 传入。
 
 ### attr 
 
 `'data-src'` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-`<img data-src="url">`当命名冲突时改变此项。
+当 <font color=Crimson>&lt;img data-src="url"&gt;</font> 命名冲突时改变此项。
 
 ### prior 
 
 `'prior'` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-`<img prior>`当命名冲突时改变此项。
+当 <font color=Crimson>&lt;img prior&gt;</font> 命名冲突时改变此项。
 
 ### sync 
 
 `true` <font color=MediumSeaGreen>&lt;Boolean&gt;</font>
 
-默认同步加载（按顺序加载），控制`<img prior>`图片加载完成后剩余图片加载方式，设置为`false`：异步加载(同时加载所有图片)。
+默认同步加载（按顺序加载），控制 <font color=Crimson>&lt;img prior&gt;</font> 图片加载完成后剩余图片加载方式，设置为 false：异步加载(同时加载所有图片)。
 
 ### loadImg 
 
 `null` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-图片路径，用于未加载完成图片的背景图，注意：使用webpack，请使用require()。
+图片路径，用于未加载完成图片的背景图，注意：使用 webpack ，请使用 require()。
 
 ### beforeLoading(object) 
 
@@ -101,7 +101,7 @@
 
 `none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
 
-每一个`<img prior>`加载后时触发（不论成功或失败）。
+每一个 <font color=Crimson>&lt;img prior&gt;</font> 加载后时触发（不论成功或失败）。
 
 - `percent` <font color=MediumSeaGreen>&lt;Number&gt;</font> 当前图片加载进度，值为`0-1`的小数。
 
@@ -109,7 +109,7 @@
 
 `none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
 
-所有`<img prior>`加载完成后执行。
+所有 <font color=Crimson>&lt;img prior&gt;</font> 加载完成后执行。
 
 - `object` <font color=MediumSeaGreen>&lt;Object&gt;</font> 指向实例
 

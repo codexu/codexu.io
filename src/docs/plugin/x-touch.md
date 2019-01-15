@@ -29,7 +29,7 @@ xTouch.init();
 
 > 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-touch/tree/master/dist)
 
-- 为DOM绑定touch事件：
+- 为 DOM 绑定 touch 事件：
 
 ``` javascript
 const root = document.getElementById('root');
@@ -61,7 +61,7 @@ root.xtouch('tap', function(status){
 
 ## 配置
 
-在初始化XTouch时传递参数:
+在初始化 XTouch 时传递参数:
 
 ``` javascript
 const config = {

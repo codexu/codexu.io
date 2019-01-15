@@ -10,9 +10,7 @@
 
 * [开发与打包](docs/getting-start/5-run.md)
 
-* [配置](docs/getting-start/6-options.md)
-
-* [特殊语法](docs/getting-start/7-special.md)
+* [自定义配置](docs/getting-start/6-options.md)
 
 ## 插件
 

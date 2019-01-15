@@ -157,20 +157,7 @@
                 <a href="../getting-start/6-options.html">
             
                     
-                    配置
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="../getting-start/7-special.html">
-            
-                <a href="../getting-start/7-special.html">
-            
-                    
-                    特殊语法
+                    自定义配置
             
                 </a>
             
@@ -349,13 +336,13 @@
 </blockquote>
 <h2 id="&#x8D77;&#x6B65;">&#x8D77;&#x6B65;</h2>
 <ol>
-<li><p>&#x6B63;&#x6587;&#x5305;&#x88F9;&#x5C42;&#x589E;&#x52A0; <code>id=&quot;root&quot;</code> &#xFF0C;&#x5C06;&#x4F60;&#x7684;&#x6240;&#x6709;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#x5199;&#x5728;&#x8FD9;&#x4E2A; div &#x4E0B;&#x3002;</p>
+<li><p>&#x6B63;&#x6587;&#x5305;&#x88F9;&#x5C42;&#x589E;&#x52A0; <font color="Green">id=&quot;root&quot;</font> &#xFF0C;&#x5C06;&#x4F60;&#x7684;&#x6240;&#x6709;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#x5199;&#x5728;&#x8FD9;&#x4E2A; <font color="Green">div</font> &#x4E0B;&#x3002;</p>
 </li>
-<li><p>X-BUILD &#x9879;&#x76EE;&#x5DF2;&#x7ECF;&#x5728; index.pug &#x4E2D;&#x5B9A;&#x4E49;&#x597D; <code>div#root</code> &#xFF0C;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x5199;&#x5728; app.pug &#x5185;&#x5373;&#x53EF;&#x3002;</p>
+<li><p>X-BUILD &#x9879;&#x76EE;&#x5DF2;&#x7ECF;&#x5728; index.pug &#x4E2D;&#x5B9A;&#x4E49;&#x597D; <font color="Crimson">div#root</font> &#xFF0C;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x5199;&#x5728; app.pug &#x5185;&#x5373;&#x53EF;&#x3002;</p>
 </li>
-<li><p><code>&lt;img&gt;</code> &#x6807;&#x7B7E;&#x4F7F;&#x7528; <code>data-src</code> &#x4F20;&#x5165;&#x56FE;&#x7247;&#x94FE;&#x63A5;&#xFF0C;&#x4E0D;&#x8981;&#x8BBE;&#x7F6E; <code>src</code> &#x5C5E;&#x6027;&#x3002;</p>
+<li><p><font color="Crimson">&lt;img&gt;</font> &#x6807;&#x7B7E;&#x4F7F;&#x7528; <font color="Green">data-src</font> &#x4F20;&#x5165;&#x56FE;&#x7247;&#x94FE;&#x63A5;&#xFF0C;&#x4E0D;&#x8981;&#x8BBE;&#x7F6E; <font color="Green">src</font> &#x5C5E;&#x6027;&#x3002;</p>
 </li>
-<li><p>&#x81F3;&#x5C11;&#x7ED9;&#x4E00;&#x4E2A; <code>&lt;img&gt;</code> &#x6807;&#x7B7E;&#x589E;&#x52A0;&#x5C5E;&#x6027; <code>prior</code> &#xFF0C;&#x8868;&#x793A;&#x6B64;&#x56FE;&#x7247;&#x9700;&#x8981;&#x4F18;&#x5148;&#x52A0;&#x8F7D;&#x3002;</p>
+<li><p>&#x81F3;&#x5C11;&#x7ED9;&#x4E00;&#x4E2A; <font color="Crimson">&lt;img&gt;</font> &#x6807;&#x7B7E;&#x589E;&#x52A0;&#x5C5E;&#x6027; <font color="Green">prior</font> &#xFF0C;&#x8868;&#x793A;&#x6B64;&#x56FE;&#x7247;&#x9700;&#x8981;&#x4F18;&#x5148;&#x52A0;&#x8F7D;&#x3002;</p>
 </li>
 </ol>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- html --&gt;</span>
@@ -364,29 +351,29 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
 <h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
-<p>&#x5B9E;&#x4F8B;&#x5316;XLoad&#x65F6;&#xFF0C;&#x4F20;&#x5165;object&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;</p>
+<p>&#x5B9E;&#x4F8B;&#x5316; XLoad &#x65F6;&#xFF0C;&#x4F20;&#x5165; object &#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">new</span> XLoad({
     <span class="hljs-comment">// ...</span>
   });
 </code></pre>
 <h3 id="wrapper">wrapper</h3>
 <p><code>#root</code> <font color="MediumSeaGreen">&lt;HTMLelement&gt;</font></p>
-<p>&#x4F20;&#x5165;&#x6B63;&#x6587;&#x5305;&#x88F9;&#x5C42;DOM&#x3002;</p>
+<p>&#x4F20;&#x5165;&#x6B63;&#x6587;&#x5305;&#x88F9;&#x5C42; DOM&#x3002;</p>
 <h3 id="loader">loader</h3>
 <p><code>null</code> <font color="MediumSeaGreen">&lt;HTMLelement&gt;</font></p>
-<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;loading&#x6548;&#x679C;&#xFF0C;&#x8BF7;&#x5C06;&#x81EA;&#x5B9A;&#x4E49;DOM&#x4F20;&#x5165;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49; loading &#x6548;&#x679C;&#xFF0C;&#x8BF7;&#x5C06;&#x81EA;&#x5B9A;&#x4E49; DOM &#x4F20;&#x5165;&#x3002;</p>
 <h3 id="attr">attr</h3>
 <p><code>&apos;data-src&apos;</code> <font color="MediumSeaGreen">&lt;String&gt;</font></p>
-<p><code>&lt;img data-src=&quot;url&quot;&gt;</code>&#x5F53;&#x547D;&#x540D;&#x51B2;&#x7A81;&#x65F6;&#x6539;&#x53D8;&#x6B64;&#x9879;&#x3002;</p>
+<p>&#x5F53; <font color="Crimson">&lt;img data-src=&quot;url&quot;&gt;</font> &#x547D;&#x540D;&#x51B2;&#x7A81;&#x65F6;&#x6539;&#x53D8;&#x6B64;&#x9879;&#x3002;</p>
 <h3 id="prior">prior</h3>
 <p><code>&apos;prior&apos;</code> <font color="MediumSeaGreen">&lt;String&gt;</font></p>
-<p><code>&lt;img prior&gt;</code>&#x5F53;&#x547D;&#x540D;&#x51B2;&#x7A81;&#x65F6;&#x6539;&#x53D8;&#x6B64;&#x9879;&#x3002;</p>
+<p>&#x5F53; <font color="Crimson">&lt;img prior&gt;</font> &#x547D;&#x540D;&#x51B2;&#x7A81;&#x65F6;&#x6539;&#x53D8;&#x6B64;&#x9879;&#x3002;</p>
 <h3 id="sync">sync</h3>
 <p><code>true</code> <font color="MediumSeaGreen">&lt;Boolean&gt;</font></p>
-<p>&#x9ED8;&#x8BA4;&#x540C;&#x6B65;&#x52A0;&#x8F7D;&#xFF08;&#x6309;&#x987A;&#x5E8F;&#x52A0;&#x8F7D;&#xFF09;&#xFF0C;&#x63A7;&#x5236;<code>&lt;img prior&gt;</code>&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x5269;&#x4F59;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;<code>false</code>&#xFF1A;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;(&#x540C;&#x65F6;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x56FE;&#x7247;)&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x540C;&#x6B65;&#x52A0;&#x8F7D;&#xFF08;&#x6309;&#x987A;&#x5E8F;&#x52A0;&#x8F7D;&#xFF09;&#xFF0C;&#x63A7;&#x5236; <font color="Crimson">&lt;img prior&gt;</font> &#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x5269;&#x4F59;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A; false&#xFF1A;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;(&#x540C;&#x65F6;&#x52A0;&#x8F7D;&#x6240;&#x6709;&#x56FE;&#x7247;)&#x3002;</p>
 <h3 id="loadimg">loadImg</h3>
 <p><code>null</code> <font color="MediumSeaGreen">&lt;String&gt;</font></p>
-<p>&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF0C;&#x7528;&#x4E8E;&#x672A;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x56FE;&#x7247;&#x7684;&#x80CC;&#x666F;&#x56FE;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;&#x4F7F;&#x7528;webpack&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;require()&#x3002;</p>
+<p>&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF0C;&#x7528;&#x4E8E;&#x672A;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x56FE;&#x7247;&#x7684;&#x80CC;&#x666F;&#x56FE;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;&#x4F7F;&#x7528; webpack &#xFF0C;&#x8BF7;&#x4F7F;&#x7528; require()&#x3002;</p>
 <h3 id="beforeloadingobject">beforeLoading(object)</h3>
 <p><code>none</code> <font color="MediumSeaGreen">&lt;Function&gt;</font></p>
 <p>&#x5F53;&#x5B9E;&#x4F8B;&#x5316;&#x5B8C;&#x6210;&#x540E;&#x89E6;&#x53D1;&#x3002;</p>
@@ -395,13 +382,13 @@
 </ul>
 <h3 id="nexttickloadingpercent">nextTickLoading(percent)</h3>
 <p><code>none</code> <font color="MediumSeaGreen">&lt;Function&gt;</font></p>
-<p>&#x6BCF;&#x4E00;&#x4E2A;<code>&lt;img prior&gt;</code>&#x52A0;&#x8F7D;&#x540E;&#x65F6;&#x89E6;&#x53D1;&#xFF08;&#x4E0D;&#x8BBA;&#x6210;&#x529F;&#x6216;&#x5931;&#x8D25;&#xFF09;&#x3002;</p>
+<p>&#x6BCF;&#x4E00;&#x4E2A; <font color="Crimson">&lt;img prior&gt;</font> &#x52A0;&#x8F7D;&#x540E;&#x65F6;&#x89E6;&#x53D1;&#xFF08;&#x4E0D;&#x8BBA;&#x6210;&#x529F;&#x6216;&#x5931;&#x8D25;&#xFF09;&#x3002;</p>
 <ul>
 <li><code>percent</code> <font color="MediumSeaGreen">&lt;Number&gt;</font> &#x5F53;&#x524D;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x8FDB;&#x5EA6;&#xFF0C;&#x503C;&#x4E3A;<code>0-1</code>&#x7684;&#x5C0F;&#x6570;&#x3002;</li>
 </ul>
 <h3 id="afterloading">afterLoading()</h3>
 <p><code>none</code> <font color="MediumSeaGreen">&lt;Function&gt;</font></p>
-<p>&#x6240;&#x6709;<code>&lt;img prior&gt;</code>&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x6240;&#x6709; <font color="Crimson">&lt;img prior&gt;</font> &#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#x6267;&#x884C;&#x3002;</p>
 <ul>
 <li><code>object</code> <font color="MediumSeaGreen">&lt;Object&gt;</font> &#x6307;&#x5411;&#x5B9E;&#x4F8B;</li>
 </ul>
@@ -432,7 +419,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"X-LOAD","level":"2.3","depth":1,"next":{"title":"X-ANIMATE","level":"2.4","depth":1,"path":"docs/plugin/x-animate.md","ref":"docs/plugin/x-animate.md","articles":[]},"previous":{"title":"X-FULLPAGE","level":"2.2","depth":1,"path":"docs/plugin/x-fullpage.md","ref":"docs/plugin/x-fullpage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/plugin/x-load.md","mtime":"2019-01-14T09:02:52.705Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-14T09:19:39.545Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"X-LOAD","level":"2.3","depth":1,"next":{"title":"X-ANIMATE","level":"2.4","depth":1,"path":"docs/plugin/x-animate.md","ref":"docs/plugin/x-animate.md","articles":[]},"previous":{"title":"X-FULLPAGE","level":"2.2","depth":1,"path":"docs/plugin/x-fullpage.md","ref":"docs/plugin/x-fullpage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/plugin/x-load.md","mtime":"2019-01-15T01:45:20.798Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-15T01:50:02.942Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

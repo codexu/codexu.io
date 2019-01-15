@@ -157,20 +157,7 @@
                 <a href="6-options.html">
             
                     
-                    配置
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="7-special.html">
-            
-                <a href="7-special.html">
-            
-                    
-                    特殊语法
+                    自定义配置
             
                 </a>
             
@@ -325,23 +312,28 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;</h1>
+                                <h2 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9879;&#x76EE;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9879;&#x76EE;</h2>
 <p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fxx1lxlnq3j31a00u0gxi.jpg" alt=""></p>
 <p>&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;&#xFF1A;</p>
 <pre><code>**[terminal]
 **[delimiter $ ]**[command x-build create [name]]
-</code></pre><h2 id="questions">Questions</h2>
-<p>X-BUILD&#x4F1A;&#x8DDF;&#x636E;&#x4F60;&#x7684;&#x9009;&#x5219;&#x4E2A;&#x6027;&#x5316;&#x7684;&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x9879;&#x76EE;&#xFF1A;</p>
+</code></pre><h2 id="&#x9009;&#x9879;">&#x9009;&#x9879;</h2>
 <h3 id="eslint">ESLint</h3>
 <p>ESLint &#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x8BC6;&#x522B; ECMAScript &#x5E76;&#x4E14;&#x6309;&#x7167;&#x89C4;&#x5219;&#x7ED9;&#x51FA;&#x62A5;&#x544A;&#x7684;&#x4EE3;&#x7801;&#x68C0;&#x6D4B;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;&#x5B83;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x4F4E;&#x7EA7;&#x9519;&#x8BEF;&#x548C;&#x7EDF;&#x4E00;&#x4EE3;&#x7801;&#x7684;&#x98CE;&#x683C;&#xFF0C;<a href="../others/eslint.html">&#x8BE6;&#x89E3;&gt;&gt;</a></p>
 <h3 id="rem&#x5E03;&#x5C40;">REM&#x5E03;&#x5C40;</h3>
-<p>REM&#x5E03;&#x5C40;&#x65B9;&#x6848;&#xFF0C;&#x91C7;&#x7528; hotcss &#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#xFF08; dpr&#x3001;&#x5C3A;&#x5BF8;&#x7B49;&#xFF09;&#x5E76;&#x8BBE;&#x7F6E;&#x6839;&#x8282;&#x70B9; font-size&#xFF0C;px2rem-loader&#x4F1A;&#x5E2E;&#x4F60;&#x5C06;px&#x8F6C;&#x5316;&#x4E3A;rem&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#xFF0C;<a href="7-special.html">&#x8BE6;&#x89E3;&gt;&gt;</a></p>
+<p>REM&#x5E03;&#x5C40;&#x65B9;&#x6848;&#xFF0C;&#x91C7;&#x7528; hotcss &#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x4FE1;&#x606F;&#xFF08; dpr&#x3001;&#x5C3A;&#x5BF8;&#x7B49;&#xFF09;&#x5E76;&#x8BBE;&#x7F6E;&#x6839;&#x8282;&#x70B9; font-size&#xFF0C;px2rem-loader&#x4F1A;&#x5E2E;&#x4F60;&#x5C06;px&#x8F6C;&#x5316;&#x4E3A;rem&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#xFF0C;&#x4F8B;&#xFF1A;</p>
+<pre><code>  width: 750px; =&gt; width: 16rem;
+</code></pre><p>&#x9ED8;&#x8BA4;&#x4E3A;<code>750px</code>&#x8BBE;&#x8BA1;&#x7A3F;&#x5F00;&#x53D1;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x8BA1;&#x7A3F;&#x4E3A;&#x5176;&#x4ED6;&#x5C3A;&#x5BF8;&#xFF0C;&#x4FEE;&#x6539; ./build/lib/isRem.js &#x6587;&#x4EF6;&#x5185;&#x7684; remUnit &#x53C2;&#x6570;&#x3002;</p>
 <h3 id="pug&#x6A21;&#x677F;&#x5F15;&#x64CE;">PUG&#x6A21;&#x677F;&#x5F15;&#x64CE;</h3>
-<p>Pug &#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x7F16;&#x5199;HTML&#x7684;&#x5E72;&#x51C0;&#x3001;&#x7A7A;&#x683C;&#x654F;&#x611F;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x7F29;&#x8FDB;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E66;&#x5199;&#xFF0C;<a href="7-special.html">&#x8BE6;&#x89E3;&gt;&gt;</a></p>
+<p>Pug &#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x7F16;&#x5199; HTML &#x7684;&#x5E72;&#x51C0;&#x3001;&#x7A7A;&#x683C;&#x654F;&#x611F;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x7F29;&#x8FDB;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E66;&#x5199;&#xFF0C;<a href="https://pugjs.org/zh-cn/api/getting-started.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x6863;&gt;&gt;</a></p>
+<p>&#x4F7F;&#x7528; <a href="https://github.com/pugjs/pug-loader" target="_blank">pug-loader</a> &#x89E3;&#x6790; pug / jade &#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528; require() &#x89E3;&#x6790;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-pug">  img(src=require(&apos;@/assets/images/logo.png&apos;))
+</code></pre>
+<p>&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;x-build-cli &#x4F1A;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; <code>index.pug</code>&#x3001;src &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; <code>app.pug</code>&#x3002;</p>
 <h3 id="css&#x9884;&#x5904;&#x7406;&#x5668;">CSS&#x9884;&#x5904;&#x7406;&#x5668;</h3>
-<p>&#x652F;&#x6301;&#x5E38;&#x7528;&#x7684;&#x4E09;&#x79CD;&#x9884;&#x5904;&#x7406;&#x5668;&#x3002;CSS &#x9884;&#x5904;&#x7406;&#x5668;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x57FA;&#x672C;&#x7684;&#x601D;&#x60F3;&#x662F;&#x7528;&#x4E00;&#x79CD;&#x4E13;&#x95E8;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#x5DE5;&#x4F5C;&#xFF0C;&#x51CF;&#x5C11;&#x67AF;&#x71E5;&#x65E0;&#x5473;&#x7684; CSS &#x4EE3;&#x7801;&#x7684;&#x7F16;&#x5199;&#x8FC7;&#x7A0B;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5B83;&#x80FD;&#x8BA9;&#x4F60;&#x7684; CSS &#x5177;&#x5907;&#x66F4;&#x52A0;&#x7B80;&#x6D01;&#x3001;&#x9002;&#x5E94;&#x6027;&#x66F4;&#x5F3A;&#x3001;&#x53EF;&#x8BFB;&#x6027;&#x66F4;&#x52A0;&#x3001;&#x5C42;&#x7EA7;&#x5173;&#x7CFB;&#x66F4;&#x52A0;&#x660E;&#x663E;&#x3001;&#x66F4;&#x6613;&#x4E8E;&#x4EE3;&#x7801;&#x7684;&#x7EF4;&#x62A4;&#x7B49;&#x8BF8;&#x591A;&#x597D;&#x5904;&#x3002;</p>
+<p>&#x652F;&#x6301;&#x5E38;&#x7528;&#x7684;&#x4E09;&#x79CD;&#x9884;&#x5904;&#x7406;&#x5668;(sass&#x3001;less&#x3001;stylus)&#xFF0C;&#x6839;&#x636E;&#x4F60;&#x7684;&#x9009;&#x62E9;&#x4F1A;&#x5B89;&#x88C5;&#x76F8;&#x5E94;&#x7684;&#x9884;&#x5904;&#x7406;&#x5668;&#x4E0E; loader&#x3002;</p>
 <h3 id="&#x63D2;&#x4EF6;">&#x63D2;&#x4EF6;</h3>
-<p>&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5B89;&#x88C5;&#xFF0C;&#x6216;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x540E;&#x901A;&#x8FC7; npm &#x5B89;&#x88C5;&#xFF0C;&#x4F7F;&#x7528;&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;&#x4F60;&#x7684;&#x5F00;&#x53D1;&#x901F;&#x5EA6;&#xFF0C;&#x907F;&#x514D;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4E0A;&#x803D;&#x8BEF;&#x5F00;&#x53D1;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x63D2;&#x4EF6;&#x662F; x-build &#x7684;&#x652F;&#x67F1;&#x529F;&#x80FD;&#xFF0C;&#x81F4;&#x529B;&#x4E8E;&#x534F;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x51CF;&#x5C11;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5F00;&#x53D1;&#x3001;&#x52A0;&#x5FEB;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#xFF0C;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x9879;&#x76EE;&#x9700;&#x6C42;&#xFF0C;&#x642D;&#x914D;&#x4E0D;&#x540C;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x4E8B;&#x534A;&#x529F;&#x500D;&#x3002;</p>
 <h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
 <table>
 <thead>
@@ -352,12 +344,12 @@
 </thead>
 <tbody>
 <tr>
-<td>-n, noversion</td>
-<td>&#x26A0;&#xFE0F; &#x5FFD;&#x7565;&#x7248;&#x672C;&#x68C0;&#x6D4B;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x9879;&#x76EE;&#x6B63;&#x5E38;&#x542F;&#x52A8;&#x3002;</td>
+<td>-q, quick</td>
+<td>&#x8DF3;&#x8FC7;&#x9009;&#x9879;&#x5FEB;&#x901F;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF08;&#x65E0; ESLint&#x3001;CSS&#x9884;&#x5904;&#x7406;&#x5668;&#x3001;REM&#x5E03;&#x5C40;&#x3001;&#x63D2;&#x4EF6;&#xFF09;&#x3002;</td>
 </tr>
 <tr>
-<td>-q, quick</td>
-<td>&#x5FEB;&#x901F;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF08;&#x65E0;ESLint&#x3001;CSS&#x9884;&#x5904;&#x7406;&#x5668;&#x3001;REM&#x5E03;&#x5C40;&#xFF09;&#x3002;</td>
+<td>-n, noversion</td>
+<td>&#x26A0;&#xFE0F; &#x5FFD;&#x7565;&#x7248;&#x672C;&#x68C0;&#x6D4B;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x9879;&#x76EE;&#x6B63;&#x5E38;&#x542F;&#x52A8;&#x3002;</td>
 </tr>
 </tbody>
 </table>
@@ -388,7 +380,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"创建一个项目","level":"1.3","depth":1,"next":{"title":"目录结构","level":"1.4","depth":1,"path":"docs/getting-start/4-structure.md","ref":"docs/getting-start/4-structure.md","articles":[]},"previous":{"title":"安装（CLI）","level":"1.2","depth":1,"path":"docs/getting-start/2-install.md","ref":"docs/getting-start/2-install.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/3-init.md","mtime":"2019-01-14T06:45:09.391Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-14T09:19:39.545Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"创建一个项目","level":"1.3","depth":1,"next":{"title":"目录结构","level":"1.4","depth":1,"path":"docs/getting-start/4-structure.md","ref":"docs/getting-start/4-structure.md","articles":[]},"previous":{"title":"安装（CLI）","level":"1.2","depth":1,"path":"docs/getting-start/2-install.md","ref":"docs/getting-start/2-install.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/3-init.md","mtime":"2019-01-15T01:33:49.491Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-15T01:50:02.942Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

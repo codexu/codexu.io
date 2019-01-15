@@ -157,20 +157,7 @@
                 <a href="../getting-start/6-options.html">
             
                     
-                    配置
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="../getting-start/7-special.html">
-            
-                <a href="../getting-start/7-special.html">
-            
-                    
-                    特殊语法
+                    自定义配置
             
                 </a>
             
@@ -344,6 +331,7 @@
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">import</span> XMusic <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;x-music&apos;</span>;
 
+<span class="hljs-comment">// &#x4F7F;&#x7528; webpack &#x8BF7; import &#x5F15;&#x5165;&#x9759;&#x6001;&#x8D44;&#x6E90;</span>
 <span class="hljs-keyword">import</span> src <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;***&apos;</span>;
 <span class="hljs-keyword">import</span> playImg <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;***&apos;</span>;
 <span class="hljs-keyword">import</span> pauseImg <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;***&apos;</span>;
@@ -355,7 +343,7 @@ xMusic.init();
 <p>&#x672C;&#x9879;&#x76EE;&#x901A;&#x8FC7; rollup &#x4F7F;&#x7528; UMD &#x683C;&#x5F0F;&#x6253;&#x5305;&#xFF0C;&#x652F;&#x6301; AMD&#x3001;CommonJS&#x3001;script &#x6807;&#x7B7E;&#x5F15;&#x5165;&#xFF0C;<a href="https://github.com/codexu/x-music/tree/master/dist" target="_blank">&#x4E0B;&#x8F7D;&#x6E90;&#x7801;</a></p>
 </blockquote>
 <h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
-<p>&#x5982;&#x679C;&#x4F7F;&#x7528;webpack&#x8FDB;&#x884C;&#x6253;&#x5305;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;import&#x52A0;&#x8F7D;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF1A;</p>
+<p>&#x5982;&#x679C;&#x4F7F;&#x7528; webpack &#x8FDB;&#x884C;&#x6253;&#x5305;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528; import &#x52A0;&#x8F7D;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF1A;</p>
 <h3 id="src">src*</h3>
 <p><code>none</code> <font color="MediumSeaGreen">&lt;String&gt;</font></p>
 <p>&#x97F3;&#x4E50;&#x8DEF;&#x5F84;</p>
@@ -398,7 +386,7 @@ xMusic.init();
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"X-MUSIC","level":"2.6","depth":1,"next":{"title":"ESLint","level":"3.1","depth":1,"path":"docs/others/eslint.md","ref":"docs/others/eslint.md","articles":[]},"previous":{"title":"X-TOUCH","level":"2.5","depth":1,"path":"docs/plugin/x-touch.md","ref":"docs/plugin/x-touch.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/plugin/x-music.md","mtime":"2019-01-14T09:19:18.080Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-14T09:19:39.545Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"X-MUSIC","level":"2.6","depth":1,"next":{"title":"ESLint","level":"3.1","depth":1,"path":"docs/others/eslint.md","ref":"docs/others/eslint.md","articles":[]},"previous":{"title":"X-TOUCH","level":"2.5","depth":1,"path":"docs/plugin/x-touch.md","ref":"docs/plugin/x-touch.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/plugin/x-music.md","mtime":"2019-01-15T01:49:38.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-15T01:50:02.942Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -23,6 +23,7 @@
 ``` javascript
 import XMusic from 'x-music';
 
+// 使用 webpack 请 import 引入静态资源
 import src from '***';
 import playImg from '***';
 import pauseImg from '***';
@@ -35,7 +36,7 @@ xMusic.init();
 
 ## 参数
 
-如果使用webpack进行打包，请使用import加载静态资源：
+如果使用 webpack 进行打包，请使用 import 加载静态资源：
 
 ### src*
 

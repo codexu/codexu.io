@@ -1,4 +1,4 @@
-# 创建一个新项目
+## 创建一个项目
 
 ![](https://ws4.sinaimg.cn/large/006tNbRwly1fxx1lxlnq3j31a00u0gxi.jpg)
 
@@ -8,9 +8,7 @@
 **[terminal]
 **[delimiter $ ]**[command x-build create [name]]
 ```
-## Questions
-
-X-BUILD会跟据你的选则个性化的创建你的项目：
+## 选项
 
 ### ESLint
 
@@ -18,23 +16,37 @@ ESLint 是一个用来识别 ECMAScript 并且按照规则给出报告的代码�
 
 ### REM布局
 
-REM布局方案，采用 hotcss 获取设备信息（ dpr、尺寸等）并设置根节点 font-size，px2rem-loader会帮你将px转化为rem，从而实现自适应布局，[详解>>](./7-special.md)
+REM布局方案，采用 hotcss 获取设备信息（ dpr、尺寸等）并设置根节点 font-size，px2rem-loader会帮你将px转化为rem，从而实现自适应布局，例：
+
+```
+  width: 750px; => width: 16rem;
+```
+
+默认为`750px`设计稿开发，如果设计稿为其他尺寸，修改 ./build/lib/isRem.js 文件内的 remUnit 参数。
 
 ### PUG模板引擎
 
-Pug 是一种用于编写HTML的干净、空格敏感的语法，通过缩进的方式进行书写，[详解>>](./7-special.md)
+Pug 是一种用于编写 HTML 的干净、空格敏感的语法，通过缩进的方式进行书写，[参考文档>>](https://pugjs.org/zh-cn/api/getting-started.html)
+
+使用 [pug-loader](https://github.com/pugjs/pug-loader) 解析 pug / jade 文件，需要使用 require() 解析静态资源，例：
+
+```pug
+  img(src=require('@/assets/images/logo.png'))
+```
+
+与此同时，x-build-cli 会在根目录下创建 `index.pug`、src 目录下创建 `app.pug`。
 
 ### CSS预处理器
 
-支持常用的三种预处理器。CSS 预处理器定义了一种新的语言，基本的思想是用一种专门的编程语言，开发者只需要使用这种语言进行编码工作，减少枯燥无味的 CSS 代码的编写过程的同时，它能让你的 CSS 具备更加简洁、适应性更强、可读性更加、层级关系更加明显、更易于代码的维护等诸多好处。
+支持常用的三种预处理器(sass、less、stylus)，根据你的选择会安装相应的预处理器与 loader。
 
 ### 插件
 
-插件可以选择安装，或创建项目后通过 npm 安装，使用插件可以加快你的开发速度，避免业务逻辑上耽误开发时间。
+插件是 x-build 的支柱功能，致力于协助开发者减少业务逻辑开发、加快项目开发，根据不同的项目需求，搭配不同的插件，事半功倍。
 
 ## 参数
 
 | 参数 | 说明 |
 | - | - |
+| -q, quick | 跳过选项快速初始化一个项目（无 ESLint、CSS预处理器、REM布局、插件）。 |
 | -n, noversion | ⚠️ 忽略版本检测，可能会影响项目正常启动。 |
-| -q, quick | 快速初始化一个项目（无ESLint、CSS预处理器、REM布局）。 |
