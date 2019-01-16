@@ -1,7 +1,7 @@
 # X-BUILD
-[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
-[![](https://img.shields.io/npm/v/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
-[![](https://img.shields.io/npm/dm/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
+[![Build Status](https://travis-ci.org/codexu/x-build.svg?branch=master)](https://travis-ci.org/codexu/x-build)
+[![](https://img.shields.io/npm/v/x-build.svg)](https://www.npmjs.com/package/x-build)
+[![](https://img.shields.io/npm/dm/x-build.svg)](https://www.npmjs.com/package/x-build)
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
 
 X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开发效率，减小开发难度。它可以让你在没有任何构建工具（例如 grunt 、 gulp 或 webpack 等工具）配置经验的情况下，帮你快速生成一个完整的前端工程，并可以打包代码和静态资源，使你的项目以最优异的性能上线。同时提供多个 H5 开发常用功能插件，最大化的节约开发成本。
@@ -12,7 +12,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 ## 适用场景
 
-1. H5 项目开发周期短，新的项目需要重新搭建开发环境，**请使用 X-BUILD-CLI 快速生成项目（类似 @vue/cli）**。
+1. H5 项目开发周期短，新的项目需要重新搭建开发环境，**请使用 X-BUILD 快速生成项目（类似 @vue/cli）**。
 
 2. 目前市场上移动设备尺寸各异，**请使用 REM布局 集成解决方案解决屏幕自适应问题**。
 
@@ -36,8 +36,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 | Project | Status | Description |
 | :------ | :------ | :------ |
-| <a href="https://github.com/codexu/x-build">X-BUILD</a> | <img src="https://img.shields.io/badge/npm-v4.4.10-blue.svg"> | 基于Webpack的工程模板，CLI create时会被下载。 |
-| <a href="https://github.com/codexu/x-build-cli">X-BUILD-CLI</a> | <img src="https://img.shields.io/badge/npm-v1.4.9-blue.svg"> | 脚手架工具，快速生成工程目录，并安装依赖。 |
+| <a href="https://github.com/codexu/x-build">X-BUILD</a> | <img src="https://img.shields.io/badge/npm-v4.4.10-blue.svg"> | 脚手架工具，快速生成工程目录，并安装依赖。 |
 | <a href="https://github.com/codexu/x-fullpage">X-FULLPAGE</a> | <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg"> | 适用于移动端的整屏滚动插件，支持动画触发。 |
 | <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.4-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
 | <a href="https://github.com/codexu/x-animate">X-ANIMATE</a> | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
@@ -54,8 +53,7 @@ X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开�
 
 请将BUG提交在不同项目的 **Github issues** 里：
 
-[X-BUILD模板](https://github.com/codexu/x-build/issues) | 
-[CLI工具](https://github.com/codexu/x-build-cli/issues) | 
+[X-BUILD](https://github.com/codexu/x-build/issues) | 
 [X-FULLPAGE](https://github.com/codexu/x-fullpage/issues) | 
 [X-LOAD](https://github.com/codexu/x-load/issues) | 
 [X-ANIMATE](https://github.com/codexu/x-animate/issues) | 

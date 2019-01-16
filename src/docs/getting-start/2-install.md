@@ -1,15 +1,10 @@
-# 命令行工具 (CLI)
+# 安装
 
-[![Build Status](https://travis-ci.org/codexu/x-build-cli.svg?branch=master)](https://travis-ci.org/codexu/x-build-cli)
-[![](https://img.shields.io/npm/v/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
-[![](https://img.shields.io/npm/dm/x-build-cli.svg)](https://www.npmjs.com/package/x-build-cli)
-[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
-
-**X-BUILD-CLI** 是一个快速生成 X-BUILD 项目的生成器，类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
+通过 npm 安装 X-BUILD，使用方式类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
 
 > #### ⚠️ Node 版本要求
 
-> X-BUILD-CLI需要 [Node.js](http://nodejs.cn/) **8.9 或更高版本** (推荐 8.11.0+)。<br>你可以使用 [nvm](https://github.com/creationix/nvm) 在同一台电脑中管理多个 Node 版本。
+> X-BUILD需要 [Node.js](http://nodejs.cn/) **8.9 或更高版本** (推荐 8.11.0+)。<br>你可以使用 [nvm](https://github.com/creationix/nvm) 在同一台电脑中管理多个 Node 版本。
 
 ## 安装
 
@@ -17,7 +12,7 @@
 
 ```
 **[terminal]
-**[command npm install -g x-build-cli]
+**[command npm install -g x-build]
 ```
 
 安装之后，你就可以在命令行中访问 **x-build** 命令。
