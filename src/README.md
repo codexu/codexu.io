@@ -4,33 +4,33 @@
 [![](https://img.shields.io/npm/dm/x-build.svg)](https://www.npmjs.com/package/x-build)
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
 
-X-BUILD 是针对 H5 开发的一套自动化构建工具，致力于提升开发效率，减小开发难度。它可以让你在没有任何构建工具（例如 grunt 、 gulp 或 webpack 等工具）配置经验的情况下，帮你快速生成一个完整的前端工程，并可以打包代码和静态资源，使你的项目以最优异的性能上线。同时提供多个 H5 开发常用功能插件，最大化的节约开发成本。
+X-BUILD 是面向 H5项目 的工程脚手架工具，解决开发中的自动化工具、性能优化、模块化、规范、打包等问题。
 
 > #### ✅ 基础
 
-> 有一定的 **HTML** 、**CSS** 基础，了解 **JavaScript** 、 **NPM** 和 **命令行**，如果以上这些都掌握的话，那继续吧～！
-
-## 适用场景
-
-1. H5 项目开发周期短，新的项目需要重新搭建开发环境，**请使用 X-BUILD 快速生成项目（类似 @vue/cli）**。
-
-2. 目前市场上移动设备尺寸各异，**请使用 REM布局 集成解决方案解决屏幕自适应问题**。
-
-3. 已经放弃 jQuery，但很多插件又依赖它，**请使用 X-BUILD 提供的无依赖插件**。
-
-4. 对前端工程化不熟悉，没有 webpack 的配置经验，**X-BUILD提供开箱即用的解决方案，无需关注配置**。
+> 有一定的 **HTML** 、**CSS** 基础，了解 **JavaScript** 、 **NPM** 和 **命令行**。
 
 ## 功能特性
 
-| Speciality | Description |
-| :- | :- |
-| devServer | [模块热替换(HMR - Hot Module Replacement)](https://webpack.docschina.org/concepts/hot-module-replacement/)可以显著加快开发速度。 |
-| 自适应解决方案 | [px2rem](https://github.com/songsiqi/px2rem) + [hotcss](https://github.com/imochen/hotcss) 实现多终端显示一致。 |
-| HTML | 支持[Pug](https://pug.bootcss.com/api/getting-started.html)模板引擎。 |
-| Css | 支持sass、less、stylus样式预处理器，normalize重置样式，Postcss。 |
-| JavaScript | [Webpack](https://webpack.docschina.org/concepts/)解决模块化，通过Babel编译成现代浏览器可执行的JavaScript。 |
-| 代码规范 | 使用[ESLint](https://eslint.org/)避免低级错误和统一代码的风格。 |
-| 静态资源服务 | 提供代码压缩、图片压缩、文件hash、base64处理等服务。 |
+#### 快速生成工程目录(CLI)
+
+通过 npm 全局安装 X-BUILD，提供了终端里的 `x` or `x-build` 命令，告别复制粘贴的蛮荒时代。
+
+#### 基于 webpack 的开发环境
+
+跳过复杂的 webpack、babel 等复杂配置，直接上手现代化的前端开发流程。
+
+#### 自适应解决方案
+
+在移动设备百花齐放的年代，实现一套代码，多端适应。
+
+#### 核心插件
+
+提供 5 个独立插件，进一步加速开发速度，同时告别 jQuery 插件。
+
+#### 可选功能
+
+PUG模板引擎、CSS预处理器(sass、less、stylus)、postcss、ESLint、图片压缩等。
 
 ## 生态系统
 
