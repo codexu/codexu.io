@@ -1,4 +1,4 @@
-# 安装
+## 命令行工具 CLI
 
 通过 npm 安装 X-BUILD，使用方式类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
 
