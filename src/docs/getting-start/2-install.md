@@ -1,6 +1,8 @@
 ## 命令行工具 CLI
 
-通过 npm 安装 X-BUILD，使用方式类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
+### 开发环境配置
+
+X-BUILD的开发环境依赖于 Node.js。
 
 > #### ✅ Node 版本要求
 
@@ -8,9 +10,41 @@
 
 > 如果是 Windows 请打开 cmd 输入命令执行，如果是类 Unix 系统，请打开任意终端输入命令执行。
 
-## 安装
+#### macOS 用户
 
-> ⚠️ x-build 与 ~~x-build-cli~~ 已合并，请老用户以文档为准。
+建议您使用 *nvm 来管理 Node.js 的安装。
+
+打开终端，执行如下命令
+
+```
+**[terminal]
+**[command curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash ]
+```
+
+完成后重启终端，执行 `nvm install --lts` 来安装最新 LTS 版本的 Node.js
+
+#### Windows 用户
+
+访问 Node.js 的官网 https://nodejs.org/ 下载对应平台且标记为 LTS 版本的安装包，并执行安装，安装成功后在终端执行：
+
+验证安装的 Node.js 版本
+
+在终端中执行如下命令 (Windows 下可以是 Git Bash 或其它终端模拟器)
+
+```
+**[terminal]
+**[command node -v ]
+```
+
+终端打印出 Node.js 的版本，则表示安装成功。
+
+LTS: 指的是 Node.js 的长期维护版本，您可以在这里 https://github.com/nodejs/Release#release-schedule 看到 Node.js 各版本的官方持续维护期限
+
+nvm: 请参考 https://github.com/creationix/nvm
+
+## 安装CLI
+
+通过 npm 安装 X-BUILD，使用方式类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
 
 使用下列命令全局安装 <font color=DodgerBlue>npm</font> 包：
 
