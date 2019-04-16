@@ -43,3 +43,7 @@
 `["./src/script/index.js"]` <font color=MediumSeaGreen>&lt;Array&gt;</font>
 
 **文件：**文件同样会被打包在 bundle.js 中，一般会将入口文件写在此处，如果不想通过import的方式引入你的文件，也可以添加在此处。
+
+## proxy
+
+**跨域：**当遇到跨域问题时，可以通过此项配置，配置方法参考[webpack-proxy](https://webpack.docschina.org/configuration/dev-server/#devserver-proxy)。
