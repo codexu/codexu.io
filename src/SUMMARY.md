@@ -12,7 +12,7 @@
 
 * [自定义配置](docs/getting-start/6-options.md)
 
-* [api请求接口](docs/getting-start/6-api.md)
+* [api请求接口](docs/getting-start/7-api.md)
 
 ## 插件
 

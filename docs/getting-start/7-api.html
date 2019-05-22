@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>安装（CLI） · X-BUILD文档</title>
+        <title>api请求接口 · X-BUILD文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="3-init.html" />
+    <link rel="next" href="../plugin/about.html" />
     
     
-    <link rel="prev" href="../../" />
+    <link rel="prev" href="6-options.html" />
     
 
     </head>
@@ -100,7 +100,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="2-install.html">
+        <li class="chapter " data-level="1.2" data-path="2-install.html">
             
                 <a href="2-install.html">
             
@@ -165,7 +165,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="7-api.html">
+        <li class="chapter active" data-level="1.7" data-path="7-api.html">
             
                 <a href="7-api.html">
             
@@ -313,7 +313,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >安装（CLI）</a>
+        <a href="../.." >api请求接口</a>
     </h1>
 </div>
 
@@ -325,39 +325,26 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;-cli">&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177; CLI</h2>
-<h3 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;</h3>
-<p>X-BUILD&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4F9D;&#x8D56;&#x4E8E; Node.js&#x3002;</p>
-<blockquote>
-<h4 id="&#x2705;-node-&#x7248;&#x672C;&#x8981;&#x6C42;">&#x2705; Node &#x7248;&#x672C;&#x8981;&#x6C42;</h4>
-<p>X-BUILD&#x9700;&#x8981; <a href="http://nodejs.cn/" target="_blank">Node.js</a> <strong>8.9 &#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;</strong> (&#x63A8;&#x8350; 8.11.0+)&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="https://github.com/creationix/nvm" target="_blank">nvm</a> &#x5728;&#x540C;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x4E2D;&#x7BA1;&#x7406;&#x591A;&#x4E2A; Node &#x7248;&#x672C;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x662F; Windows &#x8BF7;&#x6253;&#x5F00; cmd &#x8F93;&#x5165;&#x547D;&#x4EE4;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x7C7B; Unix &#x7CFB;&#x7EDF;&#xFF0C;&#x8BF7;&#x6253;&#x5F00;&#x4EFB;&#x610F;&#x7EC8;&#x7AEF;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x3002;</p>
-</blockquote>
-<h4 id="macos-&#x7528;&#x6237;">macOS &#x7528;&#x6237;</h4>
-<p>&#x5EFA;&#x8BAE;&#x60A8;&#x4F7F;&#x7528; *nvm &#x6765;&#x7BA1;&#x7406; Node.js &#x7684;&#x5B89;&#x88C5;&#x3002;</p>
-<p>&#x6253;&#x5F00;&#x7EC8;&#x7AEF;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;</p>
-<pre><code>**[terminal]
-**[command curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash ]
-</code></pre><p>&#x5B8C;&#x6210;&#x540E;&#x91CD;&#x542F;&#x7EC8;&#x7AEF;&#xFF0C;&#x6267;&#x884C; <code>nvm install --lts</code> &#x6765;&#x5B89;&#x88C5;&#x6700;&#x65B0; LTS &#x7248;&#x672C;&#x7684; Node.js</p>
-<h4 id="windows-&#x7528;&#x6237;">Windows &#x7528;&#x6237;</h4>
-<p>&#x8BBF;&#x95EE; Node.js &#x7684;&#x5B98;&#x7F51; <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a> &#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x5E73;&#x53F0;&#x4E14;&#x6807;&#x8BB0;&#x4E3A; LTS &#x7248;&#x672C;&#x7684;&#x5B89;&#x88C5;&#x5305;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x5B89;&#x88C5;&#xFF0C;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x540E;&#x5728;&#x7EC8;&#x7AEF;&#x6267;&#x884C;&#xFF1A;</p>
-<p>&#x9A8C;&#x8BC1;&#x5B89;&#x88C5;&#x7684; Node.js &#x7248;&#x672C;</p>
-<p>&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4; (Windows &#x4E0B;&#x53EF;&#x4EE5;&#x662F; Git Bash &#x6216;&#x5176;&#x5B83;&#x7EC8;&#x7AEF;&#x6A21;&#x62DF;&#x5668;)</p>
-<pre><code>**[terminal]
-**[command node -v ]
-</code></pre><p>&#x7EC8;&#x7AEF;&#x6253;&#x5370;&#x51FA; Node.js &#x7684;&#x7248;&#x672C;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
-<p>LTS: &#x6307;&#x7684;&#x662F; Node.js &#x7684;&#x957F;&#x671F;&#x7EF4;&#x62A4;&#x7248;&#x672C;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC; <a href="https://github.com/nodejs/Release#release-schedule" target="_blank">https://github.com/nodejs/Release#release-schedule</a> &#x770B;&#x5230; Node.js &#x5404;&#x7248;&#x672C;&#x7684;&#x5B98;&#x65B9;&#x6301;&#x7EED;&#x7EF4;&#x62A4;&#x671F;&#x9650;</p>
-<p>nvm: &#x8BF7;&#x53C2;&#x8003; <a href="https://github.com/creationix/nvm" target="_blank">https://github.com/creationix/nvm</a></p>
-<h2 id="&#x5B89;&#x88C5;cli">&#x5B89;&#x88C5;CLI</h2>
-<p>&#x901A;&#x8FC7; npm &#x5B89;&#x88C5; X-BUILD&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x7C7B;&#x4F3C;&#x4E8E; @vue/cli&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x7EC8;&#x7AEF;&#x91CC;&#x7684; x-build &#x548C; x(&#x7B80;&#x5199;) &#x547D;&#x4EE4;&#x3002;</p>
-<p>&#x4F7F;&#x7528;&#x4E0B;&#x5217;&#x547D;&#x4EE4;&#x5168;&#x5C40;&#x5B89;&#x88C5; <font color="DodgerBlue">npm</font> &#x5305;&#xFF1A;</p>
-<pre><code>**[terminal]
-**[command npm install -g x-build]
-</code></pre><p>&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8BBF;&#x95EE; <strong>x-build</strong> &#x547D;&#x4EE4;&#x3002;</p>
-<p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x68C0;&#x67E5;&#x5176;&#x7248;&#x672C;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF0C;&#x540C;&#x65F6;&#x9A8C;&#x8BC1;&#x5B83;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
-<pre><code>**[terminal]
-**[command x-build --version]
+                                <h1 id="api&#x8BF7;&#x6C42;&#x63A5;&#x53E3;">api&#x8BF7;&#x6C42;&#x63A5;&#x53E3;</h1>
+<p>&#x5F53;&#x6709;&#x5927;&#x91CF;&#x7684;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x4F7F;&#x7528; x-build &#x63D0;&#x4F9B;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D; api &#x6A21;&#x5757;&#x5C06;&#x8282;&#x7701;&#x5927;&#x91CF;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<h2 id="api&#x76EE;&#x5F55;">api&#x76EE;&#x5F55;</h2>
+<p>api/index.js &#x4E3A; api &#x4E3B;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528; webpack &#x63D0;&#x4F9B;&#x7684; require.context &#x65B9;&#x6CD5;&#xFF0C;&#x5C06; api/ &#x5185;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF08;&#x5305;&#x62EC;&#x5B50;&#x8DEF;&#x5F84;&#xFF09;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; ES6 &#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;">&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h2>
+<p>&#x5047;&#x8BBE;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; GET &#x8BF7;&#x6C42;&#xFF0C;&#x5728; api/ &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; getUser.js&#xFF0C;&#x5728;&#x6B64;&#x6211;&#x4EEC;&#x4F7F;&#x7528; axios &#x4E3E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// getUser.js</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> axios.get(<span class="hljs-string">&apos;...&apos;</span>)
+}
 </code></pre>
+<p>&#x6B64;&#x65F6;&#x5BFC;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x88AB; index.js &#x83B7;&#x53D6;&#x5230;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x4EE5;&#x6587;&#x4EF6;&#x540D;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x5185;&#x7684; key &#x5BFC;&#x51FA;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x63A5;&#x53E3;">&#x4F7F;&#x7528;&#x63A5;&#x53E3;</h2>
+<p>&#x5728;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> api <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./api&apos;</span>
+api.getUser()
+</code></pre>
+
                                 
                                 </section>
                             
@@ -368,12 +355,12 @@
 
             
                 
-                <a href="../../" class="navigation navigation-prev " aria-label="Previous page: 概述">
+                <a href="6-options.html" class="navigation navigation-prev " aria-label="Previous page: 自定义配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="3-init.html" class="navigation navigation-next " aria-label="Next page: 创建一个项目">
+                <a href="../plugin/about.html" class="navigation navigation-next " aria-label="Next page: 快速上手">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -384,7 +371,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"安装（CLI）","level":"1.2","depth":1,"next":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/getting-start/3-init.md","ref":"docs/getting-start/3-init.md","articles":[]},"previous":{"title":"概述","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/2-install.md","mtime":"2019-05-22T07:24:31.228Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T07:52:07.374Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"api请求接口","level":"1.7","depth":1,"next":{"title":"快速上手","level":"2.1","depth":1,"path":"docs/plugin/about.md","ref":"docs/plugin/about.md","articles":[]},"previous":{"title":"自定义配置","level":"1.6","depth":1,"path":"docs/getting-start/6-options.md","ref":"docs/getting-start/6-options.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/7-api.md","mtime":"2019-05-22T07:50:25.530Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T07:52:07.374Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
