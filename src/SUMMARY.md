@@ -12,6 +12,8 @@
 
 * [自定义配置](docs/getting-start/6-options.md)
 
+* [api请求接口](docs/getting-start/6-api.md)
+
 ## 插件
 
 * [快速上手](docs/plugin/about.md)

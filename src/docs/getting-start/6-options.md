@@ -47,3 +47,11 @@
 ## proxy
 
 **跨域：**当遇到跨域问题时，可以通过此项配置，配置方法参考[webpack-proxy](https://webpack.docschina.org/configuration/dev-server/#devserver-proxy)。
+
+## remUnit
+
+**rem布局：**改变此项修改rem布局默认参数。
+
+## base64Size
+
+**静态资源：**设定静态资源使用base64打包的大小，默认为10000。
