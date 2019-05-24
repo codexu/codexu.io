@@ -14,7 +14,7 @@ api/index.js 为 api 主入口文件，使用 webpack 提供的 require.context 
 // getUser.js
 import axios from 'axios';
 
-export function () {
+export default function () {
   return axios.get('...')
 }
 ```
