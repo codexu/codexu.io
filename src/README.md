@@ -5,16 +5,7 @@
 [![](https://img.shields.io/npm/dm/x-build.svg)](https://www.npmjs.com/package/x-build)
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
 
-X-BUILD 是面向 小型H5项目 的工程脚手架工具，通过终端命令快速初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题。
-
-| Project | Status | Description |
-| :------ | :------ | :------ |
-| <a href="https://github.com/codexu/x-build">X-BUILD</a> | <img src="https://img.shields.io/badge/npm-v4.4.10-blue.svg"> | 脚手架工具，快速生成工程目录，并安装依赖。 |
-| <a href="https://github.com/codexu/x-fullpage">X-FULLPAGE</a> | <img src="https://img.shields.io/badge/npm-v1.2.2-blue.svg"> | 适用于移动端的整屏滚动插件，支持动画触发。 |
-| <a href="https://github.com/codexu/x-load">X-LOAD</a> | <img src="https://img.shields.io/badge/npm-v1.3.4-blue.svg"> | 创建Loading效果、控制图片加载方式。 |
-| <a href="https://github.com/codexu/x-animate">X-ANIMATE</a> | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 屏幕滚动执行相应动画，支持动画组和生命周期回调。 |
-| <a href="https://github.com/codexu/x-touch">X-TOUCH</a> | <img src="https://img.shields.io/badge/npm-v1.2.1-blue.svg"> | 使原生DOM支持轻触、长按和滑动事件。 |
-| <a href="https://github.com/codexu/x-music">X-MUSIC</a> | <img src="https://img.shields.io/badge/npm-v1.0.2-blue.svg"> | 设置背景音乐与按钮控制。 |
+X-BUILD 是面向**小型项目**的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题。
 
 ## 功能特性
 
@@ -24,7 +15,7 @@ X-BUILD 是面向 小型H5项目 的工程脚手架工具，通过终端命令�
 
 - 自适应解决方案
 
-- api模块自动加载
+- 数据接口模块自动加载
 
 - 自选插件
 
