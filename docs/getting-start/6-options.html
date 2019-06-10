@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>自定义配置 · X-BUILD文档</title>
+        <title>配置 · X-BUILD文档</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -157,7 +157,7 @@
                 <a href="6-options.html">
             
                     
-                    自定义配置
+                    配置
             
                 </a>
             
@@ -178,10 +178,23 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8" data-path="../others/eslint.html">
+            
+                <a href="../others/eslint.html">
+            
+                    
+                    ESLint 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
-        <li class="header">插件</li>
+        <li class="header">其他插件</li>
         
         
     
@@ -265,26 +278,6 @@
     
 
     
-        
-        <li class="header">附录</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="../others/eslint.html">
-            
-                <a href="../others/eslint.html">
-            
-                    
-                    ESLint
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
 
     <li class="divider"></li>
 
@@ -313,7 +306,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >自定义配置</a>
+        <a href="../.." >配置</a>
     </h1>
 </div>
 
@@ -326,33 +319,56 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h1>
-<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x6539;&#x53D8;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>root/build/config.json</code>&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x67D0;&#x9879;&#x914D;&#x7F6E;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x4FEE;&#x6539;&#x3002;</p>
-<h2 id="port">port</h2>
+<p>&#x4F7F;&#x7528;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <strong>xbuild.config.js</strong> &#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x9879;&#x76EE;&#x505A;&#x66F4;&#x591A;&#x7684;&#x4E2A;&#x6027;&#x4F1A;&#x914D;&#x7F6E;&#x3002;</p>
+<h3 id="port">port</h3>
 <p><code>8080</code> <font color="MediumSeaGreen">&lt;Number&gt;</font></p>
 <p><strong>&#x7AEF;&#x53E3;&#xFF1A;</strong>&#x6539;&#x53D8; devServer &#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 8080 &#x7AEF;&#x53E3;&#x3002;</p>
-<h2 id="isrem">isRem</h2>
+<h3 id="open">open</h3>
 <p><code>false</code> <font color="MediumSeaGreen">&lt;boolean&gt;</font></p>
-<p><strong>&#x5E03;&#x5C40;&#xFF1A;</strong>&#x5982;&#x679C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x9009;&#x62E9;&#x4E86; true&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x4E0B;&#x8F7D; hotcss.js&#xFF0C;&#x5E76;&#x5728; push &#x5728; plugins &#x4E2D;(&#x4F1A;&#x5C06;hotcss&#x6253;&#x5305;&#x5728;bundle.js&#x4E2D;)&#x3002;</p>
-<h2 id="eslint">eslint</h2>
-<p><code>false</code> <font color="MediumSeaGreen">&lt;boolean&gt;</font></p>
+<p><strong>&#x6D4F;&#x89C8;&#x5668;&#xFF1A;</strong> &#x81EA;&#x52A8;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x6D4F;&#x89C8;&#x5668;&#x8FD0;&#x884C;&#x9879;&#x76EE;</p>
+<h3 id="entry">entry</h3>
+<font color="MediumSeaGreen">&lt;Array&gt;</font>
+
+<pre><code class="lang-javascript">[
+  <span class="hljs-string">&apos;./src/scripts/index.js&apos;</span>,
+  <span class="hljs-string">&apos;./src/styles/index.[css/scss/less/styl]&apos;</span>
+]
+</code></pre>
+<p><strong>&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF1A;</strong> &#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E86; index.js &#x548C; index.[css/scss/less/styl] &#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="eslint">eslint</h3>
+<font color="MediumSeaGreen">&lt;boolean&gt;</font>
+
 <p><strong>&#x4EE3;&#x7801;&#x68C0;&#x6D4B;&#xFF1A;</strong>&#x5982;&#x679C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x9009;&#x62E9;&#x4E86; true&#xFF0C;&#x4F1A;&#x5F00;&#x542F;&#x4EE3;&#x7801;&#x68C0;&#x6D4B;&#xFF0C;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A; false &#x5173;&#x95ED; ESLint&#x3002;</p>
-<h2 id="imagemin">imagemin</h2>
-<p><code>false</code> <font color="MediumSeaGreen">&lt;boolean&gt;</font></p>
-<p><strong>&#x56FE;&#x7247;&#x538B;&#x7F29;&#xFF1A;</strong>&#x7531;&#x4E8E;&#x538B;&#x7F29;&#x56FE;&#x7247;plugin&#x5F88;&#x5927;&#xFF0C;&#x4E25;&#x91CD;&#x5F71;&#x54CD;&#x9879;&#x76EE;&#x6784;&#x5EFA;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x6240;&#x4EE5;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x4E0B;x-build&#x662F;&#x4E0D;&#x5177;&#x5907;&#x538B;&#x7F29;&#x56FE;&#x7247;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x901A;&#x8FC7;&#x6539;&#x53D8;<code>./build/config.json</code>&#x4E2D;&#x7684;<code>imagemin</code>&#x5C5E;&#x6027;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;ture&#xFF0C;&#x5373;&#x53EF;&#x5F00;&#x542F;&#x6253;&#x5305;&#x65F6;&#x538B;&#x7F29;&#x56FE;&#x7247;&#x529F;&#x80FD;&#x3002;</p>
-<p>&#x9700;&#x8981;&#x5B89;&#x88C5;&#x63D2;&#x4EF6;&#xFF1A;</p>
-<pre><code>  $ yarn add -D imagemin-webpack-plugin
-</code></pre><h2 id="plugins">plugins</h2>
-<p><code>[&quot;normalize.css&quot;]</code> <font color="MediumSeaGreen">&lt;Array&gt;</font></p>
-<p><strong>&#x63D2;&#x4EF6;&#xFF1A;</strong>&#x4E3A;&#x4E86;&#x51CF;&#x5C11;http&#x8BF7;&#x6C42;&#xFF0C;x-build&#x4F1A;&#x5C06;&#x63D2;&#x4EF6;&#x6253;&#x5305;&#x5728; bundle.js&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5B89;&#x88C5;&#x67D0;&#x4E2A;&#x63D2;&#x4EF6;&#xFF0C;&#x5E76;&#x5E0C;&#x671B;&#x6253;&#x5305;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x6DFB;&#x52A0;&#x5728;&#x6B64;&#x5904;&#x3002;</p>
-<h2 id="files">files</h2>
-<p><code>[&quot;./src/script/index.js&quot;]</code> <font color="MediumSeaGreen">&lt;Array&gt;</font></p>
-<p><strong>&#x6587;&#x4EF6;&#xFF1A;</strong>&#x6587;&#x4EF6;&#x540C;&#x6837;&#x4F1A;&#x88AB;&#x6253;&#x5305;&#x5728; bundle.js &#x4E2D;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x5C06;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x5199;&#x5728;&#x6B64;&#x5904;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x901A;&#x8FC7;import&#x7684;&#x65B9;&#x5F0F;&#x5F15;&#x5165;&#x4F60;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x5728;&#x6B64;&#x5904;&#x3002;</p>
-<h2 id="proxy">proxy</h2>
+<h3 id="babel">babel</h3>
+<font color="MediumSeaGreen">&lt;boolean&gt;</font>
+
+<p><strong>&#x4EE3;&#x7801;&#x7F16;&#x8BD1;&#xFF1A;</strong>Babel &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5927;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x672A;&#x652F;&#x6301;&#x7684;&#x8BED;&#x6CD5;&#x3002;</p>
+<h3 id="mobilelayout">mobileLayout</h3>
+<font color="MediumSeaGreen">&lt;boolean&gt;</font>
+
+<p><strong>&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#xFF1A;</strong>&#x662F;&#x5426;&#x4F7F;&#x7528;&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#x3002;</p>
+<h3 id="remunit">remUnit</h3>
+<font color="MediumSeaGreen">&lt;boolean&gt;</font>
+
+<p><strong>&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#x53C2;&#x6570;</strong></p>
+<h3 id="base64">base64</h3>
+<p><code>8 * 1024</code><font color="MediumSeaGreen">&lt;Number&gt;</font></p>
+<p><strong>&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF1A;</strong>&#x8BBE;&#x5B9A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4F7F;&#x7528; base64 &#x6253;&#x5305;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 8kb&#x3002;</p>
+<h3 id="proxy">proxy</h3>
+<font color="MediumSeaGreen">&lt;Object&gt;</font>
+
+<pre><code class="lang-javascript">{
+  <span class="hljs-string">&apos;/api&apos;</span>: {
+    target: <span class="hljs-string">&apos;#&apos;</span>,
+    pathRewrite: {
+      <span class="hljs-string">&apos;^/api&apos;</span>: <span class="hljs-string">&apos;&apos;</span>
+    },
+    changeOrigin: <span class="hljs-literal">true</span>,
+    secure: <span class="hljs-literal">false</span>
+  }
+}
+</code></pre>
 <p><strong>&#x8DE8;&#x57DF;&#xFF1A;</strong>&#x5F53;&#x9047;&#x5230;&#x8DE8;&#x57DF;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B64;&#x9879;&#x914D;&#x7F6E;&#xFF0C;&#x914D;&#x7F6E;&#x65B9;&#x6CD5;&#x53C2;&#x8003;<a href="https://webpack.docschina.org/configuration/dev-server/#devserver-proxy" target="_blank">webpack-proxy</a>&#x3002;</p>
-<h2 id="remunit">remUnit</h2>
-<p><strong>rem&#x5E03;&#x5C40;&#xFF1A;</strong>&#x6539;&#x53D8;&#x6B64;&#x9879;&#x4FEE;&#x6539;rem&#x5E03;&#x5C40;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;&#x3002;</p>
-<h2 id="base64size">base64Size</h2>
-<p><strong>&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF1A;</strong>&#x8BBE;&#x5B9A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4F7F;&#x7528;base64&#x6253;&#x5305;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;10000&#x3002;</p>
 
                                 
                                 </section>
@@ -380,7 +396,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"自定义配置","level":"1.6","depth":1,"next":{"title":"api请求接口","level":"1.7","depth":1,"path":"docs/getting-start/7-api.md","ref":"docs/getting-start/7-api.md","articles":[]},"previous":{"title":"开发与打包","level":"1.5","depth":1,"path":"docs/getting-start/5-run.md","ref":"docs/getting-start/5-run.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/6-options.md","mtime":"2019-06-03T02:10:42.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-03T05:25:14.468Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"配置","level":"1.6","depth":1,"next":{"title":"api请求接口","level":"1.7","depth":1,"path":"docs/getting-start/7-api.md","ref":"docs/getting-start/7-api.md","articles":[]},"previous":{"title":"开发与打包","level":"1.5","depth":1,"path":"docs/getting-start/5-run.md","ref":"docs/getting-start/5-run.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/6-options.md","mtime":"2019-06-10T09:24:02.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-10T09:31:52.999Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

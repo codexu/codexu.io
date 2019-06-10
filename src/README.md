@@ -1,6 +1,5 @@
 # X-BUILD
 [![Build Status](https://travis-ci.org/codexu/x-build.svg?branch=master)](https://travis-ci.org/codexu/x-build)
-[![codecov](https://codecov.io/gh/codexu/x-build/branch/master/graph/badge.svg)](https://codecov.io/gh/codexu/x-build)
 [![](https://img.shields.io/npm/v/x-build.svg)](https://www.npmjs.com/package/x-build)
 [![](https://img.shields.io/npm/dm/x-build.svg)](https://www.npmjs.com/package/x-build)
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
@@ -17,8 +16,6 @@ X-BUILD 是面向**小型项目**的脚手架工具，通过终端命令最快�
 
 - 数据接口模块自动加载
 
-- 自选插件
-
 - PUG模板引擎
 
 - CSS预处理器(sass、less、stylus)
@@ -26,8 +23,6 @@ X-BUILD 是面向**小型项目**的脚手架工具，通过终端命令最快�
 - ESLint
 
 - Babel
-
-- 图片压缩
 
 ## 讨论交流
 

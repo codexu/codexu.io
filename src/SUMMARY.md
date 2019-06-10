@@ -10,11 +10,13 @@
 
 * [开发与打包](docs/getting-start/5-run.md)
 
-* [自定义配置](docs/getting-start/6-options.md)
+* [配置](docs/getting-start/6-options.md)
 
 * [api请求接口](docs/getting-start/7-api.md)
 
-## 插件
+* [ESLint 配置](docs/others/eslint.md)
+
+## 其他插件
 
 * [快速上手](docs/plugin/about.md)
 
@@ -27,7 +29,3 @@
 * [X-TOUCH](docs/plugin/x-touch.md)
 
 * [X-MUSIC](docs/plugin/x-music.md)
-
-## 附录
-
-* [ESLint](docs/others/eslint.md)

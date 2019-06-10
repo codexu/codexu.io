@@ -157,7 +157,7 @@
                 <a href="6-options.html">
             
                     
-                    自定义配置
+                    配置
             
                 </a>
             
@@ -178,10 +178,23 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8" data-path="../others/eslint.html">
+            
+                <a href="../others/eslint.html">
+            
+                    
+                    ESLint 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
-        <li class="header">插件</li>
+        <li class="header">其他插件</li>
         
         
     
@@ -265,26 +278,6 @@
     
 
     
-        
-        <li class="header">附录</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="../others/eslint.html">
-            
-                <a href="../others/eslint.html">
-            
-                    
-                    ESLint
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
 
     <li class="divider"></li>
 
@@ -325,47 +318,26 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;">&#x5F00;&#x53D1;&#x73AF;&#x5883;</h1>
-<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;(root/):</p>
+                                <h1 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h1>
 <pre><code>  .
-  &#x251C;&#x2500;&#x2500; index.pug
   &#x251C;&#x2500;&#x2500; node_modules/
-  |   &#x2514;&#x2500;&#x2500; ...
   &#x2514;&#x2500;&#x2500; src/ # &#x6E90;&#x7801;&#x76EE;&#x5F55;
       &#x251C;&#x2500;&#x2500; assets/ # &#x9759;&#x6001;&#x8D44;&#x6E90;
+      &#x251C;&#x2500;&#x2500; api/ # AJAX&#x8BF7;&#x6C42;&#x76EE;&#x5F55;
       &#x251C;&#x2500;&#x2500; scripts/
       |   &#x2514;&#x2500;&#x2500; index.js # JavaScript&#x4E3B;&#x5165;&#x53E3;&#x6587;&#x4EF6;
       &#x251C;&#x2500;&#x2500; styles/
-      |   &#x251C;&#x2500;&#x2500; x-build.css # x-build&#x6B22;&#x8FCE;&#x754C;&#x9762;&#x6837;&#x5F0F;&#xFF08;&#x5220;&#x9664;&#x5373;&#x53EF;&#xFF09;
       |   &#x2514;&#x2500;&#x2500; index.[css\scss\less\styl] # &#x6837;&#x5F0F;&#x5165;&#x53E3;&#x6587;&#x4EF6;
-      &#x2514;&#x2500;&#x2500; app.pug # html&#x6B63;&#x6587;
+      &#x2514;&#x2500;&#x2500; index.html # html&#x6B63;&#x6587;
 </code></pre><h2 id="&#x5165;&#x53E3;&#x6587;&#x4EF6;">&#x5165;&#x53E3;&#x6587;&#x4EF6;</h2>
-<ul>
-<li><p><strong>PUG</strong>&#xFF1A;&#x4F7F;&#x7528; pug &#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x4E3A; root/index.pug&#xFF0C;&#x5B83;&#x5F15;&#x5165;&#x4E86; root/src/app.pug&#x3002;</p>
-</li>
-<li><p><strong>HTML</strong>&#xFF1A;&#x672A;&#x4F7F;&#x7528; pug &#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x4E3A; root/src/index.html&#x3002;</p>
-</li>
-<li><p><strong>CSS</strong>&#xFF1A;&#x4E0D;&#x8BBA;&#x662F;&#x5426;&#x4F7F;&#x7528; CSS &#x9884;&#x5904;&#x7406;&#x5668;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x59CB;&#x7EC8;&#x4F4D;&#x4E8E; root/src/styles/index.[css\scss\less\styl]&#xFF0C;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x521B;&#x5EFA;&#x65F6;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
-</li>
-<li><p><strong>JS</strong>: root/src/scripts/index.js &#x662F;&#x552F;&#x4E00;&#x7684; js &#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x5E76;&#x4E0D;&#x9700;&#x8981; impot css &#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E00;&#x6B65; X-BUILD &#x5DF2;&#x7ECF;&#x4E3A;&#x4F60;&#x505A;&#x597D;&#x3002;</p>
-</li>
-</ul>
+<p><strong>src/index.[html/pug]</strong>&#xFF1A;HTML &#x5165;&#x53E3;&#x6587;&#x4EF6;&#x3002;</p>
+<p><strong>src/scripts/index.js</strong>&#xFF1A;JavaScript &#x5165;&#x53E3;&#x6587;&#x4EF6;&#x3002;</p>
+<p><strong>src/styles/index.[css/scss/less/styl]</strong>: CSS &#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x6B64;&#x6587;&#x4EF6;&#x65E0;&#x9700;&#x5728; JS &#x4E2D;&#x5F15;&#x5165;&#x3002;</p>
 <h2 id="assets-&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;">assets &#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;</h2>
-<p>&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x4E0B;X-BUILD&#x53EA;&#x4E3A;&#x4F60;&#x521B;&#x5EFA;&#x4E86;assets/images&#x76EE;&#x5F55;&#x5B58;&#x653E;&#x4F60;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8981;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF1A;</p>
-<ul>
-<li><p><strong>&#x5B57;&#x4F53;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/font&#xFF0C;&#x652F;&#x6301; woff&#x3001;eot&#x3001;ttf&#x3001;otf &#x683C;&#x5F0F;&#x3002;</p>
-</li>
-<li><p><strong>&#x89C6;&#x9891;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; static/media/&#xFF0C;&#x652F;&#x6301;mp4&#x3001;webm&#x3001;ogg&#x3001;mp3&#x3001;wav&#x3001;flac&#x3001;aac &#x683C;&#x5F0F;&#x3002;</p>
-</li>
-</ul>
-<h1 id="&#x751F;&#x4EA7;&#x73AF;&#x5883;">&#x751F;&#x4EA7;&#x73AF;&#x5883;</h1>
-<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;(root/dist):</p>
-<pre><code>  .
-  &#x251C;&#x2500;&#x2500; index.html
-  &#x251C;&#x2500;&#x2500; bundle.[hash:8].css
-  &#x251C;&#x2500;&#x2500; bundle.[hash:8].js
-  &#x2514;&#x2500;&#x2500; assets/ # &#x9759;&#x6001;&#x8D44;&#x6E90;
-</code></pre>
+<p><strong>&#x56FE;&#x7247;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/font&#xFF0C;&#x652F;&#x6301; png|jpe?g|gif|svg|webp &#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x5B57;&#x4F53;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/font&#xFF0C;&#x652F;&#x6301; woff|eot|ttf|otf &#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x89C6;&#x9891;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; static/media/&#xFF0C;&#x652F;&#x6301;mp4|webm|ogg|mp3|wav|flac|aac &#x683C;&#x5F0F;&#x3002;</p>
+
                                 
                                 </section>
                             
@@ -392,7 +364,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.4","depth":1,"next":{"title":"开发与打包","level":"1.5","depth":1,"path":"docs/getting-start/5-run.md","ref":"docs/getting-start/5-run.md","articles":[]},"previous":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/getting-start/3-init.md","ref":"docs/getting-start/3-init.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/4-structure.md","mtime":"2019-06-03T02:10:42.703Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-03T05:25:14.468Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.4","depth":1,"next":{"title":"开发与打包","level":"1.5","depth":1,"path":"docs/getting-start/5-run.md","ref":"docs/getting-start/5-run.md","articles":[]},"previous":{"title":"创建一个项目","level":"1.3","depth":1,"path":"docs/getting-start/3-init.md","ref":"docs/getting-start/3-init.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/getting-start/4-structure.md","mtime":"2019-06-10T09:10:00.686Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-10T09:31:52.999Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

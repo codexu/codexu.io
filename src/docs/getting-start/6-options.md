@@ -1,57 +1,77 @@
 # 配置
 
-默认情况下并不需要改变配置文件`root/build/config.json`，如果你想修改某项配置可以在这里修改。
+使用根目录下的 **xbuild.config.js** 文件，可以对项目做更多的个性会配置。
 
-## port
+### port
 
 `8080` <font color=MediumSeaGreen>&lt;Number&gt;</font>
 
 **端口：**改变 devServer 端口号，默认为 8080 端口。
 
-## isRem
+### open
 
 `false` <font color=MediumSeaGreen>&lt;boolean&gt;</font>
 
-**布局：**如果初始化时选择了 true，会自动下载 hotcss.js，并在 push 在 plugins 中(会将hotcss打包在bundle.js中)。
+**浏览器：** 自动使用默认浏览器运行项目
 
-## eslint
+### entry
 
-`false` <font color=MediumSeaGreen>&lt;boolean&gt;</font>
+<font color=MediumSeaGreen>&lt;Array&gt;</font>
+
+```javascript
+[
+  './src/scripts/index.js',
+  './src/styles/index.[css/scss/less/styl]'
+]
+```
+
+**入口文件：** 默认设置了 index.js 和 index.[css/scss/less/styl] 的入口文件。
+
+### eslint
+
+<font color=MediumSeaGreen>&lt;boolean&gt;</font>
 
 **代码检测：**如果初始化时选择了 true，会开启代码检测，可设置为 false 关闭 ESLint。
 
-## imagemin
+### babel
 
-`false` <font color=MediumSeaGreen>&lt;boolean&gt;</font>
+<font color=MediumSeaGreen>&lt;boolean&gt;</font>
 
-**图片压缩：**由于压缩图片plugin很大，严重影响项目构建的时间，所以默认状态下x-build是不具备压缩图片的功能，但通过改变` ./build/config.json `中的` imagemin `属性，设置为ture，即可开启打包时压缩图片功能。
+**代码编译：**Babel 可以使用大部分浏览器未支持的语法。
 
-需要安装插件：
+### mobileLayout
 
+<font color=MediumSeaGreen>&lt;boolean&gt;</font>
+
+**自适应布局：**是否使用自适应布局。
+
+### remUnit
+
+<font color=MediumSeaGreen>&lt;boolean&gt;</font>
+
+**自适应布局参数**
+
+### base64
+
+`8 * 1024`<font color=MediumSeaGreen>&lt;Number&gt;</font>
+
+**静态资源：**设定静态资源使用 base64 打包的大小，默认为 8kb。
+
+### proxy
+
+<font color=MediumSeaGreen>&lt;Object&gt;</font>
+
+```javascript
+{
+  '/api': {
+    target: '#',
+    pathRewrite: {
+      '^/api': ''
+    },
+    changeOrigin: true,
+    secure: false
+  }
+}
 ```
-  $ yarn add -D imagemin-webpack-plugin
-```
-
-## plugins
-
-`["normalize.css"]` <font color=MediumSeaGreen>&lt;Array&gt;</font>
-
-**插件：**为了减少http请求，x-build会将插件打包在 bundle.js，如果你想安装某个插件，并希望打包在一起，添加在此处。
-
-## files
-
-`["./src/script/index.js"]` <font color=MediumSeaGreen>&lt;Array&gt;</font>
-
-**文件：**文件同样会被打包在 bundle.js 中，一般会将入口文件写在此处，如果不想通过import的方式引入你的文件，也可以添加在此处。
-
-## proxy
 
 **跨域：**当遇到跨域问题时，可以通过此项配置，配置方法参考[webpack-proxy](https://webpack.docschina.org/configuration/dev-server/#devserver-proxy)。
-
-## remUnit
-
-**rem布局：**改变此项修改rem布局默认参数。
-
-## base64Size
-
-**静态资源：**设定静态资源使用base64打包的大小，默认为10000。

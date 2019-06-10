@@ -42,7 +42,7 @@ LTS: 指的是 Node.js 的长期维护版本，您可以在这里 https://github
 
 nvm: 请参考 https://github.com/creationix/nvm
 
-## 安装CLI
+## 安装 CLI
 
 通过 npm 安装 X-BUILD，使用方式类似于 @vue/cli，提供了终端里的 x-build 和 x(简写) 命令。
 
@@ -54,10 +54,3 @@ nvm: 请参考 https://github.com/creationix/nvm
 ```
 
 安装之后，你就可以在命令行中访问 **x-build** 命令。
-
-你还可以用这个命令来检查其版本是否正确，同时验证它是否安装成功。
-
-```
-**[terminal]
-**[command x-build --version]
-```
