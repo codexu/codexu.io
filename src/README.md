@@ -1,12 +1,16 @@
-# X-BUILD
-[![Build Status](https://travis-ci.org/codexu/x-build.svg?branch=master)](https://travis-ci.org/codexu/x-build)
-[![](https://img.shields.io/npm/v/x-build.svg)](https://www.npmjs.com/package/x-build)
-[![](https://img.shields.io/npm/dm/x-build.svg)](https://www.npmjs.com/package/x-build)
-[![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/codexu/x-build/blob/master/LICENSE)
+<h1 align="center">X-BUILD</h1>
+<p align="center">
+  <a href="https://travis-ci.org/codexu/x-build"><img src="https://travis-ci.org/codexu/x-build.svg?branch=master" /></a>
+  <a href="https://www.npmjs.com/package/x-build"><img src="https://img.shields.io/npm/v/x-build.svg" /></a>
+  <a href="https://www.npmjs.com/package/x-build"><img src="https://img.shields.io/npm/dm/x-build.svg" /></a>
+  <a href="https://github.com/codexu/x-build/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" /></a>
+</p>
 
-X-BUILD 是面向**小型项目**的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题。
+![](http://chuantu.xyz/t6/702/1560160623x1709417317.gif)
 
-## 功能特性
+<p align="center">X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题</p>
+
+## 主要功能
 
 - 快速生成工程目录
 

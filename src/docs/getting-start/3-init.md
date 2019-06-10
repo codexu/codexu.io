@@ -1,7 +1,5 @@
 ## 创建一个项目
 
-![](https://ws1.sinaimg.cn/large/006tNc79ly1fzakm551gsj31ao0re7dn.jpg)
-
 通过以下指令创建一个新项目：
 
 ```
