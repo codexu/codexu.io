@@ -1,4 +1,4 @@
-## 基本概念
+## 概念
 
 如果你对 [webpack](https://webpack.docschina.org/concepts/) 没有太多的了解，本章可以带你了解 X-BUILD 的基本工作原理，让你节省大量的时间快速享受 webpack 带来的便捷。
 
@@ -131,7 +131,7 @@ X-BUILD 采用 px2rem-loader + hotcss 的自适应解决方案，在初始化时
 
 > [REM 自适应解决方案](https://juejin.im/post/5ad9a694f265da0b7a203f9b)
 
-## API 请求接口
+## 请求接口
 
 当有大量的接口时，使用 X-BUILD 提供的自动加载 api 模块将节省大量操作：
 
