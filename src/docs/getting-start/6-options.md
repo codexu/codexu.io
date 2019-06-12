@@ -47,7 +47,7 @@
 
 ### designWidth
 
-<font color=MediumSeaGreen>&lt;Number&gt;</font>
+`750`<font color=MediumSeaGreen>&lt;Number&gt;</font>
 
 **设计稿尺寸(px)**
 
