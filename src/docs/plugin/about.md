@@ -19,10 +19,6 @@
 
 2. 使用 `<script>` 标签引入 **(不推荐)**。
 
-> ### 关于使用 CLI 安装插件
-
-> x-build create 时会选择要使用的插件，这些插件会被直接打包在 bundle.js 中，安装 x-animate 和 x-fullpage 会自动将 animate.css 下载并打包，无需使用 import 'animate.css'，x-fullpage 依赖 x-touch，务必一起安装。
-
 ## 多个插件调用
 
 每个插件都会有**生命周期函数**，在不同的时间去调用钩子函数，然后初始化其他的插件是正确的开发方式，例如：

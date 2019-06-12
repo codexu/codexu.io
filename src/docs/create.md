@@ -1,0 +1,82 @@
+## 创建项目
+
+通过以下指令创建一个新项目：
+
+```
+**[terminal]
+**[command x-build create [name]]
+```
+
+## 参数
+<font color=MediumSeaGreen>[ -q ]</font>  跳过选项快速初始化一个默认项目。
+<font color=MediumSeaGreen>[ -n ]</font>  忽略版本检测，可能会影响项目正常启动。
+
+## 选项
+
+X-BUILD 提供了多个选项，根据项目的需求选择不同的配置，随后会根据你的选择创建你的开发目录，安装相应的依赖。
+
+提供的选项（[需要更多功能？](https://github.com/codexu/x-build/issues)）：
+
+- Babel（默认）
+- ESLint（默认）
+- CSS Pre-processors
+  - Sass
+  - Less
+  - Stylus
+- Pug(Jade)
+- Rem layout
+
+> 如何选择？
+  **键盘 ⬆️⬇️** 切换选项, **键盘空格[space]** 选择或取消选项, **键盘[a]** 全选, **键盘[i]** 反选。
+
+## 目录结构
+
+```
+  .
+  ├── xbuild.config.js # 项目配置文件
+  ├── package.json
+  ├── node_modules/
+  └── src/ # 源码目录
+      ├── api/ # AJAX请求目录
+      ├── scripts/
+      |   └── index.js # JavaScript主入口文件
+      ├── styles/
+      |   └── index.[css\scss\less\styl] # 样式入口文件
+      └── index.[html\pug] # html正文
+```
+
+#### 入口文件：
+
+**HTML**：src/index.[html/pug]
+
+**JavaScript**：src/scripts/index.js
+
+**CSS**：src/styles/index.[css/scss/less/styl]
+
+#### assets 静态资源目录：
+
+**图片**：创建目录 assets/images，支持 png|jpe?g|gif|svg|webp 格式。
+
+**字体**：创建目录 assets/font，支持 woff|eot|ttf|otf 格式。
+
+**视频**：创建目录 assets/media/，支持mp4|webm|ogg|mp3|wav|flac|aac 格式。
+
+## 开发与生产
+
+通常大部分 CLI 工具的指令一样，X-BUILD 也不例外。
+
+开发：
+
+```
+**[terminal]
+**[command npm run serve]
+```
+
+生产：
+
+```
+**[terminal]
+**[command npm run build]
+```
+
+想了解 X-BUILD 在开发和生产环境中都做了什么，请查看下一章了解一些基本概念。

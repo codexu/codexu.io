@@ -6,9 +6,7 @@
   <a href="https://github.com/codexu/x-build/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg" /></a>
 </p>
 
-![](http://chuantu.xyz/t6/702/1560160623x1709417317.gif)
-
-<p align="center">X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题</p>
+<p align="center">X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题，辅助你生成更优质的代码。</p>
 
 ## 主要功能
 

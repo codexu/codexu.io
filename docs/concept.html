@@ -1,0 +1,482 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>概念 · X-BUILD文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="codexu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="options.html" />
+    
+    
+    <link rel="prev" href="create.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">X-BUILD</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    安装（CLI）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="quick.html">
+            
+                <a href="quick.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="create.html">
+            
+                <a href="create.html">
+            
+                    
+                    创建项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="concept.html">
+            
+                <a href="concept.html">
+            
+                    
+                    概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="options.html">
+            
+                <a href="options.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="eslint.html">
+            
+                <a href="eslint.html">
+            
+                    
+                    规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="plugin/about.html">
+            
+                <a href="plugin/about.html">
+            
+                    
+                    其他插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="plugin/x-fullpage.html">
+            
+                <a href="plugin/x-fullpage.html">
+            
+                    
+                    X-FULLPAGE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="plugin/x-load.html">
+            
+                <a href="plugin/x-load.html">
+            
+                    
+                    X-LOAD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="plugin/x-animate.html">
+            
+                <a href="plugin/x-animate.html">
+            
+                    
+                    X-ANIMATE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="plugin/x-touch.html">
+            
+                <a href="plugin/x-touch.html">
+            
+                    
+                    X-TOUCH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="plugin/x-music.html">
+            
+                <a href="plugin/x-music.html">
+            
+                    
+                    X-MUSIC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >概念</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x57FA;&#x672C;&#x6982;&#x5FF5;">&#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x5BF9; <a href="https://webpack.docschina.org/concepts/" target="_blank">webpack</a> &#x6CA1;&#x6709;&#x592A;&#x591A;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x672C;&#x7AE0;&#x53EF;&#x4EE5;&#x5E26;&#x4F60;&#x4E86;&#x89E3; X-BUILD &#x7684;&#x57FA;&#x672C;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x8BA9;&#x4F60;&#x8282;&#x7701;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x5FEB;&#x901F;&#x4EAB;&#x53D7; webpack &#x5E26;&#x6765;&#x7684;&#x4FBF;&#x6377;&#x3002;</p>
+<blockquote>
+<p>&#x672C;&#x7AE0;&#x8282;&#x5185;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x5747;&#x4E0D;&#x9700;&#x8981;&#x4F60;&#x505A;&#x914D;&#x7F6E;&#xFF0C;&#x4EC5;&#x9700;&#x4E86;&#x89E3;&#x5373;&#x53EF;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5165;&#x53E3;&#x6587;&#x4EF6;">&#x5165;&#x53E3;&#x6587;&#x4EF6;</h2>
+<p>X-BUILD &#x5728;&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x9884;&#x5148;&#x505A;&#x597D;&#x4E86;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x7684;&#x5173;&#x8054;&#xFF0C;&#x4F60;&#x65E0;&#x9700;&#x5173;&#x5FC3; html/js/css &#x6587;&#x4EF6;&#x662F;&#x5982;&#x4F55;&#x5173;&#x8054;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF1A;</p>
+<h3 id="html">HTML</h3>
+<p>&#x4F7F;&#x7528; <a href="https://webpack.docschina.org/plugins/html-webpack-plugin" target="_blank">HtmlWebpackPlugin</a> &#x914D;&#x7F6E;&#x4E86; HTML &#x5165;&#x53E3;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#xFF08;src/index.[html/pug]&#xFF09;&#xFF0C;&#x5F53;&#x4F60;&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x65F6;&#x9009;&#x62E9;&#x4E86; <strong>Pug(Jade)</strong> &#x9009;&#x9879;&#x540E;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5; pug-loader &#x6765;&#x652F;&#x6301; pug &#x6216; jade &#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x8FD8;&#x662F;&#x5F88;&#x63A8;&#x8350;&#x4F7F;&#x7528; pug &#x4F5C;&#x4E3A; HTML &#x7684;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x3002;</p>
+<p><a href="https://pug.bootcss.com/api/getting-started.html" target="_blank">&#x4EC0;&#x4E48;&#x662F; pug &#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF1F;</a></p>
+<h3 id="css">CSS</h3>
+<p>&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x65F6;&#x5982;&#x679C;&#x9009;&#x62E9;&#x4E86; <strong>CSS Pre-processors</strong> &#x9009;&#x9879;&#xFF0C;&#x4F1A;&#x518D;&#x6B21;&#x8BE2;&#x95EE;&#x4F60;&#x9009;&#x62E9;&#x54EA;&#x79CD; CSS &#x9884;&#x5904;&#x7406;&#x5668;&#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF08;&#x5355;&#x9009;&#xFF09;&#xFF0C;&#x968F;&#x540E;&#x4F1A;&#x5B89;&#x88C5;&#x76F8;&#x5BF9;&#x5E94;&#x7684; loader&#xFF0C;&#x63A8;&#x8350;&#x81F3;&#x5C11;&#x638C;&#x63E1;&#x4E00;&#x79CD; CSS&#x9884;&#x5904;&#x7406;&#x5668;&#x3002;</p>
+<p><a href="https://segmentfault.com/a/1190000010984731" target="_blank">&#x5B89;&#x88C5; Sass &#x5931;&#x8D25;&#xFF1F;</a></p>
+<h3 id="javascript">JavaScript</h3>
+<ul>
+<li><p><a href="https://www.babeljs.cn/" target="_blank">Babel</a> : &#x5B83;&#x80FD;&#x8BA9;&#x4F60;&#x7F16;&#x5199;&#x7684;&#x65B0;&#x7248;&#x672C; JavaScript &#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x65E7;&#x7248;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F9D;&#x7136;&#x80FD;&#x591F;&#x5DE5;&#x4F5C;&#x3002;</p>
+</li>
+<li><p><a href="https://cn.eslint.org/" target="_blank">ESLint</a> : &#x8BED;&#x6CD5;&#x89C4;&#x5219;&#x548C;&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x7684;&#x68C0;&#x67E5;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x7684;&#x76EE;&#x6807;&#x662F;&#x4FDD;&#x8BC1;&#x4EE3;&#x7801;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x548C;&#x907F;&#x514D;&#x9519;&#x8BEF;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5FEB;&#x901F;&#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x5E76;&#x4E0D;&#x5305;&#x542B;&#x8FD9;&#x4E24;&#x9879;&#x529F;&#x80FD;&#xFF0C;&#x4F46; create &#x547D;&#x4EE4;&#x4E2D;&#x8FD8;&#x662F;&#x5C06;&#x8FD9;&#x4E24;&#x9879;&#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x9009;&#x4E2D;&#x72B6;&#x6001;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x5E2E;&#x4F60;&#x517B;&#x6210;&#x4E66;&#x5199;&#x66F4;&#x52A0;&#x5148;&#x8FDB;&#x548C;&#x89C4;&#x8303;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<h2 id="&#x9759;&#x6001;&#x8D44;&#x6E90;">&#x9759;&#x6001;&#x8D44;&#x6E90;</h2>
+<p>webpack &#x5C06;&#x52A8;&#x6001;&#x6253;&#x5305;&#x6240;&#x6709;&#x4F9D;&#x8D56;&#xFF0C;&#x56E0;&#x4E3A;&#x73B0;&#x5728;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x90FD;&#x53EF;&#x4EE5;&#x660E;&#x786E;&#x8868;&#x8FF0;&#x5B83;&#x81EA;&#x8EAB;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x6253;&#x5305;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5757;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;&#x76EE;&#x5F55;-">&#x521B;&#x5EFA;&#x76EE;&#x5F55; <font color="red">*</font></h3>
+<p>&#x521D;&#x59CB;&#x5316;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x5E76;&#x6CA1;&#x6709;<strong>&#x9759;&#x6001;&#x8D44;&#x6E90;</strong>&#x76EE;&#x5F55;&#xFF0C;&#x4F46;&#x8FD9;&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x4F60;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x653E;&#x7F6E;&#x4F60;&#x7684;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#xFF1A;</p>
+<p>&#x5728; src/ &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; assets/ &#x76EE;&#x5F55;&#xFF1A;</p>
+<p><strong>&#x56FE;&#x7247;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/images&#xFF0C;&#x652F;&#x6301; png|jpe?g|gif|svg|webp &#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x5B57;&#x4F53;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/font&#xFF0C;&#x652F;&#x6301; woff|eot|ttf|otf &#x683C;&#x5F0F;&#x3002;</p>
+<p><strong>&#x89C6;&#x9891;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/media/&#xFF0C;&#x652F;&#x6301;mp4|webm|ogg|mp3|wav|flac|aac &#x683C;&#x5F0F;&#x3002;</p>
+<p>webpack &#x628A;&#x4E00;&#x5207;&#x8D44;&#x6E90;&#x90FD;&#x5F53;&#x4F5C;&#x6A21;&#x5757;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>require(&apos;&apos;)</code> &#x6765;&#x5F15;&#x5165;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#xFF0C;X-BUILD &#x5DF2;&#x7ECF;&#x5E2E;&#x4F60;&#x5B89;&#x88C5;&#x597D;&#x4E86;&#x8BFB;&#x53D6;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x7684; loader&#xFF0C;&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#x4F7F;&#x7528;&#x3002;</p>
+<p><a href="https://webpack.docschina.org/loaders/file-loader" target="_blank">&#x4E3A;&#x4EC0;&#x4E48;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x4E5F;&#x53EF;&#x4EE5;&#x5F53;&#x4F5C;&#x6A21;&#x5757;&#x88AB;&#x5F15;&#x5165;&#xFF1F;</a></p>
+<h3 id="&#x52A0;&#x8F7D;&#x6570;&#x636E;&#xFF08;&#x540E;&#x671F;&#x5B9E;&#x73B0;&#xFF09;"><del>&#x52A0;&#x8F7D;&#x6570;&#x636E;&#xFF08;&#x540E;&#x671F;&#x5B9E;&#x73B0;&#xFF09;</del></h3>
+<p>&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x7684;&#x6709;&#x7528;&#x8D44;&#x6E90;&#x8FD8;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x5982; JSON &#x6587;&#x4EF6;&#xFF0C;CSV&#x3001;TSV &#x548C; XML&#x3002;&#x7C7B;&#x4F3C;&#x4E8E; NodeJS&#xFF0C;JSON &#x652F;&#x6301;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x5185;&#x7F6E;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4; import Data from &apos;./data.json&apos; &#x9ED8;&#x8BA4;&#x5C06;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;&#x8981;&#x5BFC;&#x5165; CSV&#x3001;TSV &#x548C; XML&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; csv-loader &#x548C; xml-loader&#x3002;&#x8BA9;&#x6211;&#x4EEC;&#x5904;&#x7406;&#x52A0;&#x8F7D;&#x8FD9;&#x4E09;&#x7C7B;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>**[terminal]
+**[command npm install --save-dev csv-loader xml-loader]
+</code></pre><p>&#x5728; xbuild.config.js &#x4E2D; loaders &#x52A0;&#x5165;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-javascript">loaders: [
+  {
+    test: <span class="hljs-regexp">/\.(csv|tsv)$/</span>,
+    use: [
+      <span class="hljs-string">&apos;csv-loader&apos;</span>
+    ]
+  },
+  {
+    test: <span class="hljs-regexp">/\.xml$/</span>,
+    use: [
+      <span class="hljs-string">&apos;xml-loader&apos;</span>
+    ]
+  }
+]
+</code></pre>
+<h2 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;">&#x5F00;&#x53D1;&#x73AF;&#x5883;</h2>
+<h3 id="hmr">HMR</h3>
+<p>&#x6A21;&#x5757;&#x70ED;&#x66FF;&#x6362;(hot module replacement &#x6216; HMR)&#x662F; webpack &#x63D0;&#x4F9B;&#x7684;&#x6700;&#x6709;&#x7528;&#x7684;&#x529F;&#x80FD;&#x4E4B;&#x4E00;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x66F4;&#x65B0;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x5B8C;&#x5168;&#x5237;&#x65B0;&#x3002;</p>
+<h3 id="source-map">Source Map</h3>
+<p>&#x6B64;&#x9879;&#x53EF;&#x4EE5;&#x5C06;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x6620;&#x5C04;&#x56DE;&#x539F;&#x59CB;&#x6E90;&#x4EE3;&#x7801;&#xFF0C;&#x5F53;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x62A5;&#x9519;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8F85;&#x52A9;&#x4F60;&#x5FEB;&#x901F;&#x5B9A;&#x4F4D;&#x5230;&#x6E90;&#x7801;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h3 id="wacth">wacth</h3>
+<p>&#x88AB;&#x4F9D;&#x8D56;&#x7684;&#x6587;&#x4EF6;&#x53D1;&#x751F;&#x66F4;&#x6539;&#x65F6;&#xFF0C;&#x90FD;&#x89E6;&#x53D1;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4E0D;&#x5FC5;&#x518D;&#x53BB;&#x624B;&#x52A8;&#x8FD0;&#x884C;&#x6574;&#x4E2A;&#x6784;&#x5EFA;&#x3002;</p>
+<h2 id="&#x751F;&#x4EA7;&#x73AF;&#x5883;">&#x751F;&#x4EA7;&#x73AF;&#x5883;</h2>
+<h3 id="&#x6A21;&#x5757;&#x5206;&#x79BB;">&#x6A21;&#x5757;&#x5206;&#x79BB;</h3>
+<p>&#x6B64;&#x7279;&#x6027;&#x80FD;&#x591F;&#x628A;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x5230;&#x4E0D;&#x540C;&#x7684; bundle &#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x6216;&#x5E76;&#x884C;&#x52A0;&#x8F7D;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x3002;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x66F4;&#x5C0F;&#x7684; bundle&#xFF0C;&#x4EE5;&#x53CA;&#x63A7;&#x5236;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x4F18;&#x5148;&#x7EA7;&#x3002;</p>
+<h3 id="css-&#x5206;&#x79BB;">CSS &#x5206;&#x79BB;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;CSS &#x4F1A;&#x88AB;&#x6253;&#x5305;&#x5728; JavaScript &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;X-BUILD &#x4F7F;&#x7528; <a href="https://webpack.docschina.org/plugins/extract-text-webpack-plugin" target="_blank">ExtractTextWebpackPlugin</a> &#x4ECE; bundle &#x4E2D;&#x63D0;&#x53D6;&#x6587;&#x672C;&#xFF08;CSS&#xFF09;&#x5230;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<h3 id="&#x6E05;&#x7406;-dist-&#x6587;&#x4EF6;&#x5939;">&#x6E05;&#x7406; /dist &#x6587;&#x4EF6;&#x5939;</h3>
+<p>&#x5F53;&#x6267;&#x884C; <code>npm run build</code> &#x540E;&#xFF0C;X-BUILD &#x5C06;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x6587;&#x4EF6;&#x8F93;&#x51FA;&#x5728;&#x8DDF;&#x76EE;&#x5F55;&#x4E0B;&#x7684; dist &#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x5F53;&#x518D;&#x6B21;&#x7F16;&#x8BD1;&#x6216;&#x4F7F;&#x7528;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x65F6;&#x4F1A;&#x6E05;&#x7406;&#x6389; dist &#x76EE;&#x5F55;&#x3002;</p>
+<h2 id="&#x73AF;&#x5883;&#x53D8;&#x91CF;">&#x73AF;&#x5883;&#x53D8;&#x91CF;</h2>
+<p>NODE_ENV &#x662F;&#x4E00;&#x4E2A;&#x7531; Node.js &#x66B4;&#x9732;&#x7ED9;&#x6267;&#x884C;&#x811A;&#x672C;&#x7684;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x901A;&#x8FC7; process.env.NODE_ENV &#x53EF;&#x4EE5;&#x533A;&#x5206;&#x5F00;&#x53D1;&#x4E0E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1A;</p>
+<p>&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF1A;<font color="MediumSeaGreen">[ production ]</font> </p>
+<p>&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF1A;<font color="MediumSeaGreen">[ development ]</font></p>
+<pre><code>// example
+if (process.env.NODE_ENV !== &apos;production&apos;) {
+  console.log(&apos;Looks like we are in development mode!&apos;);
+}
+</code></pre><h2 id="&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h2>
+<p>X-BUILD &#x91C7;&#x7528; px2rem-loader + hotcss &#x7684;&#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x5728;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x9009;&#x62E9; <strong>Mobile layout</strong> &#x5373;&#x53EF;&#x5F00;&#x542F;&#x6B64;&#x9879;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h3>
+<p>&#x9996;&#x5148;&#x8981;&#x548C;&#x8BBE;&#x8BA1;&#x5E08;&#x6C9F;&#x901A;&#xFF0C;&#x786E;&#x5B9A;&#x8BBE;&#x8BA1;&#x7A3F;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x4F8B;&#x5982; 750px&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x6700;&#x4F18;&#x8BBE;&#x5B9A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728; xbuild.config.js &#x4E2D;&#x8BBE;&#x7F6E; <strong>designWidth</strong>&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; Number&#x3002;</p>
+<p>&#x968F;&#x540E;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x8BBE;&#x8BA1;&#x56FE;&#x5185;&#x7684;&#x5143;&#x7D20;&#x5C3A;&#x5BF8;&#x662F;&#x591A;&#x5C11;&#x50CF;&#x7D20;&#xFF0C;&#x5728; css &#x4E2D;&#x5199;&#x540C;&#x6837;&#x7684;&#x5C3A;&#x5BF8;&#x5373;&#x53EF;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x5C06; px &#x8F6C;&#x5316;&#x4E3A; rem&#xFF0C;&#x66F4;&#x6362;&#x8BBE;&#x5907;&#x540E;&#x53D1;&#x73B0;&#x663E;&#x793A;&#x6548;&#x679C;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x3002;</p>
+<blockquote>
+<p><a href="https://juejin.im/post/5ad9a694f265da0b7a203f9b" target="_blank">REM &#x81EA;&#x9002;&#x5E94;&#x89E3;&#x51B3;&#x65B9;&#x6848;</a></p>
+</blockquote>
+<h2 id="api-&#x8BF7;&#x6C42;&#x63A5;&#x53E3;">API &#x8BF7;&#x6C42;&#x63A5;&#x53E3;</h2>
+<p>&#x5F53;&#x6709;&#x5927;&#x91CF;&#x7684;&#x63A5;&#x53E3;&#x65F6;&#xFF0C;&#x4F7F;&#x7528; X-BUILD &#x63D0;&#x4F9B;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D; api &#x6A21;&#x5757;&#x5C06;&#x8282;&#x7701;&#x5927;&#x91CF;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<h3 id="api-&#x76EE;&#x5F55;">API &#x76EE;&#x5F55;</h3>
+<p>src/api/index.js &#x4E3A; api &#x4E3B;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528; webpack &#x63D0;&#x4F9B;&#x7684; <a href="https://webpack.docschina.org/guides/dependency-management/#require-context" target="_blank">require.context</a> &#x65B9;&#x6CD5;&#xFF0C;&#x5C06; api/ &#x5185;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#xFF08;&#x5305;&#x62EC;&#x5B50;&#x8DEF;&#x5F84;&#xFF09;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; ES6 &#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;">&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h3>
+<p>&#x5047;&#x8BBE;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; GET &#x8BF7;&#x6C42;&#xFF0C;&#x5728; api/ &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; getUser.js&#xFF0C;&#x5728;&#x6B64;&#x6211;&#x4EEC;&#x4F7F;&#x7528; axios &#x4E3E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-JavaScript"><span class="hljs-comment">// getUser.js</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> axios.get(<span class="hljs-string">&apos;...&apos;</span>)
+}
+</code></pre>
+<p>&#x6B64;&#x65F6;&#x5BFC;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x4F1A;&#x88AB; index.js &#x83B7;&#x53D6;&#x5230;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x4EE5;&#x6587;&#x4EF6;&#x540D;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x5185;&#x7684; key &#x5BFC;&#x51FA;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x63A5;&#x53E3;">&#x4F7F;&#x7528;&#x63A5;&#x53E3;</h3>
+<p>&#x5047;&#x8BBE;&#x5728; src/srcipts/index.js &#x4E2D;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#xFF1A;</p>
+<pre><code class="lang-JavaScript"><span class="hljs-keyword">import</span> Api <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../api&apos;</span>
+Api.getUser()
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="create.html" class="navigation navigation-prev " aria-label="Previous page: 创建项目">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="options.html" class="navigation navigation-next " aria-label="Next page: 配置">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"概念","level":"2.2","depth":1,"next":{"title":"配置","level":"2.3","depth":1,"path":"docs/options.md","ref":"docs/options.md","articles":[]},"previous":{"title":"创建项目","level":"2.1","depth":1,"path":"docs/create.md","ref":"docs/create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/concept.md","mtime":"2019-06-12T08:51:35.050Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-12T08:53:38.799Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

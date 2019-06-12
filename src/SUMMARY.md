@@ -2,23 +2,21 @@
 
 * [概述](README.md)
 
-* [安装（CLI）](docs/getting-start/2-install.md)
+* [安装（CLI）](docs/install.md)
 
-* [创建一个项目](docs/getting-start/3-init.md)
+* [快速开始](docs/quick.md)
 
-* [目录结构](docs/getting-start/4-structure.md)
 
-* [开发与打包](docs/getting-start/5-run.md)
+* [创建项目](docs/create.md)
 
-* [配置](docs/getting-start/6-options.md)
+* [概念](docs/concept.md)
 
-* [api请求接口](docs/getting-start/7-api.md)
+* [配置](docs/options.md)
 
-* [ESLint 配置](docs/others/eslint.md)
+* [规范](docs/eslint.md)
 
-## 其他插件
 
-* [快速上手](docs/plugin/about.md)
+* [其他插件](docs/plugin/about.md)
 
 * [X-FULLPAGE](docs/plugin/x-fullpage.md)
 
