@@ -45,11 +45,11 @@
 
 **自适应布局：**是否使用自适应布局。
 
-### remUnit
+### designWidth
 
-<font color=MediumSeaGreen>&lt;boolean&gt;</font>
+<font color=MediumSeaGreen>&lt;Number&gt;</font>
 
-**自适应布局参数**
+**设计稿尺寸(px)**
 
 ### base64
 
