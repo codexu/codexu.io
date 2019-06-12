@@ -8,7 +8,7 @@
 
 <p align="center">X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题，辅助你生成更优质的代码。</p>
 
-![](http://ww2.sinaimg.cn/large/006tNc79ly1g3yhlx119kj31ae0u0k14.jpg)
+![](http://ww4.sinaimg.cn/large/006tNc79ly1g3yi5adyjlg30rs0hzdqw.gif)
 
 ## 主要功能
 
