@@ -18,6 +18,8 @@ X-BUILD 在初始化项目时，预先做好了入口文件的关联，你无需
 
 初始化项目时如果选择了 **CSS Pre-processors** 选项，会再次询问你选择哪种 CSS 预处理器作为开发工具（单选），随后会安装相对应的 loader，推荐至少掌握一种 CSS预处理器。
 
+[PostCSS](https://postcss.org/) 插件 [Autopreﬁxer](https://github.com/postcss/autoprefixer) 自动补全浏览器私有前缀。若使用更多的插件请自行安装，然后在跟目录下的 postcss.config.js 中配置。
+
 [安装 Sass 失败？](https://segmentfault.com/a/1190000010984731)
 
 ### JavaScript
