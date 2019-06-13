@@ -13,19 +13,25 @@
 
 ## 主要功能
 
-- 快速生成工程目录
+**脚手架：**
 
-- 基于 webpack 的开发环境
+- 自动创建工程目录（自定义/快速）
 
-- 自适应解决方案
+- 自动安装依赖 / 自动初始化 Git
+
+- 生成配置文件，提供更灵活的选择
+
+**开发/生产环境：**
+
+- 基于 webpack4 的开发环境
+
+- 支持 CSS 预处理器(sass、less、stylus)
+
+- 支持 TypeScript & TSLint 或 Babel & ESLint 
+
+- 提供可选的自适应解决方案
 
 - 数据接口模块自动加载
-
-- CSS预处理器(sass、less、stylus)
-
-- ESLint
-
-- Babel
 
 ## 讨论交流
 

@@ -17,10 +17,6 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
                 
             
@@ -422,6 +418,7 @@
 <ul>
 <li>Babel&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</li>
 <li>ESLint&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</li>
+<li>TypeScript</li>
 <li>CSS Pre-processors<ul>
 <li>Sass</li>
 <li>Less</li>
@@ -443,13 +440,13 @@
   &#x2514;&#x2500;&#x2500; src/ # &#x6E90;&#x7801;&#x76EE;&#x5F55;
       &#x251C;&#x2500;&#x2500; api/ # AJAX&#x8BF7;&#x6C42;&#x76EE;&#x5F55;
       &#x251C;&#x2500;&#x2500; scripts/
-      |   &#x2514;&#x2500;&#x2500; index.js # JavaScript&#x4E3B;&#x5165;&#x53E3;&#x6587;&#x4EF6;
+      |   &#x2514;&#x2500;&#x2500; index.[js/ts] # JavaScript&#x4E3B;&#x5165;&#x53E3;&#x6587;&#x4EF6;
       &#x251C;&#x2500;&#x2500; styles/
-      |   &#x2514;&#x2500;&#x2500; index.[css\scss\less\styl] # &#x6837;&#x5F0F;&#x5165;&#x53E3;&#x6587;&#x4EF6;
-      &#x2514;&#x2500;&#x2500; index.[html\pug] # html&#x6B63;&#x6587;
+      |   &#x2514;&#x2500;&#x2500; index.[css/scss/less/styl] # &#x6837;&#x5F0F;&#x5165;&#x53E3;&#x6587;&#x4EF6;
+      &#x2514;&#x2500;&#x2500; index.[html/pug] # html&#x6B63;&#x6587;
 </code></pre><h4 id="&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF1A;">&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF1A;</h4>
 <p><strong>HTML</strong>&#xFF1A;src/index.[html/pug]</p>
-<p><strong>JavaScript</strong>&#xFF1A;src/scripts/index.js</p>
+<p><strong>JavaScript</strong>&#xFF1A;src/scripts/index.[js/ts]</p>
 <p><strong>CSS</strong>&#xFF1A;src/styles/index.[css/scss/less/styl]</p>
 <h4 id="assets-&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#xFF1A;">assets &#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#xFF1A;</h4>
 <p><strong>&#x56FE;&#x7247;</strong>&#xFF1A;&#x521B;&#x5EFA;&#x76EE;&#x5F55; assets/images&#xFF0C;&#x652F;&#x6301; png|jpe?g|gif|svg|webp &#x683C;&#x5F0F;&#x3002;</p>
@@ -491,7 +488,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"创建项目","level":"2.1","depth":1,"next":{"title":"概念","level":"2.2","depth":1,"path":"docs/concept.md","ref":"docs/concept.md","articles":[{"title":"- 入口文件","level":"2.2.1","depth":2,"anchor":"#入口文件","path":"docs/concept.md","ref":"docs/concept.md#入口文件","articles":[]},{"title":"- 静态资源","level":"2.2.2","depth":2,"anchor":"#静态资源","path":"docs/concept.md","ref":"docs/concept.md#静态资源","articles":[]},{"title":"- 开发环境","level":"2.2.3","depth":2,"anchor":"#开发环境","path":"docs/concept.md","ref":"docs/concept.md#开发环境","articles":[]},{"title":"- 生产环境","level":"2.2.4","depth":2,"anchor":"#生产环境","path":"docs/concept.md","ref":"docs/concept.md#生产环境","articles":[]},{"title":"- 环境变量","level":"2.2.5","depth":2,"anchor":"#环境变量","path":"docs/concept.md","ref":"docs/concept.md#环境变量","articles":[]},{"title":"- 自适应解决方案","level":"2.2.6","depth":2,"anchor":"#自适应解决方案","path":"docs/concept.md","ref":"docs/concept.md#自适应解决方案","articles":[]},{"title":"- 请求接口","level":"2.2.7","depth":2,"anchor":"#请求接口","path":"docs/concept.md","ref":"docs/concept.md#请求接口","articles":[]}]},"previous":{"title":"快速开始","level":"1.3","depth":1,"path":"docs/quick.md","ref":"docs/quick.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu"},"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"x-build & plugins 文档"},"file":{"path":"docs/create.md","mtime":"2019-06-12T09:12:48.833Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-13T02:13:27.533Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"创建项目","level":"2.1","depth":1,"next":{"title":"概念","level":"2.2","depth":1,"path":"docs/concept.md","ref":"docs/concept.md","articles":[{"title":"- 入口文件","level":"2.2.1","depth":2,"anchor":"#入口文件","path":"docs/concept.md","ref":"docs/concept.md#入口文件","articles":[]},{"title":"- 静态资源","level":"2.2.2","depth":2,"anchor":"#静态资源","path":"docs/concept.md","ref":"docs/concept.md#静态资源","articles":[]},{"title":"- 开发环境","level":"2.2.3","depth":2,"anchor":"#开发环境","path":"docs/concept.md","ref":"docs/concept.md#开发环境","articles":[]},{"title":"- 生产环境","level":"2.2.4","depth":2,"anchor":"#生产环境","path":"docs/concept.md","ref":"docs/concept.md#生产环境","articles":[]},{"title":"- 环境变量","level":"2.2.5","depth":2,"anchor":"#环境变量","path":"docs/concept.md","ref":"docs/concept.md#环境变量","articles":[]},{"title":"- 自适应解决方案","level":"2.2.6","depth":2,"anchor":"#自适应解决方案","path":"docs/concept.md","ref":"docs/concept.md#自适应解决方案","articles":[]},{"title":"- 请求接口","level":"2.2.7","depth":2,"anchor":"#请求接口","path":"docs/concept.md","ref":"docs/concept.md#请求接口","articles":[]}]},"previous":{"title":"快速开始","level":"1.3","depth":1,"path":"docs/quick.md","ref":"docs/quick.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","advanced-emoji","github","terminal"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/codexu/x-build"},"terminal":{"copyButtons":true,"fade":false,"style":"flat"},"advanced-emoji":{"embedEmojis":false},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"codexu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"X-BUILD文档","language":"zh-hans","gitbook":"*","description":"X-BUILD文档"},"file":{"path":"docs/create.md","mtime":"2019-06-13T03:21:22.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-13T03:24:37.136Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -499,10 +496,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>

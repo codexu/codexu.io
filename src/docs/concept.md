@@ -28,6 +28,8 @@ X-BUILD 在初始化项目时，预先做好了入口文件的关联，你无需
 
 - [ESLint](https://cn.eslint.org/) : 语法规则和代码风格的检查工具，它的目标是保证代码的一致性和避免错误。
 
+- [TypeScript](https://www.tslang.cn/index.html) : TypeScript 并不是一个完全新的语言, 它是 JavaScript 的超集，为 JavaScript 的生态增加了类型机制，并最终将代码编译为纯粹的 JavaScript 代码。
+
 快速创建的项目并不包含这两项功能，但 create 命令中还是将这两项作为默认选中状态，他们可以帮你养成书写更加先进和规范的代码。
 
 ## 静态资源

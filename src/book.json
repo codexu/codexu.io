@@ -1,6 +1,6 @@
 {
   "title": "X-BUILD文档",
-  "description": "x-build & plugins 文档",
+  "description": "X-BUILD文档",
   "author" : "codexu",
   "language" : "zh-hans",
   "styles": {
@@ -8,14 +8,13 @@
   },
   "plugins": [
     "-search",
-    "splitter",
     "advanced-emoji",
     "github",
     "terminal"
   ],
   "pluginsConfig": {
     "github": {
-      "url": "https://github.com/codexu"
+      "url": "https://github.com/codexu/x-build"
     },
     "terminal": {
       "copyButtons": true,

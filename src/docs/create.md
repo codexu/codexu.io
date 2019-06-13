@@ -19,6 +19,7 @@ X-BUILD 提供了多个选项，根据项目的需求选择不同的配置，随
 
 - Babel（默认）
 - ESLint（默认）
+- TypeScript
 - CSS Pre-processors
   - Sass
   - Less
@@ -39,17 +40,17 @@ X-BUILD 提供了多个选项，根据项目的需求选择不同的配置，随
   └── src/ # 源码目录
       ├── api/ # AJAX请求目录
       ├── scripts/
-      |   └── index.js # JavaScript主入口文件
+      |   └── index.[js/ts] # JavaScript主入口文件
       ├── styles/
-      |   └── index.[css\scss\less\styl] # 样式入口文件
-      └── index.[html\pug] # html正文
+      |   └── index.[css/scss/less/styl] # 样式入口文件
+      └── index.[html/pug] # html正文
 ```
 
 #### 入口文件：
 
 **HTML**：src/index.[html/pug]
 
-**JavaScript**：src/scripts/index.js
+**JavaScript**：src/scripts/index.[js/ts]
 
 **CSS**：src/styles/index.[css/scss/less/styl]
 

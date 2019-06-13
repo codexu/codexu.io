@@ -6,6 +6,7 @@
 
 * [快速开始](docs/quick.md)
 
+---
 
 * [创建项目](docs/create.md)
 
@@ -22,6 +23,7 @@
 
 * [规范](docs/eslint.md)
 
+---
 
 * [其他插件](docs/plugin/about.md)
 
