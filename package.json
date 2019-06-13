@@ -1,24 +1,9 @@
 {
-  "name": "codexu.github.io",
-  "version": "1.0.0",
-  "description": "[https://codexu.github.io/](https://codexu.github.io/)",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "serve": "cd src && gitbook serve",
-    "build": "cd src && gitbook build && cp -r _book/* ../",
-    "push": "git add . && git commit -m 'docs' && git push"
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codexu/codexu.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/codexu/codexu.github.io/issues"
-  },
-  "homepage": "https://github.com/codexu/codexu.github.io#readme"
+  "devDependencies": {
+    "vuepress": "^1.0.1"
+  }
 }
