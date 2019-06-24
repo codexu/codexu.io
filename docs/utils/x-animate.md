@@ -4,50 +4,50 @@
 ![](https://img.shields.io/npm/dm/x-animate.svg)
 ![](https://img.shields.io/github/license/codexu/x-animate.svg)
 
-通过屏幕滚动实现执行动画，支持延时动画、控制动画执行时间、执行偏移量、生命周期回调、动画组，完美支持Animate.css。
+Perform animations through screen scrolling, support for time-lapse animation, control animation execution time, execution offsets, lifecycle callbacks, animation groups, and support Animate.css perfectly.
 
-## 安装
+## Installation
 
-- 通过 <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font> 安装：
+- Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-npm install animate.css x-animate --save
+Npm install animate.css x-animate --save
 ```
 
-## 引用
+## Quote
 
-- 通过包管理器安装：
+- Install through the package manager:
 
 ```javascript
 // javascript
-import 'animate.css'
-import XAnimate from 'x-animate'
-const xAnimate = new XAnimate();
+Import 'animate.css'
+Import XAnimate from 'x-animate'
+Const xAnimate = new XAnimate();
 xAnimate.init();
 ```
 
-> 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-animate/tree/master/dist)
+> This project is packaged in rollup using UMD format, and supports AMD, CommonJS, and script tags. [Download Source] (https://github.com/codexu/x-animate/tree/master/dist)
 
-## 起步
+## Getting off
 
-为至少一个 DOM 添加 <font color=Green>animate</font> 属性，并赋值一个动画名称，例如：
+Add a <font color=Green>animate</font> attribute to at least one DOM and assign an animated name, for example:
 
 ```html
 <!-- html -->
 <div animate="bounceInLeft"></div>
 ```
 
-## 单元素动画
+## single element animation
 
-只对单个元素生效的动画，当滚动到它的相应位置就会被执行：
+An animation that only works on a single element will be executed when scrolled to its corresponding position:
 
 ```html
 <!-- html -->
-<div animate="[animate-name]" 
-     delay="1000" 
-     duration="1000" 
-     offset="100" 
-     animateEnter="animateEnterFn" 
+<div animate="[animate-name]"
+     Delay="1000"
+     Duration="1000"
+     Offset="100"
+     animateEnter="animateEnterFn"
      animateLeave="animateLeaveFn"
 ></div>
 ```
@@ -56,41 +56,41 @@ xAnimate.init();
 
 `none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-参考 animate.css 动画名，或参考自定义动画。
+Refer to the animate.css animation name, or refer to the custom animation.
 
 ### delay
 
 `0(ms)` <font color=MediumSeaGreen>&lt;Number&gt;</font>
 
-延时：当屏幕滚动到对应位置时，延时结束执行动画。
+Delay: When the screen scrolls to the corresponding position, the delay ends the execution of the animation.
 
 ### duration
 
 `1000(ms)` <font color=MediumSeaGreen>&lt;Number&gt;</font>
 
-持续时间：动画执行的持续时间，数值越大动画越慢。
+Duration: The duration of the animation execution. The larger the value, the slower the animation.
 
 ### offset
 
 `0(px)` <font color=MediumSeaGreen>&lt;Number&gt;</font>
 
-偏移量：以屏幕底部为轴，默认滚动到某一元素已显示一半高度时执行动画。偏移量为正数，则需多滚动相应的距离；偏移量为负值，则会提前相应距离执行动画。
+Offset: The animation is performed when the bottom of the screen is the axis and the default scrolls to when an element has displayed half the height. If the offset is positive, you need to scroll the corresponding distance. If the offset is negative, the animation will be executed in advance.
 
 ### animateEnter(item)
 
 `none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
 
-生命周期函数：当某个元素动画开始时执行函数。
+Lifecycle function: The function is executed when an element animation begins.
 
 ### animateLeave(item)
 
 `none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
 
-生命周期函数：当某个元素动画结束时执行函数。
+Lifecycle function: Executes a function when an element's animation ends.
 
-## 动画组
+## Animation Group
 
-当滚动到某个区域需要它里面的子元素做连续动画时（例如为地图标记点做连续动画）：
+When scrolling to an area requires sub-elements in it to make continuous animations (for example, continuous animation for map points):
 
 ```html
 <!-- html -->
@@ -101,54 +101,54 @@ xAnimate.init();
 
 ### animate-group*
 
-为一个动画组的父元素添加此属性。
+Add this property to the parent element of an animation group.
 
 ### animateItem*
 
-动画名，同时子元素支持单元素的所有属性。
+The name of the animation, and the child elements support all the attributes of the single element.
 
-## 绑定生命周期函数
+## Binding life cycle function
 
-在需要触发的元素上增加属性 <font color=Green>animate-enter</font> (动画前)或 <font color=Green>animate-leave</font> (动画后)，值为定义在 methods 中的函数名。
+Add the attribute <font color=Green>animate-enter</font> (before the animation) or <font color=Green>animate-leave</font> (after the animation) to the element that needs to be triggered. The value is defined in the methods. The name of the function.
 
 ```html
 <!-- html -->
 <div animate-enter="animateEnter" animate-leave="animateLeave"></div>
 ```
 
-将需要执行的函数定义在 methods 中：
+Define the functions that need to be executed in methods:
 
 ```javascript
 // javascript
-let xAnimate = new XAnimate({
-  methods: {
+Let xAnimate = new XAnimate({
+  Methods: {
     animateEnterFn(item) {
-      console.log('animateEnter', item);
+      Console.log('animateEnter', item);
     },
     animateLeaveFn(item) {
-      console.log('animateLeave', item);
+      Console.log('animateLeave', item);
     }
   }
 });
 ```
 
-## 自定义动画
+## Custom animation
 
-使用自定义的动画，例如新定义 newAnimate 动画:
+Use custom animations, such as new definition newAnimate animations:
 
 ```css
 /* css */
 @keyframes newAnimate {
-  from {
-    opacity: 0;
+  From {
+    Opacity: 0;
   }
-  to {
-    opacity: 1;
+  To {
+    Opacity: 1;
   }
 }
 
 .newAnimate {
-  animation-name: newAnimate;
+  Animation-name: newAnimate;
 }
 ```
 
@@ -157,16 +157,16 @@ let xAnimate = new XAnimate({
 <div animate="newAnimate"></div>
 ```
 
-## 其他配置
+## Other configuration
 
 ```javascript
 // javascript
-const xAnimate = new XAnimate({
-  // 默认值'animate'，对应<div animate=""></div>，防止与其他插件命名冲突
-  name: 'animate',
-  // 默认值'delay'，对应<div delay=""></div>，防止与其他插件命名冲突
-  delay: 'delay',
-  // 默认值'duration'，对应<div duration=""></div>，防止与其他插件命名冲突
-  duration: 'duration'
+Const xAnimate = new XAnimate({
+  // The default value 'animate', corresponding to <div animate=""></div>, prevents naming conflicts with other plugins
+  Name: 'animate',
+  // The default value is 'delay', corresponding to <div delay=""></div> to prevent naming conflicts with other plugins
+  Delay: 'delay',
+  // The default value is 'duration', corresponding to <div duration=""></div> to prevent naming conflicts with other plugins
+  Duration: 'duration'
 });
 ```

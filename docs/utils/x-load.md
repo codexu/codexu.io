@@ -4,35 +4,35 @@
 ![](https://img.shields.io/npm/dm/x-load.svg)
 ![](https://img.shields.io/github/license/codexu/x-load.svg)
 
-通过预加载、懒加载、顺序加载控制图片下载方式，主要针对H5页面的Loading加载进度实现。
+The preloading, lazy loading, and sequential loading control image downloading methods are mainly implemented for the loading loading progress of the H5 page.
 
-## 安装
+## Installation
 
-- 通过 <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font> 安装：
+- Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-npm install x-load --save
+Npm install x-load --save
 ```
 
-## 引用
+## Quote
 
-- 通过包管理器安装：
+- Install through the package manager:
 
 ```javascript
-import XLoad from 'x-load';
+Import XLoad from 'x-load';
 ```
 
-> 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-load/tree/master/dist)
+> This project is packaged in rollup using UMD format, supports AMD, CommonJS, and script tags, [download source] (https://github.com/codexu/x-load/tree/master/dist)
 
-## 起步
+## Getting off
 
-1. 正文包裹层增加 <font color=Green>id="root"</font> ，将你的所有正文内容写在这个 <font color=Green>div</font> 下。
+1. Add <font color=Green>id="root"</font> to the body wrapper and write all your body content under this <font color=Green>div</font>.
 
-2. X-BUILD 项目已经在 index.pug 中定义好 <font color=Crimson>div#root</font> ，所有的内容写在 app.pug 内即可。
+2. The X-BUILD project has been defined in index.pug <font color=Crimson>div#root</font> , and all the content is written in app.pug.
 
-3. <font color=Crimson>&lt;img&gt;</font> 标签使用 <font color=Green>data-src</font> 传入图片链接，不要设置 <font color=Green>src</font> 属性。
+3. <font color=Crimson>&lt;img&gt;</font> tags use <font color=Green>data-src</font> to pass in image links, do not set <font color=Green>src</font> attribute .
 
-4. 至少给一个 <font color=Crimson>&lt;img&gt;</font> 标签增加属性 <font color=Green>prior</font> ，表示此图片需要优先加载。
+4. Add at least one <font color=Crimson>&lt;img&gt;</font> tag to the attribute <font color=Green>prior</font> to indicate that this image needs to be loaded first.
 
 ```html
 <!-- html -->
@@ -41,74 +41,72 @@ import XLoad from 'x-load';
 </div>
 ```
 
-## 参数
+## Parameters
 
-实例化 XLoad 时，传入 object 配置参数：
+When instantiating XLoad, pass in the object configuration parameter:
 
 ```javascript
-new XLoad({
+New XLoad({
   // ...
 });
 ```
 
-### wrapper 
+### wrapper
 
 `#root` <font color=MediumSeaGreen>&lt;HTMLelement&gt;</font>
 
-传入正文包裹层 DOM。
+Incoming the body wrap layer DOM.
 
-### loader 
+### loader
 
 `null` <font color=MediumSeaGreen>&lt;HTMLelement&gt;</font>
 
-如果需要自定义 loading 效果，请将自定义 DOM 传入。
+If you need a custom loading effect, pass in a custom DOM.
 
-### attr 
+### attr
 
 `'data-src'` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-当 <font color=Crimson>&lt;img data-src="url"&gt;</font> 命名冲突时改变此项。
+Change this when the <font color=Crimson>&lt;img data-src="url"&gt;</font> naming conflicts.
 
-### prior 
+### prior
 
 `'prior'` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-当 <font color=Crimson>&lt;img prior&gt;</font> 命名冲突时改变此项。
+Change this when the <font color=Crimson>&lt;img prior&gt;</font> naming conflicts.
 
-### sync 
+### sync
 
 `true` <font color=MediumSeaGreen>&lt;Boolean&gt;</font>
 
-默认同步加载（按顺序加载），控制 <font color=Crimson>&lt;img prior&gt;</font> 图片加载完成后剩余图片加载方式，设置为 false：异步加载(同时加载所有图片)。
+Default sync loading (loaded in order), control <font color=Crimson>&lt;img prior&gt;</font> The remaining image loading mode after the image is loaded, set to false: asynchronous loading (load all images at the same time).
 
-### loadImg 
+### loadImg
 
 `null` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-图片路径，用于未加载完成图片的背景图，注意：使用 webpack ，请使用 require()。
+Image path, used to unload the background image of the completed image, note: use webpack, please use require().
 
-### beforeLoading(object) 
-
-`none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
-
-当实例化完成后触发。
-
-- `object` <font color=MediumSeaGreen>&lt;Object&gt;</font> 指向实例
-
-### nextTickLoading(percent) 
+### beforeLoading(object)
 
 `none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
 
-每一个 <font color=Crimson>&lt;img prior&gt;</font> 加载后时触发（不论成功或失败）。
+Fires when instantiation is complete.
 
-- `percent` <font color=MediumSeaGreen>&lt;Number&gt;</font> 当前图片加载进度，值为`0-1`的小数。
+- `object` <font color=MediumSeaGreen>&lt;Object&gt;</font> points to the instance
 
-### afterLoading() 
+### nextTickLoading(percent)
 
 `none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
 
-所有 <font color=Crimson>&lt;img prior&gt;</font> 加载完成后执行。
+Each <font color=Crimson>&lt;img prior&gt;</font> is fired after loading (whether successful or failed).
 
-- `object` <font color=MediumSeaGreen>&lt;Object&gt;</font> 指向实例
+- `percent` <font color=MediumSeaGreen>&lt;Number&gt;</font> The current image loading progress is a decimal value of `0-1`.
 
+### afterLoading()
 
+`none` <font color=MediumSeaGreen>&lt;Function&gt;</font>
+
+All <font color=Crimson>&lt;img prior&gt;</font> is executed after loading is complete.
+
+- `object` <font color=MediumSeaGreen>&lt;Object&gt;</font> points to the instance

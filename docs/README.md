@@ -9,55 +9,50 @@
 
 ![](http://ww2.sinaimg.cn/large/006tNc79ly1g3yij4uah1g30rs0hzdnt.gif)
 
-## 介绍
 
-X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几秒钟初始化项目目录，解决开发中的自动化、性能、模块化、规范、自适应布局等问题，辅助你生成更优质的代码。它两部分组成：一部分为基于 Node.js 环境下的项目生成器，它是安装在全局环境下的 NPM 包；另一部分是基于 webpack 的开发和生产环境，对各类需求做了相应的配置。
+## Introduction
 
-## 特性
+X-BUILD is a scaffolding tool for small projects. It can quickly initialize the project directory in a few seconds through terminal commands, and solve the problems of automation, performance, modularity, specification, adaptive layout, etc. in development, and help you generate better code. . It consists of two parts: a project generator based on the Node.js environment, which is an NPM package installed in the global environment, and a webpack-based development and production environment that configures various requirements.
 
-**脚手架：**
+## Features
 
-- 自动创建工程目录（自定义/快速）
+**scaffold:**
 
-- 自动安装依赖 / 自动初始化 Git
+- Automatic creation of project directory (custom / fast)
 
-- 生成配置文件，提供更灵活的选择
+- Automatically install dependencies / auto-initialize Git
 
-**开发/生产环境：**
+- Generate profiles for more flexible options
 
-- 基于 webpack4 的开发环境
+**Development / Production Environment:**
 
-- 支持 CSS 预处理器(sass、less、stylus)
+- webpack4 based development environment
 
-- 支持 TypeScript & TSLint 或 Babel & ESLint 
+- Support for CSS preprocessors (sass, less, stylus)
 
-- 提供可选的自适应解决方案
+- Support for TypeScript & TSLint or Babel & ESLint
 
-- 数据接口模块自动加载
+- Provide an optional adaptive solution
 
-## 适合环境
+- Data interface module is automatically loaded
 
-- **小型项目**：周期短，无需使用大型框架开发并且还能保证项目的品质和效率。
+## Suitable for the environment
 
-- **高效学习**：无论是 ES 新语法、TS 或 CSS 预处理器，避免复杂的搭建环境影响学习效率。
+- **Small projects**: Short cycle, no need to use large framework development and guarantee the quality and efficiency of the project.
 
-::: danger 搭建大型项目
-如果你有足够了解 X-BUILD ，并且熟练掌握 webpack，在此基础上完全可以搭建适合大型项目开发的环境，但我并不建议你这么做！
+- **Efficient learning**: Whether it is ES new syntax, TS or CSS preprocessor, avoid complex construction environment affecting learning efficiency.
+
+::: danger Building a large project
+If you have enough knowledge of X-BUILD and master webpack, you can build an environment suitable for large-scale project development, but I don't recommend it!
 :::
 
-## 讨论交流
+## Discussion and exchange
 
-### QQ群
+Please submit the bug in the **Github issues** for different projects:
 
-欢迎加入 QQ交流群（374406559），在这里可以互相交流前端问题。
-
-### 提问 & BUG
-
-请将BUG提交在不同项目的 **Github issues** 里：
-
-[X-BUILD](https://github.com/codexu/x-build/issues) | 
-[X-FULLPAGE](https://github.com/codexu/x-fullpage/issues) | 
-[X-LOAD](https://github.com/codexu/x-load/issues) | 
-[X-ANIMATE](https://github.com/codexu/x-animate/issues) | 
-[X-TOUCH](https://github.com/codexu/x-touch/issues) | 
+[X-BUILD](https://github.com/codexu/x-build/issues) |
+[X-FULLPAGE](https://github.com/codexu/x-fullpage/issues) |
+[X-LOAD](https://github.com/codexu/x-load/issues) |
+[X-ANIMATE](https://github.com/codexu/x-animate/issues) |
+[X-TOUCH](https://github.com/codexu/x-touch/issues) |
 [X-MUSIC](https://github.com/codexu/x-music/issues)

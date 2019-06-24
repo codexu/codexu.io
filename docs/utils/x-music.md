@@ -4,66 +4,64 @@
 ![](https://img.shields.io/npm/dm/x-music.svg)
 ![](https://img.shields.io/github/license/codexu/x-music.svg)
 
-设置背景音乐及播放控制按钮。
+Set background music and playback controls.
 
-## 安装
+## Installation
 
-- 通过 <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font> 安装：
+- Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-npm install x-music --save
+Npm install x-music --save
 ```
 
-## 起步
+## Getting off
 
-- 使用 ES6 方式引用：
+- Reference using ES6:
 
 ``` javascript
-import XMusic from 'x-music';
+Import XMusic from 'x-music';
 
-// 使用 webpack 请 import 引入静态资源
-import src from '***';
-import playImg from '***';
-import pauseImg from '***';
+/ / Use webpack please import to introduce static resources
+Import src from '***';
+Import playImg from '***';
+Import pauseImg from '***';
 
-const xMusic = new XMusic({ src, playImg, pauseImg });
+Const xMusic = new XMusic({ src, playImg, pauseImg });
 xMusic.init();
 ```
 
-> 本项目通过 rollup 使用 UMD 格式打包，支持 AMD、CommonJS、script 标签引入，[下载源码](https://github.com/codexu/x-music/tree/master/dist)
+> This project is packaged in rollup using UMD format, supporting the introduction of AMD, CommonJS, and script tags. [Download Source] (https://github.com/codexu/x-music/tree/master/dist)
 
-## 参数
+## Parameters
 
-如果使用 webpack 进行打包，请使用 import 加载静态资源：
+If you are packaging with webpack, use import to load the static resource:
 
 ### src*
 
 `none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-音乐路径
+Music path
 
 ### playImg*
 
 `none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-播放按钮图片路径
+Play button image path
 
 ### pauseImg*
 
 `none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-暂停按钮图片路径
+Pause button image path
 
-### width 
-
-`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
-
-按钮图片宽度(px)
-
-### height 
+### width
 
 `none` <font color=MediumSeaGreen>&lt;String&gt;</font>
 
-按钮图片高度(px)
+Button image width (px)
 
+### height
 
+`none` <font color=MediumSeaGreen>&lt;String&gt;</font>
+
+Button picture height (px)
