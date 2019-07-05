@@ -65,7 +65,7 @@ npm install --save-dev csv-loader xml-loader
 Add the following code to loaders in xbuild.config.js :
 
 ```javascript
-Loaders: [
+loaders: [
   {
     Test: /\.(csv|tsv)$/,
     Use: [
@@ -119,7 +119,7 @@ Development environment: <font color=MediumSeaGreen>[ development ]</font>
 
 ```
 // example
-If (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   Console.log('Looks like we are in development mode!');
 }
 ```
@@ -150,10 +150,10 @@ Assuming you create a GET request, create getUser.js under the api/ directory, h
 
 ```JavaScript
 // getUser.js
-Import axios from 'axios';
+import axios from 'axios';
 
-Export default function () {
-  Return axios.get('...')
+export default function () {
+  return axios.get('...')
 }
 ```
 
@@ -164,6 +164,6 @@ The exported file will be retrieved by index.js and will be exported with the fi
 Suppose you use an interface in src/srcipts/index.js:
 
 ```JavaScript
-Import Api from '../api'
+import Api from '../api'
 Api.getUser()
 ```

@@ -29,7 +29,7 @@ X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几
 
 - 支持 CSS 预处理器(sass、less、stylus)
 
-- 支持 TypeScript & TSLint 或 Babel & ESLint 
+- 支持 TypeScript & TSLint 或 Babel & ESLint
 
 - 提供可选的自适应解决方案
 
@@ -55,9 +55,23 @@ X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几
 
 请将BUG提交在不同项目的 **Github issues** 里：
 
-[X-BUILD](https://github.com/codexu/x-build/issues) | 
-[X-FULLPAGE](https://github.com/codexu/x-fullpage/issues) | 
-[X-LOAD](https://github.com/codexu/x-load/issues) | 
-[X-ANIMATE](https://github.com/codexu/x-animate/issues) | 
-[X-TOUCH](https://github.com/codexu/x-touch/issues) | 
+[X-BUILD](https://github.com/codexu/x-build/issues) |
+[X-FULLPAGE](https://github.com/codexu/x-fullpage/issues) |
+[X-LOAD](https://github.com/codexu/x-load/issues) |
+[X-ANIMATE](https://github.com/codexu/x-animate/issues) |
+[X-TOUCH](https://github.com/codexu/x-touch/issues) |
 [X-MUSIC](https://github.com/codexu/x-music/issues)
+
+## 分享你的项目
+
+如果你使用 X-BUILD 开发了某个项目，可以在此与大家分享：
+
+- 加 QQ群 或 作者微信(xu461229187)
+- 准备信息：项目名称*、作者*、线上链接*、Git仓库、备注信息
+
+## 成功案例
+
+项目名称 | 作者 |  线上链接 | Git仓库 | 备注信息
+:-: | :-: | :-: | :-: | :-:
+志愿君机器人助理 | - | [链接](https://ygaokao.com/gaokao/index.html) | - | 需要微信登陆
+找回我的准考证 | - | [链接](https://ygaokao.com/zkz/index.html) | - | 移动端项目

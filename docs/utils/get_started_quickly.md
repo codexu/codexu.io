@@ -27,12 +27,12 @@ X-load handles image loading. During the loading process, the loading effect occ
 
 ```javascript
   // Example: x-load & x-animate
-  Import XLoad from 'x-load';
-  Import XAnimate from 'x-animate'
+  import XLoad from 'x-load';
+  import XAnimate from 'x-animate'
 
-  Const xAnimate = new XAnimate();
+  const xAnimate = new XAnimate();
 
-  New XLoad({
+  new XLoad({
     afterLoading: function() {
       xAnimate.init();
     }

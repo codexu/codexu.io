@@ -5,7 +5,7 @@ Quickly create a new project with the following instructions:
 ![](http://ww2.sinaimg.cn/large/006tNc79ly1g3yg6q07lij31ae0u0aiy.jpg)
 
 ```sh
-X-build create [name] -q
+x-build create [name] -q
 ```
 
 ::: tip Tips
@@ -25,8 +25,8 @@ After the installation is complete, there will be a next prompt, enter the creat
 Go to the created directory and start webpack devServer via npm or yarn:
 
 ```sh
-Cd [name]
-Npm run serve
+cd [name]
+npm run serve
 ```
 
 ![](http://ww3.sinaimg.cn/large/006tNc79ly1g3yg86s170j31ae0u0dpi.jpg)

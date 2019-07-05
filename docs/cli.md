@@ -14,7 +14,7 @@ It is recommended that you use nvm to manage the installation of Node.js.
 Open the terminal and execute the following command.
 
 ```sh
-Curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 ```
 
 When finished, restart the terminal and execute `nvm install --lts` to install the latest LTS version of Node.js.
@@ -28,7 +28,7 @@ Verify the installed Node.js version
 Execute the following command in the terminal (Git Bash or other terminal emulator under Windows)
 
 ```sh
-Node -v
+node -v
 ```
 
 If the terminal prints out the version of Node.js, the installation is successful.
@@ -44,7 +44,7 @@ Installing X-BUILD via npm is similar to @vue/cli and provides x-build and x (sh
 Use the following command to globally install the npm package:
 
 ```sh
-Npm install -g x-build
+npm install -g x-build
 ```
 
 Once installed, you can access the **x-build** command from the command line.

@@ -7,7 +7,7 @@ After learning the previous chapter, we quickly created an X-BUILD project, but 
 Create a new project with the following instructions:
 
 ```sh
-X-build create [name]
+x-build create [name]
 ```
 
 ## Parameters
@@ -74,13 +74,13 @@ Usually the instructions of most CLI tools are the same, X-BUILD is no exception
 Development:
 
 ```sh
-Npm run serve
+npm run serve
 ```
 
 produce:
 
 ```sh
-Npm run build
+npm run build
 ```
 
 To find out what X-BUILD has done in both development and production environments, check out the next chapter [Concepts](/Concepts).

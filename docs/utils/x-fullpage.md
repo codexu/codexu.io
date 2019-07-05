@@ -12,7 +12,7 @@ X-FULLPAGE can only assist you in triggering animations, using css animation lib
 - Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-Npm install x-fullpage x-touch animate.css --save
+npm install x-fullpage x-touch animate.css --save
 ```
 
 > This tutorial uses animate.css as the animation library by default
@@ -23,12 +23,12 @@ X-FULLPAGE depends on X-TOUCH, please make sure X-TOUCH takes precedence init:
 
 ```javascript
 // javascript
-Import XFullpage from 'x-fullpage';
-Import XTouch from 'x-touch';
-Import 'animate.css';
+import XFullpage from 'x-fullpage';
+import XTouch from 'x-touch';
+import 'animate.css';
 
-Const xTouch = new XTouch();
-Const xFullpage = new XFullpage();
+const xTouch = new XTouch();
+const xFullpage = new XFullpage();
 
 xTouch.init();
 xFullpage.init();
@@ -89,7 +89,7 @@ Animation duration.
 When instantiating XFullpage, pass in the object configuration parameter:
 
 ``` javascript
-  New XFullpage({
+  new XFullpage({
     // ...
   });
 ```

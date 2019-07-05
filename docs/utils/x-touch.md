@@ -11,7 +11,7 @@ Implement mobile click, long press, and direction sliding events for native DOM.
 - Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-Npm install x-touch --save
+npm install x-touch --save
 ```
 
 ## Getting off
@@ -19,9 +19,9 @@ Npm install x-touch --save
 - Reference using ES6:
 
 ``` javascript
-Import XTouch from 'x-touch';
+import XTouch from 'x-touch';
 
-Const xTouch = new XTouch();
+const xTouch = new XTouch();
 xTouch.init();
 ```
 
@@ -30,9 +30,9 @@ xTouch.init();
 - Bind the touch event for the DOM:
 
 ``` javascript
-Const root = document.getElementById('root');
+const root = document.getElementById('root');
 
-Root.xtouch('tap', function(status){
+root.xtouch('tap', function(status){
   // do someting!
 })
 
@@ -62,13 +62,13 @@ Root.xtouch('tap', function(status){
 Pass parameters when initializing XTouch:
 
 ``` javascript
-Const config = {
+const config = {
   slideMin: 50,
   tapMin: 10,
   longTapTime: 300
 }
 
-Const xTouch = new XTouch(config);
+const xTouch = new XTouch(config);
 ```
 
 ### slideMin

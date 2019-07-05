@@ -56,3 +56,17 @@ Please submit the bug in the **Github issues** for different projects:
 [X-ANIMATE](https://github.com/codexu/x-animate/issues) |
 [X-TOUCH](https://github.com/codexu/x-touch/issues) |
 [X-MUSIC](https://github.com/codexu/x-music/issues)
+
+## Share your project
+
+If you have developed a project using X-BUILD, you can share it with everyone here:
+
+- Add QQ group or author WeChat (xu461229187)
+- Preparation information: **Project name***、**Author***、**Online link***、Git repository、Remarks
+
+## Success case
+
+Project Name | Author | Online Link | Git Warehouse | Remarks
+:-: | :-: | :-: | :-: | :-:
+志愿君机器人助理 | - | [链接](https://ygaokao.com/gaokao/index.html) | - | 需要微信登陆
+找回我的准考证 | - | [链接](https://ygaokao.com/zkz/index.html) | - | 移动端项目

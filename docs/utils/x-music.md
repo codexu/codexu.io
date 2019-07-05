@@ -8,10 +8,10 @@ Set background music and playback controls.
 
 ## Installation
 
-- Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
+- install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-Npm install x-music --save
+npm install x-music --save
 ```
 
 ## Getting off
@@ -19,14 +19,14 @@ Npm install x-music --save
 - Reference using ES6:
 
 ``` javascript
-Import XMusic from 'x-music';
+import XMusic from 'x-music';
 
-/ / Use webpack please import to introduce static resources
+// Use webpack please import to introduce static resources
 Import src from '***';
-Import playImg from '***';
-Import pauseImg from '***';
+import playImg from '***';
+import pauseImg from '***';
 
-Const xMusic = new XMusic({ src, playImg, pauseImg });
+const xMusic = new XMusic({ src, playImg, pauseImg });
 xMusic.init();
 ```
 

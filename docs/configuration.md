@@ -28,7 +28,7 @@ The entry files for index.js and index.[css/scss/less/styl] are set by default.
 
 ```javascript
 // example:
-Entry: [
+entry: [
   './src/scripts/index.js',
   './src/styles/index.[css/scss/less/styl]'
 ]
@@ -84,7 +84,7 @@ When you encounter cross-domain problems during development, you can use this co
 
 ```javascript
 // example:
-Proxy: {
+proxy: {
   '/api': {
     Target: '#',
     pathRewrite: {

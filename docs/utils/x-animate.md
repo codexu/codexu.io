@@ -11,7 +11,7 @@ Perform animations through screen scrolling, support for time-lapse animation, c
 - Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-Npm install animate.css x-animate --save
+npm install animate.css x-animate --save
 ```
 
 ## Quote
@@ -20,9 +20,9 @@ Npm install animate.css x-animate --save
 
 ```javascript
 // javascript
-Import 'animate.css'
-Import XAnimate from 'x-animate'
-Const xAnimate = new XAnimate();
+import 'animate.css'
+import XAnimate from 'x-animate'
+const xAnimate = new XAnimate();
 xAnimate.init();
 ```
 
@@ -120,13 +120,13 @@ Define the functions that need to be executed in methods:
 
 ```javascript
 // javascript
-Let xAnimate = new XAnimate({
-  Methods: {
+const xAnimate = new XAnimate({
+  methods: {
     animateEnterFn(item) {
-      Console.log('animateEnter', item);
+      console.log('animateEnter', item);
     },
     animateLeaveFn(item) {
-      Console.log('animateLeave', item);
+      console.log('animateLeave', item);
     }
   }
 });
@@ -139,16 +139,16 @@ Use custom animations, such as new definition newAnimate animations:
 ```css
 /* css */
 @keyframes newAnimate {
-  From {
+  from {
     Opacity: 0;
   }
-  To {
+  to {
     Opacity: 1;
   }
 }
 
 .newAnimate {
-  Animation-name: newAnimate;
+  animation-name: newAnimate;
 }
 ```
 
@@ -161,12 +161,12 @@ Use custom animations, such as new definition newAnimate animations:
 
 ```javascript
 // javascript
-Const xAnimate = new XAnimate({
+const xAnimate = new XAnimate({
   // The default value 'animate', corresponding to <div animate=""></div>, prevents naming conflicts with other plugins
-  Name: 'animate',
+  name: 'animate',
   // The default value is 'delay', corresponding to <div delay=""></div> to prevent naming conflicts with other plugins
-  Delay: 'delay',
+  delay: 'delay',
   // The default value is 'duration', corresponding to <div duration=""></div> to prevent naming conflicts with other plugins
-  Duration: 'duration'
+  duration: 'duration'
 });
 ```

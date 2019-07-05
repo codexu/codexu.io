@@ -11,7 +11,7 @@ The preloading, lazy loading, and sequential loading control image downloading m
 - Install via <font color=DodgerBlue>npm</font> or <font color=DodgerBlue>yarn</font>:
 
 ```sh
-Npm install x-load --save
+npm install x-load --save
 ```
 
 ## Quote
@@ -19,7 +19,7 @@ Npm install x-load --save
 - Install through the package manager:
 
 ```javascript
-Import XLoad from 'x-load';
+import XLoad from 'x-load';
 ```
 
 > This project is packaged in rollup using UMD format, supports AMD, CommonJS, and script tags, [download source] (https://github.com/codexu/x-load/tree/master/dist)
@@ -46,7 +46,7 @@ Import XLoad from 'x-load';
 When instantiating XLoad, pass in the object configuration parameter:
 
 ```javascript
-New XLoad({
+new XLoad({
   // ...
 });
 ```
