@@ -61,7 +61,7 @@ Please submit the bug in the **Github issues** for different projects:
 
 If you have developed a project using X-BUILD, you can share it with everyone here:
 
-- Add QQ group or author WeChat (xu461229187)
+- Add QQ group or author WeChat (xu461229187) or submit by modifying this page below
 - Preparation information: **Project name***、**Author***、**Online link***、Git repository、Remarks
 
 ## Success case
@@ -70,4 +70,4 @@ Project Name | Author | Online Link | Git Warehouse | Remarks
 :-: | :-: | :-: | :-: | :-:
 志愿君机器人助理 | codexu | ![](http://ww3.sinaimg.cn/large/006tNc79ly1g4p4gs2z82j30280280mq.jpg) | - | 需要微信登陆，谨慎消费
 找回我的准考证 | codexu | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4gc93ljj30280280ll.jpg) | - | 移动端项目
-爱怡国际-名医尊享卡 | 杨振华 | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目
+爱怡国际-名医尊享卡 | 华 | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目

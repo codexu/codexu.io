@@ -66,7 +66,7 @@ X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几
 
 如果你使用 X-BUILD 开发了某个项目，可以在此与大家分享：
 
-- 加 QQ群 或 作者微信(xu461229187)
+- 加 QQ群 或 作者微信(xu461229187) 或 通过下方修改此页的方式提交
 - 准备信息：项目名称*、作者*、线上链接*、Git仓库、备注信息
 
 ## 成功案例
@@ -75,4 +75,4 @@ X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几
 :-: | :-: | :-: | :-: | :-:
 志愿君机器人助理 | codexu | ![](http://ww3.sinaimg.cn/large/006tNc79ly1g4p4gs2z82j30280280mq.jpg) | - | 需要微信登陆，谨慎消费
 找回我的准考证 | codexu | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4gc93ljj30280280ll.jpg) | - | 移动端项目
-爱怡国际-名医尊享卡 | 杨振华 | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目
+爱怡国际-名医尊享卡 | 华 | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目
