@@ -70,4 +70,14 @@ Project Name | Author | Online Link | Git Warehouse | Remarks
 :-: | :-: | :-: | :-: | :-:
 志愿君机器人助理 | codexu | ![](http://ww3.sinaimg.cn/large/006tNc79ly1g4p4gs2z82j30280280mq.jpg) | - | 需要微信登陆，谨慎消费
 找回我的准考证 | codexu | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4gc93ljj30280280ll.jpg) | - | 移动端项目
-爱怡国际-名医尊享卡 | 华 | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目
+爱怡国际-名医尊享卡 | HuaZFang | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目
+共享设计师问卷调查 | sanpangZZ | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5dcwj.png'> | - | 移动端项目
+Python全栈工程师 | WenXian | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5python.png' > | - | 移动端项目
+Python全栈工程师 | WenXian | [Python全栈工程师](http://www.zretc.com/pages/course-python/) | - | PC端项目
+逆风翻盘向‘薪’而生 | LOUSANPANG | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5nffp.png' > | - | 移动端项目
+逆风翻盘向‘薪’而生 | LOUSANPANG | [逆风翻盘向‘薪’而生](http://www.zretc.com/pages/InternetAgePc-ad/) | - | PC端项目
+圆梦千万毕业生 | LouHAO | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5yuanmeng.png'> | - | 移动端项目
+圆梦千万毕业生 | LouHAO | [圆梦千万毕业生](http://www.zretc.com/pages/DreamGraduate-Pc/) | - | PC端项目
+企业背景 | HAOFW | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5qiye.png'> | - | 移动端项目
+企业背景 | HAOFW | [企业背景](http://zretc.com/pages/famous-enterprise/) | - | PC端项目
+
