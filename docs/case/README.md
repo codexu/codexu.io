@@ -25,16 +25,12 @@
 ## 全部案例
 
 Project Name | Author | Online Link | Remarks
-:-: | :-: | :-: | :-:
+:- | :- | :- | :-
 志愿君机器人助理 | [codexu](https://github.com/codexu) | [查看二维码](/qr/006tNc79ly1g4p4gs2z82j30280280mq.jpg) | 需要微信登陆，谨慎消费
-找回我的准考证 | [codexu](https://github.com/codexu) | [查看二维码](/qr/006tNc79ly1g4p4gc93ljj30280280ll.jpg) | 移动端项目
-爱怡国际-名医尊享卡 | HuaZFang | [查看二维码](/qr/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | 移动端项目
-共享设计师问卷调查 | sanpangZZ | [查看二维码](/qr/006tNc79ly1g4s6w1ok5ij30280280lz.jpg) | 移动端项目
-Python全栈工程师 | WenXian | [查看二维码](/qr/006tNc79ly1g4s6vnr8mpj30280280qx.jpg) | 移动端项目
-Python全栈工程师 | WenXian | [跳转链接](http://www.zretc.com/pages/course-python/) | PC端项目
-逆风翻盘向‘薪’而生 | [LOUSANPANG](https://github.com/LOUSANPANG) | [查看二维码](/qr/006tNc79ly1g4s6v8ja3pj30280280m6.jpg) | 移动端项目
-逆风翻盘向‘薪’而生 | [LOUSANPANG](https://github.com/LOUSANPANG) | [跳转链接](http://www.zretc.com/pages/InternetAgePc-ad/) | PC端项目
-圆梦千万毕业生 | LouHAO | [查看二维码](/qr/006tNc79ly1g4s6wikr2mj30280280qm.jpg) | 移动端项目
-圆梦千万毕业生 | LouHAO | [跳转链接](http://www.zretc.com/pages/DreamGraduate-Pc/) | PC端项目
-企业背景 | HAOFW | [查看二维码](/qr/006tNc79ly1g4s6y7d8hbj30280280qo.jpg) | 移动端项目
-企业背景 | HAOFW | [跳转链接](http://zretc.com/pages/famous-enterprise/) | PC端项目
+找回我的准考证 | [codexu](https://github.com/codexu) | [查看二维码](/qr/006tNc79ly1g4p4gc93ljj30280280ll.jpg) | 通过 canvas 生成高考准考证
+爱怡国际-名医尊享卡 | HuaZFang | [查看二维码](/qr/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | -
+共享设计师问卷调查 | sanpangZZ | [查看二维码](/qr/006tNc79ly1g4s6w1ok5ij30280280lz.jpg) | -
+Python全栈工程师 | WenXian | [移动端](/qr/006tNc79ly1g4s6vnr8mpj30280280qx.jpg) / [PC](http://www.zretc.com/pages/course-python/) | -
+逆风翻盘向‘薪’而生 | [LOUSANPANG](https://github.com/LOUSANPANG) | [移动端](/qr/006tNc79ly1g4s6v8ja3pj30280280m6.jpg) / [PC](http://www.zretc.com/pages/InternetAgePc-ad/) | -
+圆梦千万毕业生 | LouHAO | [移动端](/qr/006tNc79ly1g4s6wikr2mj30280280qm.jpg) / [PC](http://www.zretc.com/pages/DreamGraduate-Pc/) | -
+企业背景 | HAOFW | [移动端](/qr/006tNc79ly1g4s6y7d8hbj30280280qo.jpg) / [PC](http://zretc.com/pages/famous-enterprise/) | -
