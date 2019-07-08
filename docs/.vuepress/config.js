@@ -9,7 +9,7 @@ module.exports = {
       lang: 'zh-CN',
       title: 'X-BUILD',
       description: ''
-    }
+    },
   },
   themeConfig: {
     docsRepo: 'codexu/codexu.github.io',
@@ -27,6 +27,7 @@ module.exports = {
           { text: 'Get started', link: '/' },
           { text: 'Guide', link: '/concept' },
           { text: 'Tools', link: '/utils/get_started_quickly' },
+          { text: 'Cases', link: '/case/' },
         ],
         sidebar: [
           {
@@ -71,6 +72,7 @@ module.exports = {
           { text: '快速上手', link: '/zh/' },
           { text: '指南', link: '/zh/概念' },
           { text: '工具', link: '/zh/utils/快速上手' },
+          { text: '案例', link: '/case/' },
         ],
         sidebar: [
           {
@@ -105,7 +107,7 @@ module.exports = {
             ]
           },
         ],
-      }
+      },
     },
   },
 }

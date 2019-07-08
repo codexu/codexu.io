@@ -45,6 +45,24 @@ X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几
 如果你有足够了解 X-BUILD ，并且熟练掌握 webpack，在此基础上完全可以搭建适合大型项目开发的环境，但我并不建议你这么做！
 :::
 
+## 征集更多案例
+
+[>>查看全部案例<<](/case)
+
+如果你使用 X-BUILD 开发了某个项目，可以通过下面的方式进行分享：
+
+- 加 QQ群 或 作者微信(xu461229187)
+- 通过进入案例页面点击下方修改此页自行编辑和提交
+
+**准备信息：**
+
+- 【项目名称】：可附带项目源码链接
+- 【作者】：可附带个人 Github 链接
+- 【线上链接】：PC 采用链接形式，移动端请生成二维码(80*80)
+- 【备注信息】
+
+> 二维码路径 > /docs/.vuepress/public/qr/***.jpg
+
 ## 讨论交流
 
 ### QQ群
@@ -61,27 +79,3 @@ X-BUILD 是面向小型项目的脚手架工具，通过终端命令最快在几
 [X-ANIMATE](https://github.com/codexu/x-animate/issues) |
 [X-TOUCH](https://github.com/codexu/x-touch/issues) |
 [X-MUSIC](https://github.com/codexu/x-music/issues)
-
-## 分享你的项目
-
-如果你使用 X-BUILD 开发了某个项目，可以在此与大家分享：
-
-- 加 QQ群 或 作者微信(xu461229187) 或 通过下方修改此页的方式提交
-- 准备信息：项目名称*、作者*、线上链接*、Git仓库、备注信息
-
-## 成功案例
-
-项目名称 | 作者 |  线上链接 | Git仓库 | 备注信息
-:-: | :-: | :-: | :-: | :-:
-志愿君机器人助理 | codexu | ![](http://ww3.sinaimg.cn/large/006tNc79ly1g4p4gs2z82j30280280mq.jpg) | - | 需要微信登陆，谨慎消费
-找回我的准考证 | codexu | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4gc93ljj30280280ll.jpg) | - | 移动端项目
-爱怡国际-名医尊享卡 | HuaZFang | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g4p4fibu6lj30280280sh.jpg) | - | 移动端项目
-共享设计师问卷调查 | sanpangZZ | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5dcwj.png'> | - | 移动端项目
-Python全栈工程师 | WenXian | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5python.png' > | - | 移动端项目
-Python全栈工程师 | WenXian | [Python全栈工程师](http://www.zretc.com/pages/course-python/) | - | PC端项目
-逆风翻盘向‘薪’而生 | LOUSANPANG | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5nffp.png' > | - | 移动端项目
-逆风翻盘向‘薪’而生 | LOUSANPANG | [逆风翻盘向‘薪’而生](http://www.zretc.com/pages/InternetAgePc-ad/) | - | PC端项目
-圆梦千万毕业生 | LouHAO | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5yuanmeng.png'> | - | 移动端项目
-圆梦千万毕业生 | LouHAO | [圆梦千万毕业生](http://www.zretc.com/pages/DreamGraduate-Pc/) | - | PC端项目
-企业背景 | HAOFW | <img src='https://github.com/LOUSANPANG/Picture-library/blob/master/codeImg/h5qiye.png'> | - | 移动端项目
-企业背景 | HAOFW | [企业背景](http://zretc.com/pages/famous-enterprise/) | - | PC端项目
