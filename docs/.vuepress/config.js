@@ -46,6 +46,7 @@ module.exports = {
             children: [
               ['/concept', 'Concept'],
               ['/configuration', 'Configuration'],
+              ['/StateManagement', 'State Management'],
               ['/specification', 'Specification'],
             ]
           },
@@ -91,6 +92,7 @@ module.exports = {
             children: [
               ['/zh/概念', '概念'],
               ['/zh/配置', '配置'],
+              ['/zh/状态管理', '状态管理'],
               ['/zh/规范', '规范'],
             ]
           },
