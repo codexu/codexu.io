@@ -48,6 +48,7 @@ module.exports = {
               ['/configuration', 'Configuration'],
               ['/StateManagement', 'State Management'],
               ['/specification', 'Specification'],
+              ['/Testing', 'Testing'],
             ]
           },
           {
@@ -94,6 +95,7 @@ module.exports = {
               ['/zh/配置', '配置'],
               ['/zh/状态管理', '状态管理'],
               ['/zh/规范', '规范'],
+              ['/zh/单元测试', '单元测试'],
             ]
           },
           {
