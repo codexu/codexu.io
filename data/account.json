@@ -1,0 +1,32 @@
+[
+  {
+    "platform": "juejin",
+    "like": 0,
+    "read": 0,
+    "follower": 0
+  },
+  {
+    "platform": "segmentfault",
+    "like": 0,
+    "read": 0,
+    "follower": 0
+  },
+  {
+    "platform": "jianshu",
+    "like": 0,
+    "read": 0,
+    "follower": 0
+  },
+  {
+    "platform": "csdn",
+    "like": 0,
+    "read": 0,
+    "follower": 0
+  },
+  {
+    "platform": "zhihu",
+    "like": 0,
+    "read": 0,
+    "follower": 0
+  }
+]

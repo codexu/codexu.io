@@ -1,9 +1,20 @@
 {
+  "name": "codexu.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "serve": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.0.1"
+    "@types/node": "^20.11.16",
+    "vitepress": "1.0.0-rc.41",
+    "vue": "^3.4.15"
   }
 }
