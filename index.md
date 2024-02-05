@@ -23,8 +23,5 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-<script setup>
-import data from '/data/account.json'
-</script>
-
-<pre>{{ data }}</pre>
+- [居然只用20多行代码就可以实现微信聊天机器人](/posts/居然只用20多行代码就可以实现微信聊天机器人.md)
+- [下一代浏览器插件开发框架WXT入门指南](/posts/下一代浏览器插件开发框架WXT入门指南.md)

@@ -7,7 +7,7 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
-    <template #doc-top>
+    <template #doc-after>
       <PostInfo />
     </template>
   </Layout>

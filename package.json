@@ -7,14 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "fetch": "bun scripts/post.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
     "@types/node": "^20.11.16",
+    "ant-design-vue": "^4.0.7",
     "vitepress": "1.0.0-rc.41",
     "vue": "^3.4.15"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "puppeteer": "^21.11.0"
   }
 }
