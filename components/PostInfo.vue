@@ -14,9 +14,26 @@ import { useData, useRouter } from 'vitepress'
 import posts from '../data/posts.json'
 import PlatformDetail from './PlatformDetail.vue';
 
+interface SiteInfo {
+  url: string;
+  like: number;
+  read: number;
+  comment: number;
+  collect: number;
+}
+
+interface Post {
+  path: string
+  juejin?: SiteInfo
+  csdn?: SiteInfo
+  zhihu?: SiteInfo
+  SegmentFault?: SiteInfo
+  jianshu?: SiteInfo
+}
+
 const { page } = useData();
 
-const post = ref(posts.find((item) => item.path === page.value.filePath))
+const post = ref<Post | undefined>(posts.find((item) => item.path === page.value.filePath))
 
 const router = useRouter();
 

@@ -1,22 +1,22 @@
 [
   {
-    "path": "posts/下一代浏览器插件开发框架WXT入门指南.md",
-    "juejin": {
-      "url": "https://juejin.cn/post/7329724409429917705",
-      "like": 33,
-      "read": 760,
-      "collect": 36,
-      "comment": 2
-    }
-  },
-  {
     "path": "posts/居然只用20多行代码就可以实现微信聊天机器人.md",
     "juejin": {
       "url": "https://juejin.cn/post/7329194915682877478",
       "like": 11,
       "comment": 2,
       "collect": 7,
-      "read": 422
+      "read": 427
+    }
+  },
+  {
+    "path": "posts/下一代浏览器插件开发框架WXT入门指南.md",
+    "juejin": {
+      "url": "https://juejin.cn/post/7329724409429917705",
+      "like": 33,
+      "comment": 2,
+      "collect": 36,
+      "read": 767
     }
   }
 ]
